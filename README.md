@@ -1,6 +1,8 @@
 # Design Experiments Plugin
 
-A simple plugin to prototype design ideas in WP-Admin. The `master` branch is just an empty boilerplate: it sets up a plugin that enqueues a new, empty admin stylesheet to get you started. 
+A simple plugin to prototype design ideas in WP-Admin. *This plugin is not intended for use in production.* This repository is intended to be a quick way for designers to try out ideas and CSS updates in WP-Admin. Quick, messy code is encouraged to get ideas across!
+
+The `master` branch is just an empty boilerplate: it sets up a plugin that enqueues a new, empty admin stylesheet to get you started. 
 
 ## To try an experiement: 
 
