@@ -14,7 +14,7 @@ A simple plugin to prototype design ideas in WP-Admin. The `master` branch is ju
 1. First, [fork the repository](https://help.github.com/en/articles/fork-a-repo). 
 2. [Clone](https://help.github.com/en/articles/cloning-a-repository) your fork. If possible, place your local copy in the Plugins folder of your local dev site. Then you'll be able to activate the plugin directly from your WP Admin dashboard (If this isn't possible, follow the instructions above to install the plugin manually after you've edited it).
 3. For simple CSS updates, you can either edit style.css directly, or edit `sass/style.scss` and compile using the method described below. 
-4. Once you're ready to share you experiment, [open a PR](https://help.github.com/en/articles/creating-a-pull-request) and tell everyone about it. 
+4. Once you're ready to share your experiment, [open a PR](https://help.github.com/en/articles/creating-a-pull-request) and tell everyone about it. 
 
 ### To compile CSS:
 
