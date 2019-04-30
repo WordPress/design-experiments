@@ -1,3 +1,145 @@
 /*
- * Admin Styles
+ * Imports
  */
+
+@import "colors";
+
+/*
+ * Admin Styles: Add Theme Page
+ */
+
+body.theme-install-php {
+
+	// TODO: Make this unnecessary!
+	overflow-x: hidden;
+
+	.wrap {
+
+		&:before {
+			content: "";
+			display: block;
+			height: 200px;
+			width: calc( 100% + 20px);
+			z-index: -1;
+			position: absolute;
+			top: -10px;
+			left: -20px;
+			background-color: $white;
+			border-bottom: 1px solid $wp-border-color;
+		}
+
+		h1.wp-heading-inline {
+			display: block;
+			margin-top: 100px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		.theme-browser {
+			margin-top: 10px;
+			padding: 0 15px;
+		}
+
+		> .wp-filter {
+			left: -22px;
+			width: calc( 100% + 44px );
+			background-color: $wp-admin-background;
+			text-align: center;
+			font-size: 16px;
+			box-shadow: none;
+			border-top: 1px solid $wp-border-color;
+			border-bottom: 1px solid $wp-border-color;
+
+			.filter-links { 
+				
+				li > a {
+					margin: 0;
+					padding: 15px 30px 18px;
+					box-shadow: none;
+					border-bottom: none;
+					transition: box-shadow 0.2s ease-out;
+				}
+
+				.current {
+					box-shadow: inset 0 -3px 0 0 $wp-blue; 
+				}
+			}
+
+			.filter-count {
+				display: none;
+			}
+
+			> .button.drawer-toggle {
+				position: absolute;
+				right: 0;
+				top: 2px;
+				width: 38px;
+
+				&:before {
+					font-size: 24px;
+				}
+			}
+		}
+
+		.filter-drawer, 
+		.wp-filter .favorites-form {
+			background-color: transparent;
+			background: $white;
+		}
+
+		.filter-group {
+			width: 32%;
+			border: none;
+
+			.filter-group-feature {
+				text-align: left;
+			}
+		}
+
+		.upload-view-toggle {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			padding: 4px 0;
+			top: 20px;
+			height: 32px;
+			background: transparent;
+			border: none;
+
+			&:before {
+				content: url( 'assets/outline-add_circle_outline-24px.svg' );
+				display: inline-block;
+				position: relative;
+				top: 1px;
+				padding-right: 4px;
+			}
+		}
+
+		.search-form {
+			display: none;
+		}
+	}
+
+	#screen-meta-links .screen-meta-toggle {
+		border: none;
+		margin-top: 20px;
+
+		#contextual-help-link {
+			box-shadow: none;
+			width: 36px;
+
+			&:before {
+				content: url( 'assets/outline-more_vert-24px.svg' );
+				display: inline-block;
+				position: relative;
+				top: 1px;
+				padding-right: 4px;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+	
+}
