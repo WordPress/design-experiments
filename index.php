@@ -11,9 +11,14 @@
 /**
  * Register all the experiments.
  */
-$all_design_experiments = array(
-	array( 'default_stylesheet', 'style.css', 'Default Plugin Stylesheet' )
+$design_experiments = array(
+	array( 'default_stylesheet', 'style.css', 'Default Plugin Stylesheet' ),
+	array( 'test_stylesheet', 'test.css', 'Test Stylesheet' )
 ); 
+
+foreach ( $design_experiments as $design_experiment ) {
+	echo $design_experiment[0];
+}
 
 
 /**
@@ -32,9 +37,11 @@ add_action('admin_menu', 'design_experiments_add_settings_page');
  * Register settings for the WP-Admin page.
  */
 function design_experiments_settings() {
-	global $all_design_experiments; 
+	global $design_experiments; 
 
-	register_setting( 'design-experiments-settings', $all_design_experiments[0][0] );
+	foreach ( $design_experiments as $design_experiment ) {
+		register_setting( 'design-experiments-settings', $design_experiment[0] );
+	}
 }
 
 
@@ -42,7 +49,7 @@ function design_experiments_settings() {
  * Build the WP-Admin settings page.
  */
 function design_experiments_settings_page() { 
-	global $all_design_experiments; ?>
+	global $design_experiments; ?>
 
 	<div class="wrap">
 	<h1><?php _e('Design Experiments'); ?></h1>
@@ -51,18 +58,20 @@ function design_experiments_settings_page() {
 		<?php settings_fields( 'design-experiments-settings' ); ?>
 		<?php do_settings_sections( 'design-experiments-settings' ); ?>
 
-		<table class="form-table">
-			<tr valign="top">
-			<td>
-				<label for="<?php echo $all_design_experiments[0][0]; ?>">
-					<input name="<?php echo $all_design_experiments[0][0]; ?>" type="checkbox" value="1" <?php checked( '1', get_option( $all_design_experiments[0][0] ) ); ?> />
-					<?php echo $all_design_experiments[0][2]; ?>
-				</label>
-			</td>
-			</tr>
-		</table>
-	    
-	    <?php submit_button(); ?>
+		<?php foreach ( $design_experiments as $design_experiment ) { ?>
+			<table class="form-table">
+				<tr valign="top">
+				<td>
+					<label for="<?php echo $design_experiment[0]; ?>">
+						<input name="<?php echo $design_experiment[0]; ?>" type="checkbox" value="1" <?php checked( '1', get_option( $design_experiment[0] ) ); ?> />
+						<?php echo $design_experiment[2]; ?>
+					</label>
+				</td>
+		<?php } ?>
+				</tr>
+			</table>
+
+		<?php submit_button(); ?>
 	</form>
 	</div>
 <?php }
@@ -72,13 +81,15 @@ function design_experiments_settings_page() {
  * Enqueue Stylesheets.
  */
 function design_experiments_enqueue_stylesheets() {
-	global $all_design_experiments; 
-	
-	if ( get_option('default_stylesheet') == 1 ) {
-		wp_register_style( $all_design_experiments[0][0], plugins_url( $all_design_experiments[0][1], __FILE__ ), false, '1.0.0' );
-		wp_enqueue_style( $all_design_experiments[0][0] );
-	} else {
-		return;
+	global $design_experiments;
+
+	foreach ( $design_experiments as $design_experiment ) {
+
+		if ( get_option( $design_experiment[0] ) == 1 ) {
+			wp_register_style( $design_experiment[0], plugins_url( $design_experiment[1], __FILE__ ), false, '1.0.0' );
+			wp_enqueue_style( $design_experiment[0] );
+		}
+
 	}
 
 }
