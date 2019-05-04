@@ -8,6 +8,13 @@
  * Author: The WordPress.org Design Team
  */
 
+/**
+ * Register all the experiments.
+ */
+$all_design_experiments = array(
+	array( 'default_stylesheet', 'style.css', 'Default Plugin Stylesheet' )
+); 
+
 
 /**
  * Set up a WP-Admin page for managing turning on and off plugin features.
@@ -25,14 +32,18 @@ add_action('admin_menu', 'design_experiments_add_settings_page');
  * Register settings for the WP-Admin page.
  */
 function design_experiments_settings() {
-	register_setting( 'design-experiments-settings', 'default_stylesheet' );
+	global $all_design_experiments; 
+
+	register_setting( 'design-experiments-settings', $all_design_experiments[0][0] );
 }
 
 
 /**
  * Build the WP-Admin settings page.
  */
-function design_experiments_settings_page() { ?>
+function design_experiments_settings_page() { 
+	global $all_design_experiments; ?>
+
 	<div class="wrap">
 	<h1><?php _e('Design Experiments'); ?></h1>
 
@@ -43,9 +54,9 @@ function design_experiments_settings_page() { ?>
 		<table class="form-table">
 			<tr valign="top">
 			<td>
-				<label for="default_stylesheet">
-					<input name="default_stylesheet" type="checkbox" value="1" <?php checked( '1', get_option( 'default_stylesheet' ) ); ?> />
-					<?php _e('Default Plugin Stylesheet'); ?>
+				<label for="<?php echo $all_design_experiments[0][0]; ?>">
+					<input name="<?php echo $all_design_experiments[0][0]; ?>" type="checkbox" value="1" <?php checked( '1', get_option( $all_design_experiments[0][0] ) ); ?> />
+					<?php echo $all_design_experiments[0][2]; ?>
 				</label>
 			</td>
 			</tr>
@@ -61,10 +72,11 @@ function design_experiments_settings_page() { ?>
  * Enqueue Stylesheets.
  */
 function design_experiments_enqueue_stylesheets() {
+	global $all_design_experiments; 
 	
 	if ( get_option('default_stylesheet') == 1 ) {
-		wp_register_style( 'design_experiments_css', plugins_url( 'style.css', __FILE__ ), false, '1.0.0' );
-		wp_enqueue_style( 'design_experiments_css' );
+		wp_register_style( $all_design_experiments[0][0], plugins_url( $all_design_experiments[0][1], __FILE__ ), false, '1.0.0' );
+		wp_enqueue_style( $all_design_experiments[0][0] );
 	} else {
 		return;
 	}
