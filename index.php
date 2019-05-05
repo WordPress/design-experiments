@@ -14,11 +14,7 @@
 $design_experiments = array(
 	array( 'default_stylesheet', 'style.css', 'Default Plugin Stylesheet' ),
 	array( 'test_stylesheet', 'test.css', 'Test Stylesheet' )
-); 
-
-foreach ( $design_experiments as $design_experiment ) {
-	echo $design_experiment[0];
-}
+);
 
 
 /**
@@ -58,17 +54,17 @@ function design_experiments_settings_page() {
 		<?php settings_fields( 'design-experiments-settings' ); ?>
 		<?php do_settings_sections( 'design-experiments-settings' ); ?>
 
-		<?php foreach ( $design_experiments as $design_experiment ) { ?>
 			<table class="form-table">
-				<tr valign="top">
-				<td>
-					<label for="<?php echo $design_experiment[0]; ?>">
-						<input name="<?php echo $design_experiment[0]; ?>" type="checkbox" value="1" <?php checked( '1', get_option( $design_experiment[0] ) ); ?> />
-						<?php echo $design_experiment[2]; ?>
-					</label>
-				</td>
-		<?php } ?>
-				</tr>
+				<?php foreach ( $design_experiments as $design_experiment ) { ?>
+					<tr valign="top">
+						<td>
+							<label for="<?php echo $design_experiment[0]; ?>">
+								<input name="<?php echo $design_experiment[0]; ?>" type="checkbox" value="1" <?php checked( '1', get_option( $design_experiment[0] ) ); ?> />
+								<?php echo $design_experiment[2]; ?>
+							</label>
+						</td>
+					</tr>
+				<?php } ?>
 			</table>
 
 		<?php submit_button(); ?>
