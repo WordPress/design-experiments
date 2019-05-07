@@ -33,11 +33,11 @@ add_action('admin_menu', 'design_experiments_add_settings_page');
  * Register settings for the WP-Admin page.
  */
 function design_experiments_settings() {
-	global $design_experiments; 
-
-	foreach ( $design_experiments as $design_experiment ) {
-		register_setting( 'design-experiments-settings', $design_experiment[0] );
-	}
+	$design_setting_args = array(
+		'type' => 'string', 
+		'default' => 'default_stylesheet',
+	);
+	register_setting( 'design-experiments-settings', 'design-experiments-setting', $design_setting_args );
 }
 
 
@@ -58,8 +58,8 @@ function design_experiments_settings_page() {
 				<?php foreach ( $design_experiments as $design_experiment ) { ?>
 					<tr valign="top">
 						<td>
-							<label for="<?php echo esc_attr( $design_experiment[0] ); ?>">
-								<input name="<?php echo esc_attr( $design_experiment[0] ); ?>" type="checkbox" value="1" <?php checked( '1', get_option( $design_experiment[0] ) ); ?> />
+							<label for="design-experiments-setting">
+								<input name="design-experiments-setting" type="radio" value="<?php echo esc_attr( $design_experiment[0] ); ?>" <?php checked( $design_experiment[0], get_option( 'design-experiments-setting' ) ); ?> />
 								<?php echo esc_html( $design_experiment[2] ); ?>
 								<?php if ( $design_experiment[3] ) { ?>
 									(<a href="<?php echo esc_url( $design_experiment[3] ); ?>"><?php _e( 'Learn more' ); ?></a>)
@@ -84,7 +84,7 @@ function design_experiments_enqueue_stylesheets() {
 
 	foreach ( $design_experiments as $design_experiment ) {
 
-		if ( get_option( $design_experiment[0] ) == 1 ) {
+		if ( get_option( 'design-experiments-setting' ) == $design_experiment[0] ) {
 			wp_register_style( $design_experiment[0], plugins_url( $design_experiment[1], __FILE__ ), false, '1.0.0' );
 			wp_enqueue_style( $design_experiment[0] );
 		}
