@@ -3,12 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
-    "chokidar-cli": "^1.2.1",
-    "node-sass": "^4.9.3",
-    "npm-run-all": "^4.1.5"
+    "node-sass": "^4.9.3"
   },
   "scripts": {
-    "build": "node-sass sass/style.scss style.css --output-style expanded",
-    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
+    "watch": "node-sass --watch sass -o css --output-style expanded",
+    "build": "node-sass sass -o css --output-style expanded"
   }
 }
