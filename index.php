@@ -21,10 +21,10 @@ class DesignExperiments {
 	 * Register all the experiments. 
 	 */
 	private $design_experiments = array(
-		array( 'default_stylesheet', 'style.css', 'Default plugin stylesheet', 'https://github.com/WordPress/design-experiments' ),
+		array( 'default', 'Default plugin stylesheet', 'https://github.com/WordPress/design-experiments' ),
 
 		// To enqueue a new stylesheet, add a line above using the example here as a guide: 
-		// array( 'stylesheet_name', 'stylesheet_name.css', 'Experiment Title', 'url/to/experiment' ),
+		// array( 'stylesheet', 'Experiment title', 'url/to/experiment' ),
 	);
 
 
@@ -42,7 +42,7 @@ class DesignExperiments {
 	function design_experiments_settings() {
 		$design_setting_args = array(
 			'type' => 'string', 
-			'default' => 'default_stylesheet',
+			'default' => 'default',
 		);
 		register_setting( 'design-experiments-settings', 'design-experiments-setting', $design_setting_args );
 	}
@@ -66,9 +66,9 @@ class DesignExperiments {
 							<td>
 								<label for="design-experiments-setting">
 									<input name="design-experiments-setting" type="radio" value="<?php echo esc_attr( $design_experiment[0] ); ?>" <?php checked( $design_experiment[0], get_option( 'design-experiments-setting' ) ); ?> />
-									<?php echo esc_html( $design_experiment[2] ); ?>
-									<?php if ( $design_experiment[3] ) { ?>
-										(<a href="<?php echo esc_url( $design_experiment[3] ); ?>"><?php _e( 'Learn more' ); ?></a>)
+									<?php echo esc_html( $design_experiment[1] ); ?>
+									<?php if ( $design_experiment[2] ) { ?>
+										(<a href="<?php echo esc_url( $design_experiment[2] ); ?>"><?php _e( 'Learn more' ); ?></a>)
 									<?php } ?>
 								</label>
 							</td>
@@ -90,7 +90,7 @@ class DesignExperiments {
 		foreach ( $this->design_experiments as $design_experiment ) {
 
 			if ( get_option( 'design-experiments-setting' ) == $design_experiment[0] ) {
-				wp_register_style( $design_experiment[0], plugins_url( 'css/' . $design_experiment[1], __FILE__ ), false, '1.0.0' );
+				wp_register_style( $design_experiment[0], plugins_url( 'css/' . $design_experiment[0] . '.css', __FILE__ ), false, '1.0.0' );
 				wp_enqueue_style( $design_experiment[0] );
 			}
 
