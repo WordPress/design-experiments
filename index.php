@@ -58,9 +58,9 @@ function design_experiments_settings_page() {
 				<?php foreach ( $design_experiments as $design_experiment ) { ?>
 					<tr valign="top">
 						<td>
-							<label for="<?php echo $design_experiment[0]; ?>">
-								<input name="<?php echo $design_experiment[0]; ?>" type="checkbox" value="1" <?php checked( '1', get_option( $design_experiment[0] ) ); ?> />
-								<?php echo $design_experiment[2] ?>
+							<label for="<?php echo esc_attr( $design_experiment[0] ); ?>">
+								<input name="<?php echo esc_attr( $design_experiment[0] ); ?>" type="checkbox" value="1" <?php checked( '1', get_option( $design_experiment[0] ) ); ?> />
+								<?php echo esc_html( $design_experiment[2] ); ?>
 								<?php if ( $design_experiment[3] ) { ?>
 									(<a href="<?php echo esc_url( $design_experiment[3] ); ?>"><?php _e( 'Learn more' ); ?></a>)
 								<?php } ?>
