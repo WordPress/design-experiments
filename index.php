@@ -85,7 +85,7 @@ function design_experiments_enqueue_stylesheets() {
 	foreach ( $design_experiments as $design_experiment ) {
 
 		if ( get_option( 'design-experiments-setting' ) == $design_experiment[0] ) {
-			wp_register_style( $design_experiment[0], plugins_url( $design_experiment[1], __FILE__ ), false, '1.0.0' );
+			wp_register_style( $design_experiment[0], plugins_url( 'css/' . $design_experiment[1], __FILE__ ), false, '1.0.0' );
 			wp_enqueue_style( $design_experiment[0] );
 		}
 
