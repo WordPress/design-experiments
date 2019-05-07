@@ -17,13 +17,13 @@ The `master` branch is just an empty boilerplate: it sets up a plugin that enque
 
 1. First, [fork the repository](https://help.github.com/en/articles/fork-a-repo). 
 2. [Clone](https://help.github.com/en/articles/cloning-a-repository) your fork. If possible, place your local copy in the Plugins folder of your local dev site. Then you'll be able to activate the plugin directly from your WP Admin dashboard (If this isn't possible, follow the instructions above to install the plugin manually after you've edited it).
-3. For simple CSS updates, you can either edit style.css directly, or edit `sass/style.scss` and compile using the method described below. 
+3. For simple CSS updates, you can either edit `css/default.css` directly, or edit `sass/default.scss` and compile using the method described below. If you'd like to add a new CSS file, you can enqueue it using the method from step 4 below. 
 
 ## To submit an experiment for inclusion in the plugin: 
 
 1. [Fork the repository](https://help.github.com/en/articles/fork-a-repo). 
 2. [Clone](https://help.github.com/en/articles/cloning-a-repository) your fork. If possible, place your local copy in the Plugins folder of your local dev site. Then you'll be able to activate the plugin directly from your WP Admin dashboard (If this isn't possible, follow the instructions above to install the plugin manually after you've edited it).
-3. If you're using Sass, create new SASS stylesheet in the `sass` directory, and run `npm run build` to compile it. Otherwise, just add a new CSS file to the `css` directory. 
+3. If you're using Sass, create new SASS stylesheet in the `sass` directory, and run `npm run build` to compile it. Otherwise, just add a new CSS file to the `css` directory. Experiments are expected to use a single css file. 
 4. Add your experiment to the [`$design_experiments` array in `index.php`](https://github.com/WordPress/design-experiments/blob/e81bafab7f4438aa9bee2982e6d2f6363a935224/index.php#L24-L27). This will properly enqueue your new stylesheet and ensure that your experiment shows up on the Plugin's settings page. This takes just a single line of code. An example is commented out in the file:
 	- `stylesheet`: The filename of your experiment's stylesheet, minus the extension. No spaces please.
 	- `Experiment title`: A title for your experiment.
