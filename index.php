@@ -12,8 +12,8 @@
  * Register all the experiments.
  */
 $design_experiments = array(
-	array( 'default_stylesheet', 'style.css', 'Default Plugin Stylesheet' ),
-	array( 'test_stylesheet', 'test.css', 'Test Stylesheet' )
+	array( 'default_stylesheet', 'style.css', 'Default Plugin Stylesheet', 'https://github.com/WordPress/design-experiments' ),
+	array( 'test_stylesheet', 'test.css', 'Test Stylesheet', 'https://github.com/WordPress/design-experiments' )
 );
 
 
@@ -60,7 +60,10 @@ function design_experiments_settings_page() {
 						<td>
 							<label for="<?php echo $design_experiment[0]; ?>">
 								<input name="<?php echo $design_experiment[0]; ?>" type="checkbox" value="1" <?php checked( '1', get_option( $design_experiment[0] ) ); ?> />
-								<?php echo $design_experiment[2]; ?>
+								<?php echo $design_experiment[2] ?>
+								<?php if ( $design_experiment[3] ) { ?>
+									(<a href="<?php echo esc_url( $design_experiment[3] ); ?>"><?php _e( 'Learn more' ); ?></a>)
+								<?php } ?>
 							</label>
 						</td>
 					</tr>
