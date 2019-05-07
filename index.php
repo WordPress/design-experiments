@@ -18,11 +18,13 @@ class DesignExperiments {
 
 
 	/**
-	 * Register all the experiments.
+	 * Register all the experiments. 
 	 */
 	private $design_experiments = array(
-		array( 'default_stylesheet', 'style.css', 'Default Plugin Stylesheet', 'https://github.com/WordPress/design-experiments' ),
-		array( 'test_stylesheet', 'test.css', 'Test Stylesheet', 'https://github.com/WordPress/design-experiments' )
+		array( 'default_stylesheet', 'style.css', 'Default plugin stylesheet', 'https://github.com/WordPress/design-experiments' ),
+
+		// To enqueue a new stylesheet, add a line above using the example here as a guide: 
+		// array( 'stylesheet_name', 'stylesheet_name.css', 'Experiment Title', 'url/to/experiment' ),
 	);
 
 
