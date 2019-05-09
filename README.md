@@ -28,7 +28,8 @@ The `master` branch is just an empty boilerplate: it sets up a plugin that enque
 	- `stylesheet`: The filename of your experiment's stylesheet, minus the extension. No spaces please.
 	- `Experiment title`: A title for your experiment.
 	- `url/to/experiment`: A URL to an explanation of your experiment. Ideally a GitHub PR or Trac ticket. (Optional)
-5. Once you're ready to share your experiment, [open a PR](https://help.github.com/en/articles/creating-a-pull-request) and share it here. 
+5. When your stylesheet is ready, visit `Settings > Design Experiments` and select your stylesheet to activate it and view your changes.
+6. Once you're ready to share your experiment, [open a PR](https://help.github.com/en/articles/creating-a-pull-request) and share it here. 
 
 ### To compile CSS:
 
