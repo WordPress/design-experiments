@@ -11,7 +11,7 @@ The `master` branch is just an empty boilerplate: it sets up a plugin that enque
 1. Download a zip of the repository.
 2. Upload to your test site as a plugin.
 3. Activate the "Design Experiments" Plugin.
-4. Visit `Settings > General > Design Experiments` to activate an experiment.
+4. Visit `Settings > Design Experiments` to activate an experiment.
 
 ## To build your own quick experiment:
 
