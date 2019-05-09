@@ -17,7 +17,7 @@ The `master` branch is just an empty boilerplate: it sets up a plugin that enque
 
 1. First, [fork the repository](https://help.github.com/en/articles/fork-a-repo). 
 2. [Clone](https://help.github.com/en/articles/cloning-a-repository) your fork. If possible, place your local copy in the Plugins folder of your local dev site. Then you'll be able to activate the plugin directly from your WP Admin dashboard (If this isn't possible, follow the instructions above to install the plugin manually after you've edited it).
-3. For simple CSS updates, you can either edit `css/default.css` directly, or edit `sass/default.scss` and compile using the method described below. If you'd like to add a new CSS file, you can enqueue it using the method from step 4 below. 
+3. For simple CSS updates, you can either edit `css/default.css` directly, or edit `sass/default.scss` and compile using the method described below. If you'd like to add a new CSS file, you can enqueue it following steps 4 and 5 below. 
 
 ## To submit an experiment for inclusion in the plugin: 
 
