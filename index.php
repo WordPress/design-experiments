@@ -22,6 +22,7 @@ class DesignExperiments {
 	 */
 	private $design_experiments = array(
 		array( 'default', 'Default plugin stylesheet', 'https://github.com/WordPress/design-experiments' ),
+		array( 'gutenberg-form-fields', 'Gutenberg-like forms' ),
 
 		// To enqueue a new stylesheet, add a line above using the example here as a guide: 
 		// array( 'stylesheet', 'Experiment title', 'url/to/experiment' ),
