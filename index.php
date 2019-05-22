@@ -25,10 +25,11 @@ class DesignExperiments {
 		add_action( 'admin_init', array( $this, 'design_experiments_settings' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'design_experiments_enqueue_stylesheets' ) );
 	}
-	
+
+
 	/**
-	* Gets the meta data from each design experiment
-	* return array $meta_data each experiment with its meda data
+	* Gets the meta data from each design experiment.
+	* return array $meta_data each experiment with its meta data.
 	*/
 	private function get_design_experiment_meta_data() {
 		$meta_data = [];
@@ -46,6 +47,7 @@ class DesignExperiments {
 		}
 		return $meta_data;
 	}
+
 
 	/**
 	 * Define a list of all CSS files
