@@ -11,21 +11,46 @@
 class DesignExperiments {
 
 	function __construct() {
+		
+		// Generate a list of all CSS files
+		$this->design_experiment_css_files = glob( 
+			plugin_dir_path( __FILE__ ) . 'css/*.css'
+		);
+		
+		$this->meta_data =
+			 $this->get_design_experiment_meta_data();
+
+		// Add admin actions
 		add_action( 'admin_menu', array( $this, 'design_experiments_add_settings_page' ) );
 		add_action( 'admin_init', array( $this, 'design_experiments_settings' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'design_experiments_enqueue_stylesheets' ) );
 	}
-
+	
+	/**
+	* Gets the meta data from each design experiment
+	* return array $meta_data each experiment with its meda data
+	*/
+	private function get_design_experiment_meta_data() {
+		$meta_data = [];
+		foreach ($this->design_experiment_css_files as $key => $file) {
+			preg_match(
+				'/^\/\*(\{.*?\})\*\//ism',
+				file_get_contents( 
+					$file 
+				),
+				$data
+			);
+			if ( ! empty( $data[1] ) ) {
+				$meta_data[basename($file, '.css')] = json_decode($data[1]);
+			}
+		}
+		return $meta_data;
+	}
 
 	/**
-	 * Register all the experiments. 
+	 * Define a list of all CSS files
 	 */
-	private $design_experiments = array(
-		array( 'default', 'Default plugin stylesheet', 'https://github.com/WordPress/design-experiments' ),
-
-		// To enqueue a new stylesheet, add a line above using the example here as a guide: 
-		// array( 'stylesheet', 'Experiment title', 'url/to/experiment' ),
-	);
+	private $design_experiment_css_files;
 
 
 	/**
@@ -49,6 +74,64 @@ class DesignExperiments {
 
 
 	/**
+	 * Fetch experiment title from the CSS file.
+	 */
+	private function get_title( $experiment_name ) {
+		
+		$default_title = ucfirst( str_replace( '-', ' ', $experiment_name ) );
+		
+		if ( ! array_key_exists( $experiment_name, $this->meta_data ) ) {
+			return $default_title;
+		}
+		
+		$experiment_meta_data = $this->meta_data[$experiment_name];
+		$experiment_has_meta_data = array_key_exists( 
+			$experiment_name, $this->meta_data
+		);
+		$meta_data_has_title = ! empty( $experiment_meta_data->title );
+		
+		if ( $experiment_has_meta_data && $meta_data_has_title ) {
+			return esc_html( 
+				$experiment_meta_data->title
+			);
+		}
+		
+		return $default_title;
+	}
+
+
+	/**
+	 * Fetch experiment metadata from the CSS file.
+	 */
+	private function output_meta_data ( $experiment_name ) {
+
+		if ( ! array_key_exists( $experiment_name, $this->meta_data ) ) {
+			return false;
+		}
+
+		$experiment_meta_data = $this->meta_data[$experiment_name];
+
+		if ( ! empty( $experiment_meta_data->details ) ) {
+			?>
+			<p>
+				<?php echo esc_html( 
+					$experiment_meta_data->details
+				); ?>
+			</p>
+			<?php
+		}
+		
+		if ( ! empty( $experiment_meta_data->pr ) ) {
+			?>
+			<p>
+				<a href="<?php echo $experiment_meta_data->pr; ?>"><?php _e( 'Details' ); ?></a>
+			</p>
+			<?php
+		}
+	}
+
+
+	/**
 	 * Build the WP-Admin settings page.
 	 */
 	function design_experiments_settings_page() { ?>
@@ -60,17 +143,21 @@ class DesignExperiments {
 			<?php settings_fields( 'design-experiments-settings' ); ?>
 			<?php do_settings_sections( 'design-experiments-settings' ); ?>
 
-				<table class="form-table">
-					<?php foreach ( $this->design_experiments as $design_experiment ) { ?>
+				<table class="form-table" style="width: auto;">
+					<?php foreach ( $this->design_experiment_css_files as $css_file ) {
+						$experiment_name = basename( $css_file, '.css' ); 
+						$experiment_title = $this->get_title( $experiment_name ); ?>
 						<tr valign="top">
-							<td>
-								<label for="design-experiments-setting">
-									<input name="design-experiments-setting" type="radio" value="<?php echo esc_attr( $design_experiment[0] ); ?>" <?php checked( $design_experiment[0], get_option( 'design-experiments-setting' ) ); ?> />
-									<?php echo esc_html( $design_experiment[1] ); ?>
-									<?php if ( $design_experiment[2] ) { ?>
-										(<a href="<?php echo esc_url( $design_experiment[2] ); ?>"><?php _e( 'Learn more' ); ?></a>)
-									<?php } ?>
+							<td style="vertical-align: top;display: table-cell;">
+								<input name="design-experiments-setting" type="radio" value="<?php echo esc_attr( $experiment_name ); ?>" <?php checked( $experiment_name, get_option( 'design-experiments-setting' ) ); ?> />
+							</td>
+							<td style="display: table-cell;">
+								<label for="design-experiments-setting" style="font-weight: bold">
+									<?php echo esc_html( $experiment_title ); ?>
 								</label>
+								<?php $this->output_meta_data(
+									$experiment_name
+								); ?>
 							</td>
 						</tr>
 					<?php } ?>
@@ -87,13 +174,14 @@ class DesignExperiments {
 	 */
 	function design_experiments_enqueue_stylesheets() {
 
-		foreach ( $this->design_experiments as $design_experiment ) {
+		foreach ( $this->design_experiment_css_files as $css_file ) {
+			$experiment_name = basename( $css_file, '.css' );
+			$experiment_url = plugins_url( 'css/' . basename( $css_file ), __FILE__ );
 
-			if ( get_option( 'design-experiments-setting' ) == $design_experiment[0] ) {
-				wp_register_style( $design_experiment[0], plugins_url( 'css/' . $design_experiment[0] . '.css', __FILE__ ), false, '1.0.0' );
-				wp_enqueue_style( $design_experiment[0] );
+			if ( get_option( 'design-experiments-setting' ) == $experiment_name ) {
+				wp_register_style( $experiment_name , $experiment_url, false, '1.0.0' );
+				wp_enqueue_style( $experiment_name );
 			}
-
 		}
 
 	}
