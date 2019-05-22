@@ -71,6 +71,29 @@ class DesignExperiments {
 		);
 		register_setting( 'design-experiments-settings', 'design-experiments-setting', $design_setting_args );
 	}
+	
+	private function get_title( $experiment_name ) {
+		
+		$default_title = ucfirst( str_replace( '-', ' ', $experiment_name ) );
+		
+		if ( ! array_key_exists( $experiment_name, $this->meta_data ) ) {
+			return $default_title;
+		}
+		
+		$experiment_meta_data = $this->meta_data[$experiment_name];
+		$experiment_has_meta_data = array_key_exists( 
+			$experiment_name, $this->meta_data
+		);
+		$meta_data_has_title = ! empty( $experiment_meta_data->title );
+		
+		if ( $experiment_has_meta_data && $meta_data_has_title ) {
+			return esc_html( 
+				$experiment_meta_data->title
+			);
+		}
+		
+		return $default_title;
+	}
 
 	private function output_meta_data ( $experiment_name ) {
 		if ( ! array_key_exists( $experiment_name, $this->meta_data ) ) {
@@ -113,7 +136,7 @@ class DesignExperiments {
 				<table class="form-table">
 					<?php foreach ( $this->design_experiment_css_files as $css_file ) {
 						$experiment_name = basename( $css_file, '.css' ); 
-						$experiment_title = ucfirst( str_replace( '-', ' ', $experiment_name ) ); ?>
+						$experiment_title = $this->get_title( $experiment_name ); ?>
 						<tr valign="top">
 							<td>
 								<label for="design-experiments-setting">
