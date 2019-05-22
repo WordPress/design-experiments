@@ -71,7 +71,11 @@ class DesignExperiments {
 		);
 		register_setting( 'design-experiments-settings', 'design-experiments-setting', $design_setting_args );
 	}
-	
+
+
+	/**
+	 * Fetch experiment title from the CSS file.
+	 */
 	private function get_title( $experiment_name ) {
 		
 		$default_title = ucfirst( str_replace( '-', ' ', $experiment_name ) );
@@ -95,7 +99,12 @@ class DesignExperiments {
 		return $default_title;
 	}
 
+
+	/**
+	 * Fetch experiment metadata from the CSS file.
+	 */
 	private function output_meta_data ( $experiment_name ) {
+
 		if ( ! array_key_exists( $experiment_name, $this->meta_data ) ) {
 			return false;
 		}
@@ -103,24 +112,25 @@ class DesignExperiments {
 		$experiment_meta_data = $this->meta_data[$experiment_name];
 
 		if ( ! empty( $experiment_meta_data->details ) ) {
-		?>
-		<p>
-			<?php echo esc_html( 
-				$experiment_meta_data->details
-			); ?>
-		</p>
-		<?php
+			?>
+			<p>
+				<?php echo esc_html( 
+					$experiment_meta_data->details
+				); ?>
+			</p>
+			<?php
 		}
 		
 		if ( ! empty( $experiment_meta_data->pr ) ) {
-		?>
-		<a href="<?php echo $experiment_meta_data->pr; ?>">
-			Details
-		</a>
-		<?php
+			?>
+			<p>
+				<a href="<?php echo $experiment_meta_data->pr; ?>"><?php _e( 'Details' ); ?></a>
+			</p>
+			<?php
 		}
 	}
-	
+
+
 	/**
 	 * Build the WP-Admin settings page.
 	 */
@@ -133,14 +143,16 @@ class DesignExperiments {
 			<?php settings_fields( 'design-experiments-settings' ); ?>
 			<?php do_settings_sections( 'design-experiments-settings' ); ?>
 
-				<table class="form-table">
+				<table class="form-table" style="width: auto;">
 					<?php foreach ( $this->design_experiment_css_files as $css_file ) {
 						$experiment_name = basename( $css_file, '.css' ); 
 						$experiment_title = $this->get_title( $experiment_name ); ?>
 						<tr valign="top">
-							<td>
-								<label for="design-experiments-setting">
-									<input name="design-experiments-setting" type="radio" value="<?php echo esc_attr( $experiment_name ); ?>" <?php checked( $experiment_name, get_option( 'design-experiments-setting' ) ); ?> />
+							<td style="vertical-align: top;display: table-cell;">
+								<input name="design-experiments-setting" type="radio" value="<?php echo esc_attr( $experiment_name ); ?>" <?php checked( $experiment_name, get_option( 'design-experiments-setting' ) ); ?> />
+							</td>
+							<td style="display: table-cell;">
+								<label for="design-experiments-setting" style="font-weight: bold">
 									<?php echo esc_html( $experiment_title ); ?>
 								</label>
 								<?php $this->output_meta_data(
