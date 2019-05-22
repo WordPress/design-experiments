@@ -13,14 +13,39 @@ class DesignExperiments {
 	function __construct() {
 		
 		// Generate a list of all CSS files
-		$this->design_experiment_css_files = glob( plugin_dir_path( __FILE__ ) . 'css/*.css' );
+		$this->design_experiment_css_files = glob( 
+			plugin_dir_path( __FILE__ ) . 'css/*.css'
+		);
+		
+		$this->meta_data =
+			 $this->get_design_experiment_meta_data();
 
 		// Add admin actions
 		add_action( 'admin_menu', array( $this, 'design_experiments_add_settings_page' ) );
 		add_action( 'admin_init', array( $this, 'design_experiments_settings' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'design_experiments_enqueue_stylesheets' ) );
 	}
-
+	
+	/**
+	* Gets the meta data from each design experiment
+	* return array $meta_data each experiment with its meda data
+	*/
+	private function get_design_experiment_meta_data() {
+		$meta_data = [];
+		foreach ($this->design_experiment_css_files as $key => $file) {
+			preg_match(
+				'/^\/\*(\{.*?\})\*\//ism',
+				file_get_contents( 
+					$file 
+				),
+				$data
+			);
+			if ( ! empty( $data[1] ) ) {
+				$meta_data[basename($file, '.css')] = json_decode($data[1]);
+			}
+		}
+		return $meta_data;
+	}
 
 	/**
 	 * Define a list of all CSS files
@@ -47,7 +72,32 @@ class DesignExperiments {
 		register_setting( 'design-experiments-settings', 'design-experiments-setting', $design_setting_args );
 	}
 
+	private function output_meta_data ( $experiment_name ) {
+		if ( ! array_key_exists( $experiment_name, $this->meta_data ) ) {
+			return false;
+		}
 
+		$experiment_meta_data = $this->meta_data[$experiment_name];
+
+		if ( ! empty( $experiment_meta_data->details ) ) {
+		?>
+		<p>
+			<?php echo esc_html( 
+				$experiment_meta_data->details
+			); ?>
+		</p>
+		<?php
+		}
+		
+		if ( ! empty( $experiment_meta_data->pr ) ) {
+		?>
+		<a href="<?php echo $experiment_meta_data->pr; ?>">
+			Details
+		</a>
+		<?php
+		}
+	}
+	
 	/**
 	 * Build the WP-Admin settings page.
 	 */
@@ -70,6 +120,9 @@ class DesignExperiments {
 									<input name="design-experiments-setting" type="radio" value="<?php echo esc_attr( $experiment_name ); ?>" <?php checked( $experiment_name, get_option( 'design-experiments-setting' ) ); ?> />
 									<?php echo esc_html( $experiment_title ); ?>
 								</label>
+								<?php $this->output_meta_data(
+									$experiment_name
+								); ?>
 							</td>
 						</tr>
 					<?php } ?>
