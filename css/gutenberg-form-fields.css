@@ -1,13 +1,16 @@
-/*
- * Gutenberg Forms
- */
+/*{
+	"title": "Gutenberg Form Fields",
+	"details": "An experiment to see how Gutenberg form field styles might look in WP-Admin.",
+	"pr": "https://github.com/WordPress/design-experiments/pull/5"
+}*/
+
 body.options-general-php,
 body.options-writing-php,
 body.options-reading-php,
 body.options-discussion-php,
 body.options-media-php,
 body.options-permalink-php {
-  background: white;
+	background: white;
 }
 
 body.options-general-php .wrap > h1,
@@ -16,8 +19,8 @@ body.options-reading-php .wrap > h1,
 body.options-discussion-php .wrap > h1,
 body.options-media-php .wrap > h1,
 body.options-permalink-php .wrap > h1 {
-  max-width: 500px;
-  margin: 64px auto 0;
+	max-width: 500px;
+	margin: 64px auto 0;
 }
 
 body.options-general-php .wrap > form,
@@ -26,8 +29,8 @@ body.options-reading-php .wrap > form,
 body.options-discussion-php .wrap > form,
 body.options-media-php .wrap > form,
 body.options-permalink-php .wrap > form {
-  max-width: 500px;
-  margin: 0 auto;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 body.options-general-php .wrap > form tr,
@@ -36,8 +39,8 @@ body.options-reading-php .wrap > form tr,
 body.options-discussion-php .wrap > form tr,
 body.options-media-php .wrap > form tr,
 body.options-permalink-php .wrap > form tr {
-  flex-direction: column;
-  display: flex;
+	flex-direction: column;
+	display: flex;
 }
 
 body.options-general-php .wrap > form td,
@@ -46,7 +49,7 @@ body.options-reading-php .wrap > form td,
 body.options-discussion-php .wrap > form td,
 body.options-media-php .wrap > form td,
 body.options-permalink-php .wrap > form td {
-  padding: 0;
+	padding: 0;
 }
 
 body.options-general-php .wrap > form h2,
@@ -55,7 +58,7 @@ body.options-reading-php .wrap > form h2,
 body.options-discussion-php .wrap > form h2,
 body.options-media-php .wrap > form h2,
 body.options-permalink-php .wrap > form h2 {
-  margin-top: 48px;
+	margin-top: 48px;
 }
 
 body.options-general-php .wrap > form .form-table,
@@ -82,7 +85,7 @@ body.options-permalink-php .wrap > form .form-table,
 body.options-permalink-php .wrap > form .form-table td,
 body.options-permalink-php .wrap > form .form-table td p,
 body.options-permalink-php .wrap > form .form-table th {
-  font-size: 13px;
+	font-size: 13px;
 }
 
 body.options-general-php .wrap > form .form-table th,
@@ -91,8 +94,8 @@ body.options-reading-php .wrap > form .form-table th,
 body.options-discussion-php .wrap > form .form-table th,
 body.options-media-php .wrap > form .form-table th,
 body.options-permalink-php .wrap > form .form-table th {
-  padding-bottom: 8px;
-  font-weight: normal;
+	padding-bottom: 8px;
+	font-weight: normal;
 }
 
 body.options-general-php .wrap > form input[type="text"],
@@ -119,17 +122,17 @@ body.options-permalink-php .wrap > form input[type="text"],
 body.options-permalink-php .wrap > form input[type="url"],
 body.options-permalink-php .wrap > form input[type="email"],
 body.options-permalink-php .wrap > form input[type="number"] {
-  width: 100%;
-  max-width: 100%;
-  padding: 10px;
-  min-height: 24px;
-  background: inherit;
-  font-size: 13px;
-  color: #23282d;
-  box-shadow: none;
-  transition: box-shadow 0.1s linear;
-  border-radius: 4px;
-  border: 1px solid #8d96a0;
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	min-height: 24px;
+	background: inherit;
+	font-size: 13px;
+	color: #23282d;
+	box-shadow: none;
+	transition: box-shadow 0.1s linear;
+	border-radius: 4px;
+	border: 1px solid #8d96a0;
 }
 
 body.options-general-php .wrap > form input[type="text"]:focus,
@@ -156,9 +159,9 @@ body.options-permalink-php .wrap > form input[type="text"]:focus,
 body.options-permalink-php .wrap > form input[type="url"]:focus,
 body.options-permalink-php .wrap > form input[type="email"]:focus,
 body.options-permalink-php .wrap > form input[type="number"]:focus {
-  color: #191e23;
-  border-color: #007cba;
-  box-shadow: 0 0 0 1px #007cba;
+	color: #191e23;
+	border-color: #007cba;
+	box-shadow: 0 0 0 1px #007cba;
 }
 
 body.options-general-php .wrap > form input[type="number"].small-text,
@@ -167,7 +170,7 @@ body.options-reading-php .wrap > form input[type="number"].small-text,
 body.options-discussion-php .wrap > form input[type="number"].small-text,
 body.options-media-php .wrap > form input[type="number"].small-text,
 body.options-permalink-php .wrap > form input[type="number"].small-text {
-  width: 65px;
+	width: 65px;
 }
 
 body.options-general-php .wrap > form input[type="checkbox"],
@@ -182,9 +185,9 @@ body.options-media-php .wrap > form input[type="checkbox"],
 body.options-media-php .wrap > form input[type="radio"],
 body.options-permalink-php .wrap > form input[type="checkbox"],
 body.options-permalink-php .wrap > form input[type="radio"] {
-  border: 2px solid #6c7781;
-  margin-right: 8px;
-  transition: none;
+	border: 2px solid #6c7781;
+	margin-right: 8px;
+	transition: none;
 }
 
 body.options-general-php .wrap > form input[type="checkbox"]:focus,
@@ -199,8 +202,8 @@ body.options-media-php .wrap > form input[type="checkbox"]:focus,
 body.options-media-php .wrap > form input[type="radio"]:focus,
 body.options-permalink-php .wrap > form input[type="checkbox"]:focus,
 body.options-permalink-php .wrap > form input[type="radio"]:focus {
-  border-color: #6c7781;
-  box-shadow: 0 0 0 1px #6c7781;
+	border-color: #6c7781;
+	box-shadow: 0 0 0 1px #6c7781;
 }
 
 body.options-general-php .wrap > form input[type="checkbox"]:checked,
@@ -215,8 +218,8 @@ body.options-media-php .wrap > form input[type="checkbox"]:checked,
 body.options-media-php .wrap > form input[type="radio"]:checked,
 body.options-permalink-php .wrap > form input[type="checkbox"]:checked,
 body.options-permalink-php .wrap > form input[type="radio"]:checked {
-  background: #11a0d2;
-  border-color: #11a0d2;
+	background: #11a0d2;
+	border-color: #11a0d2;
 }
 
 body.options-general-php .wrap > form input[type="checkbox"]:checked:focus,
@@ -231,7 +234,7 @@ body.options-media-php .wrap > form input[type="checkbox"]:checked:focus,
 body.options-media-php .wrap > form input[type="radio"]:checked:focus,
 body.options-permalink-php .wrap > form input[type="checkbox"]:checked:focus,
 body.options-permalink-php .wrap > form input[type="radio"]:checked:focus {
-  box-shadow: 0 0 0 2px #555d66;
+	box-shadow: 0 0 0 2px #555d66;
 }
 
 body.options-general-php .wrap > form input[type="checkbox"],
@@ -240,7 +243,7 @@ body.options-reading-php .wrap > form input[type="checkbox"],
 body.options-discussion-php .wrap > form input[type="checkbox"],
 body.options-media-php .wrap > form input[type="checkbox"],
 body.options-permalink-php .wrap > form input[type="checkbox"] {
-  border-radius: 4px;
+	border-radius: 4px;
 }
 
 body.options-general-php .wrap > form input[type="checkbox"]:checked::before, body.options-general-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
@@ -254,24 +257,24 @@ body.options-media-php .wrap > form input[type="checkbox"]:checked::before,
 body.options-media-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
 body.options-permalink-php .wrap > form input[type="checkbox"]:checked::before,
 body.options-permalink-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before {
-  margin: -3px -5px;
-  color: white;
+	margin: -3px -5px;
+	color: white;
 }
 
 @media all and (min-width: 782px) {
-  body.options-general-php .wrap > form input[type="checkbox"]:checked::before, body.options-general-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
-  body.options-writing-php .wrap > form input[type="checkbox"]:checked::before,
-  body.options-writing-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
-  body.options-reading-php .wrap > form input[type="checkbox"]:checked::before,
-  body.options-reading-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
-  body.options-discussion-php .wrap > form input[type="checkbox"]:checked::before,
-  body.options-discussion-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
-  body.options-media-php .wrap > form input[type="checkbox"]:checked::before,
-  body.options-media-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
-  body.options-permalink-php .wrap > form input[type="checkbox"]:checked::before,
-  body.options-permalink-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before {
-    margin: -4px 0 0 -5px;
-  }
+	body.options-general-php .wrap > form input[type="checkbox"]:checked::before, body.options-general-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+	body.options-writing-php .wrap > form input[type="checkbox"]:checked::before,
+	body.options-writing-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+	body.options-reading-php .wrap > form input[type="checkbox"]:checked::before,
+	body.options-reading-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+	body.options-discussion-php .wrap > form input[type="checkbox"]:checked::before,
+	body.options-discussion-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+	body.options-media-php .wrap > form input[type="checkbox"]:checked::before,
+	body.options-media-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+	body.options-permalink-php .wrap > form input[type="checkbox"]:checked::before,
+	body.options-permalink-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before {
+	margin: -4px 0 0 -5px;
+	}
 }
 
 body.options-general-php .wrap > form input[type="radio"],
@@ -280,7 +283,7 @@ body.options-reading-php .wrap > form input[type="radio"],
 body.options-discussion-php .wrap > form input[type="radio"],
 body.options-media-php .wrap > form input[type="radio"],
 body.options-permalink-php .wrap > form input[type="radio"] {
-  border-radius: 8px;
+	border-radius: 8px;
 }
 
 body.options-general-php .wrap > form input[type="radio"]:checked::before,
@@ -289,19 +292,19 @@ body.options-reading-php .wrap > form input[type="radio"]:checked::before,
 body.options-discussion-php .wrap > form input[type="radio"]:checked::before,
 body.options-media-php .wrap > form input[type="radio"]:checked::before,
 body.options-permalink-php .wrap > form input[type="radio"]:checked::before {
-  margin: 6px 0 0 6px;
-  background-color: white;
+	margin: 6px 0 0 6px;
+	background-color: white;
 }
 
 @media all and (min-width: 782px) {
-  body.options-general-php .wrap > form input[type="radio"]:checked::before,
-  body.options-writing-php .wrap > form input[type="radio"]:checked::before,
-  body.options-reading-php .wrap > form input[type="radio"]:checked::before,
-  body.options-discussion-php .wrap > form input[type="radio"]:checked::before,
-  body.options-media-php .wrap > form input[type="radio"]:checked::before,
-  body.options-permalink-php .wrap > form input[type="radio"]:checked::before {
-    margin: 3px 0 0 3px;
-  }
+	body.options-general-php .wrap > form input[type="radio"]:checked::before,
+	body.options-writing-php .wrap > form input[type="radio"]:checked::before,
+	body.options-reading-php .wrap > form input[type="radio"]:checked::before,
+	body.options-discussion-php .wrap > form input[type="radio"]:checked::before,
+	body.options-media-php .wrap > form input[type="radio"]:checked::before,
+	body.options-permalink-php .wrap > form input[type="radio"]:checked::before {
+	margin: 3px 0 0 3px;
+	}
 }
 
 body.options-general-php .wrap > form select,
@@ -310,15 +313,15 @@ body.options-reading-php .wrap > form select,
 body.options-discussion-php .wrap > form select,
 body.options-media-php .wrap > form select,
 body.options-permalink-php .wrap > form select {
-  -webkit-appearance: none;
-  background: url("../assets/dropdown-arrow.svg") center right no-repeat;
-  padding: 4px 32px 4px 10px;
-  height: auto;
-  box-shadow: 0 0 0 transparent;
-  transition: box-shadow 0.1s linear;
-  border-radius: 4px;
-  border: 1px solid #8d96a0;
-  font-size: 13px;
+	-webkit-appearance: none;
+	background: url("../assets/dropdown-arrow.svg") center right no-repeat;
+	padding: 4px 32px 4px 10px;
+	height: auto;
+	box-shadow: 0 0 0 transparent;
+	transition: box-shadow 0.1s linear;
+	border-radius: 4px;
+	border: 1px solid #8d96a0;
+	font-size: 13px;
 }
 
 body.options-general-php .wrap > form select:disabled,
@@ -327,7 +330,7 @@ body.options-reading-php .wrap > form select:disabled,
 body.options-discussion-php .wrap > form select:disabled,
 body.options-media-php .wrap > form select:disabled,
 body.options-permalink-php .wrap > form select:disabled {
-  border: 1px solid #ccd0d4;
+	border: 1px solid #ccd0d4;
 }
 
 body.options-general-php .wrap > form select:not(:disabled):hover,
@@ -336,11 +339,11 @@ body.options-reading-php .wrap > form select:not(:disabled):hover,
 body.options-discussion-php .wrap > form select:not(:disabled):hover,
 body.options-media-php .wrap > form select:not(:disabled):hover,
 body.options-permalink-php .wrap > form select:not(:disabled):hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  border-color: #999;
-  box-shadow: inset 0 -1px 0 #999;
-  color: #23282d;
+	cursor: pointer;
+	background-color: #fafafa;
+	border-color: #999;
+	box-shadow: inset 0 -1px 0 #999;
+	color: #23282d;
 }
 
 body.options-general-php .wrap > form input[type="submit"].button-primary,
@@ -349,36 +352,36 @@ body.options-reading-php .wrap > form input[type="submit"].button-primary,
 body.options-discussion-php .wrap > form input[type="submit"].button-primary,
 body.options-media-php .wrap > form input[type="submit"].button-primary,
 body.options-permalink-php .wrap > form input[type="submit"].button-primary {
-  padding: 6px 12px;
-  height: auto;
+	padding: 6px 12px;
+	height: auto;
 }
 
 body.options-writing-php #default_post_format {
-  padding-right: 32px;
+	padding-right: 32px;
 }
 
 body.options-writing-php #mailserver_url {
-  width: 25em;
+	width: 25em;
 }
 
 body.options-writing-php #mailserver_url + label {
-  margin-left: 12px;
+	margin-left: 12px;
 }
 
 body.options-writing-php #mailserver_port {
-  width: 50px;
+	width: 50px;
 }
 
 body.options-permalink-php code {
-  display: inline-block;
-  margin-top: 4px;
+	display: inline-block;
+	margin-top: 4px;
 }
 
 body.options-permalink-php p > code {
-  font-size: 12px;
+	font-size: 12px;
 }
 
 body.options-permalink-php #permalink_structure {
-  margin-top: 16px;
-  margin-bottom: 8px;
+	margin-top: 16px;
+	margin-bottom: 8px;
 }
