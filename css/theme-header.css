@@ -1,0 +1,137 @@
+/*{
+  "title": "Theme Install Page: Header Update",
+  "details": "A Gutenberg and Material Design-inspired header treatment in WP-Admin.",
+  "pr": "https://github.com/WordPress/design-experiments/pull/1"
+}*/
+/*
+ * Colors
+ */
+/*
+ * Admin Styles: Add Theme Page
+ */
+body.theme-install-php {
+  overflow-x: hidden;
+}
+
+body.theme-install-php .wrap:before {
+  content: "";
+  display: block;
+  height: 200px;
+  width: calc( 100% + 20px);
+  z-index: -1;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.theme-install-php .wrap h1.wp-heading-inline {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+body.theme-install-php .wrap .theme-browser {
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+body.theme-install-php .wrap > .wp-filter {
+  left: -22px;
+  width: calc( 100% + 44px);
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.theme-install-php .wrap > .wp-filter .filter-links li > a {
+  margin: 0;
+  padding: 15px 30px 18px;
+  box-shadow: none;
+  border-bottom: none;
+  transition: box-shadow 0.2s ease-out;
+}
+
+body.theme-install-php .wrap > .wp-filter .filter-links .current {
+  box-shadow: inset 0 -3px 0 0 #0073aa;
+}
+
+body.theme-install-php .wrap > .wp-filter .filter-count {
+  display: none;
+}
+
+body.theme-install-php .wrap > .wp-filter > .button.drawer-toggle {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 38px;
+}
+
+body.theme-install-php .wrap > .wp-filter > .button.drawer-toggle:before {
+  font-size: 24px;
+}
+
+body.theme-install-php .wrap .filter-drawer,
+body.theme-install-php .wrap .wp-filter .favorites-form {
+  background-color: transparent;
+  background: #FFFFFF;
+}
+
+body.theme-install-php .wrap .filter-group {
+  width: 32%;
+  border: none;
+}
+
+body.theme-install-php .wrap .filter-group .filter-group-feature {
+  text-align: left;
+}
+
+body.theme-install-php .wrap .upload-view-toggle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 4px 0;
+  top: 20px;
+  height: 32px;
+  background: transparent;
+  border: none;
+}
+
+body.theme-install-php .wrap .upload-view-toggle:before {
+  content: url("../assets/outline-add_circle_outline-24px.svg");
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  padding-right: 4px;
+}
+
+body.theme-install-php .wrap .search-form {
+  display: none;
+}
+
+body.theme-install-php #screen-meta-links .screen-meta-toggle {
+  border: none;
+  margin-top: 20px;
+}
+
+body.theme-install-php #screen-meta-links .screen-meta-toggle #contextual-help-link {
+  box-shadow: none;
+  width: 36px;
+}
+
+body.theme-install-php #screen-meta-links .screen-meta-toggle #contextual-help-link:before {
+  content: url("../assets/outline-more_vert-24px.svg");
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  padding-right: 4px;
+}
+
+body.theme-install-php #screen-meta-links .screen-meta-toggle #contextual-help-link:after {
+  display: none;
+}
