@@ -35,13 +35,15 @@ class DesignExperiments {
 	* return array $meta_data each experiment with its meta data.
 	*/
 	private function get_design_experiment_meta_data() {
+		$file_headers = array(
+			'title'   => 'title',
+			'details' => 'details',
+			'pr'      => 'pr',
+		);
+		
 		foreach ( $this->design_experiment_css_files as $file ) {
-			$file_content = file_get_contents( $file );
-
-			if ( preg_match( '/^\/\*(\{.*?\})\*\//ism', $file_content, $data ) && ! empty( $data[1] ) ) {
-				$name = basename( $file, '.css' );
-				$this->meta_data[ $name ] = json_decode( $data[1] );
-			}
+			$name = basename( $file, '.css' );
+			$this->meta_data[ $name ] = get_file_data( $file, $file_headers );
 		}
 	}
 
@@ -69,8 +71,8 @@ class DesignExperiments {
 	 */
 	private function get_title( $experiment_name ) {
 
-		if ( array_key_exists( $experiment_name, $this->meta_data ) && ! empty( $this->meta_data[ $experiment_name ]->title ) ) {
-			$title = $this->meta_data[ $experiment_name ]->title;
+		if ( array_key_exists( $experiment_name, $this->meta_data ) && ! empty( $this->meta_data[ $experiment_name ]['title'] ) ) {
+			$title = $this->meta_data[ $experiment_name ]['title'];
 		} else {
 			$title = ucfirst( str_replace( '-', ' ', $experiment_name ) );
 		}
@@ -90,16 +92,16 @@ class DesignExperiments {
 
 		$experiment_meta = $this->meta_data[ $experiment_name ];
 
-		if ( ! empty( $experiment_meta->details ) ) {
+		if ( ! empty( $experiment_meta['details'] ) ) {
 			?>
-			<p><?php echo esc_html( $experiment_meta->details ); ?></p>
+			<p><?php echo esc_html( $experiment_meta['details'] ); ?></p>
 			<?php
 		}
 
-		if ( ! empty( $experiment_meta->pr ) ) {
+		if ( ! empty( $experiment_meta['pr'] ) ) {
 			?>
 			<p>
-				<a href="<?php echo esc_url( $experiment_meta->pr ); ?>"><?php _e( 'Details', 'design-experiments' ); ?></a>
+				<a href="<?php echo esc_url( $experiment_meta['pr'] ); ?>"><?php _e( 'Details', 'design-experiments' ); ?></a>
 			</p>
 			<?php
 		}
