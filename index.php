@@ -171,11 +171,9 @@ class DesignExperiments {
 			if ( $option === $experiment_name ) {
 				$experiment_url = plugins_url( 'css/' . basename( $css_file ), __FILE__ );
 
-				// Auto-bust cache here, perhaps?
-				// $mtime = @filemtime( $css_file );
-				// $version = $mtime ? $mtime : time();
-
-				$version = '1.0.0';
+				// Auto-bust stylesheet cache.
+				$mtime = @filemtime( $css_file );
+				$version = $mtime ? $mtime : time();
 
 				wp_register_style( $experiment_name , $experiment_url, false, $version );
 				wp_enqueue_style( $experiment_name );
