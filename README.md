@@ -27,7 +27,7 @@ A simple plugin to prototype design ideas in WP-Admin. This repository is intend
 	```
 	/*
 	Title: Your Experiment Title
-	Description: A description of your Experiment
+	Description: A description of your experiment.
 	PR: https://
 	*/
 	```
