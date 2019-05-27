@@ -36,9 +36,9 @@ class DesignExperiments {
 	*/
 	private function get_design_experiment_meta_data() {
 		$file_headers = array(
-			'title'   => 'title',
-			'details' => 'details',
-			'pr'      => 'pr',
+			'title'   		=> 'Title',
+			'description' 	=> 'Description',
+			'pr'     		=> 'PR',
 		);
 		
 		foreach ( $this->design_experiment_css_files as $file ) {
@@ -92,9 +92,9 @@ class DesignExperiments {
 
 		$experiment_meta = $this->meta_data[ $experiment_name ];
 
-		if ( ! empty( $experiment_meta['details'] ) ) {
+		if ( ! empty( $experiment_meta['description'] ) ) {
 			?>
-			<p><?php echo esc_html( $experiment_meta['details'] ); ?></p>
+			<p><?php echo esc_html( $experiment_meta['description'] ); ?></p>
 			<?php
 		}
 
