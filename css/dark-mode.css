@@ -34,6 +34,7 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.curre
   position: relative;
 }
 
+body,
 #wpcontent {
   background-color: white;
 }
