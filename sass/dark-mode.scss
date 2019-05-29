@@ -53,3 +53,15 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:a
 	z-index: 500;
 	pointer-events: none;
 }
+
+// Try re-inverting images. 
+img, 
+.wp-block-cover {
+	filter: invert(1);
+}
+
+// But not in our overlays.
+.media-modal img,
+.theme-overlay img {
+	filter: none;
+}

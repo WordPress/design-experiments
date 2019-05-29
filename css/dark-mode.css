@@ -52,3 +52,13 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.curre
   z-index: 500;
   pointer-events: none;
 }
+
+img,
+.wp-block-cover {
+  filter: invert(1);
+}
+
+.media-modal img,
+.theme-overlay img {
+  filter: none;
+}
