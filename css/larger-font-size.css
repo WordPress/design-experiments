@@ -1,0 +1,101 @@
+/*
+Title: Larger Font Sizes
+Description: Trying some larger font sizes in WP-Admin.
+*/
+/*
+ * Body Small
+ * 14px
+ */
+#adminmenu .wp-submenu a,
+.postbox .inside,
+.postbox p,
+.form-table,
+.form-table td,
+.form-table td p,
+.subsubsub,
+.widefat td,
+.widefat td ol,
+.widefat td p,
+.widefat td ul,
+.widefat tfoot td,
+.widefat th,
+.widefat thead td,
+.row-actions,
+.wp-core-ui .button,
+.wp-core-ui .button-primary,
+.wp-core-ui .button-secondary,
+a.rsswidget,
+.form-wrap p,
+p.description,
+p.help,
+span.description,
+#available-widgets .widget .widget-description,
+.widget-title h3,
+.widget-title h4,
+.theme-overlay .current-label,
+.theme-overlay .theme-version,
+.theme-overlay .theme-tags,
+.notice p {
+  font-size: 14px;
+}
+
+/*
+ * Body
+ * 16px
+ */
+body,
+p,
+input,
+select,
+textarea,
+.wp-filter,
+.metabox-holder .postbox > h3,
+.metabox-holder .stuffbox > h3,
+.metabox-holder h2.hndle,
+.metabox-holder h3.hndle,
+.form-table th,
+td.column-title strong,
+td.plugin-title strong,
+.column-username strong a,
+#adminmenu .wp-submenu-head,
+#adminmenu a.menu-top,
+#wpadminbar *,
+.community-events .event-title,
+#dashboard_quick_press .draft-title,
+#published-posts a,
+.theme-overlay .theme-description,
+.settings_page_design-experiments label {
+  font-size: 16px;
+}
+
+.row-title {
+  font-size: 16px !important;
+}
+
+/*
+ * Display Small
+ * 20px
+ */
+h2,
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/*
+ * Display Medium
+ * 24px
+ */
+.postbox .inside h2,
+.wrap [class$=icon32] + h2,
+.wrap h1,
+.wrap > h2:first-child {
+  font-size: 24px;
+}
+
+/*
+ * Misc Updates
+ */
+.settings_page_design-experiments .form-table input[type=radio] {
+  margin-top: 0;
+}
