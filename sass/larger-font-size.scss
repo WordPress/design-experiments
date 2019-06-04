@@ -6,7 +6,7 @@ Description: Trying some larger font sizes in WP-Admin.
 
 /*
  * Body Small
- * 14px
+ * 0.875rem = 14px
  */
 
 #adminmenu .wp-submenu a,
@@ -39,13 +39,13 @@ span.description,
 .theme-overlay .theme-version,
 .theme-overlay .theme-tags,
 .notice p {
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 
 /*
  * Body
- * 16px
+ * 1rem = 16px
  */
 
 body,
@@ -70,35 +70,35 @@ td.plugin-title strong,
 #published-posts a,
 .theme-overlay .theme-description,
 .settings_page_design-experiments label {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 // This one has to override an existing !important. 😠
 .row-title {
-	font-size: 16px !important;
+	font-size: 1rem !important;
 }
 
 /*
  * Display Small
- * 20px
+ * 1.25rem = 20px
  */
 
 h2, 
 h3 {
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: normal;
 }
 
 /*
  * Display Medium
- * 24px
+ * 1.5rem = 24px
  */
 
 .postbox .inside h2, 
 .wrap [class$=icon32]+h2, 
 .wrap h1, 
 .wrap>h2:first-child {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 
