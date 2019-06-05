@@ -7,4 +7,10 @@ Please let us know and we'll add you.
 
 | GitHub Username | WordPress.org Username|
 | --------------- | --------------------- |
-|  |  |
+| @kjellr | @kjellr |
+| @karmatosed | @karmatosed |
+| @mapk | @mapk |
+| @azaozz | @azaozz |
+| @draganescu | @andraganescu |
+| @melchoyce | @melchoyce |
+| @sarahmonster | @tinkerbelly |
