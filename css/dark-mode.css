@@ -1,0 +1,65 @@
+/*
+Title: Dark Mode
+Description: Uses the 'difference' blending mode to provide a quick and messy dark mode.
+PR: https://github.com/WordPress/design-experiments/pull/8
+*/
+#wpadminbar,
+#adminmenuwrap,
+#adminmenu,
+#adminmenuback {
+  background-color: black;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+.no-js li.wp-has-current-submenu:hover .wp-submenu {
+  background-color: #1a1a1a;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+.folded #adminmenu li.wp-has-current-submenu {
+  background-color: #e07848;
+}
+
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.current:after {
+  display: none;
+}
+
+#wpbody {
+  position: relative;
+}
+
+body,
+#wpcontent {
+  background-color: white;
+}
+
+#wpbody::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  right: 0;
+  min-height: 100vh;
+  background-color: white;
+  mix-blend-mode: difference;
+  z-index: 500;
+  pointer-events: none;
+}
+
+img,
+.wp-block-cover {
+  filter: invert(1);
+}
+
+.media-modal img,
+.theme-overlay img {
+  filter: none;
+}
