@@ -1,0 +1,386 @@
+/*
+Title: Gutenberg Form Fields
+Description: An experiment to see how Gutenberg form field styles might look in WP-Admin.
+PR: https://github.com/WordPress/design-experiments/pull/5
+*/
+body.options-general-php,
+body.options-writing-php,
+body.options-reading-php,
+body.options-discussion-php,
+body.options-media-php,
+body.options-permalink-php {
+  background: white;
+}
+
+body.options-general-php .wrap > h1,
+body.options-writing-php .wrap > h1,
+body.options-reading-php .wrap > h1,
+body.options-discussion-php .wrap > h1,
+body.options-media-php .wrap > h1,
+body.options-permalink-php .wrap > h1 {
+  max-width: 500px;
+  margin: 64px auto 0;
+}
+
+body.options-general-php .wrap > form,
+body.options-writing-php .wrap > form,
+body.options-reading-php .wrap > form,
+body.options-discussion-php .wrap > form,
+body.options-media-php .wrap > form,
+body.options-permalink-php .wrap > form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+body.options-general-php .wrap > form tr,
+body.options-writing-php .wrap > form tr,
+body.options-reading-php .wrap > form tr,
+body.options-discussion-php .wrap > form tr,
+body.options-media-php .wrap > form tr,
+body.options-permalink-php .wrap > form tr {
+  flex-direction: column;
+  display: flex;
+}
+
+body.options-general-php .wrap > form td,
+body.options-writing-php .wrap > form td,
+body.options-reading-php .wrap > form td,
+body.options-discussion-php .wrap > form td,
+body.options-media-php .wrap > form td,
+body.options-permalink-php .wrap > form td {
+  padding: 0;
+}
+
+body.options-general-php .wrap > form h2,
+body.options-writing-php .wrap > form h2,
+body.options-reading-php .wrap > form h2,
+body.options-discussion-php .wrap > form h2,
+body.options-media-php .wrap > form h2,
+body.options-permalink-php .wrap > form h2 {
+  margin-top: 48px;
+}
+
+body.options-general-php .wrap > form .form-table,
+body.options-general-php .wrap > form .form-table td,
+body.options-general-php .wrap > form .form-table td p,
+body.options-general-php .wrap > form .form-table th,
+body.options-writing-php .wrap > form .form-table,
+body.options-writing-php .wrap > form .form-table td,
+body.options-writing-php .wrap > form .form-table td p,
+body.options-writing-php .wrap > form .form-table th,
+body.options-reading-php .wrap > form .form-table,
+body.options-reading-php .wrap > form .form-table td,
+body.options-reading-php .wrap > form .form-table td p,
+body.options-reading-php .wrap > form .form-table th,
+body.options-discussion-php .wrap > form .form-table,
+body.options-discussion-php .wrap > form .form-table td,
+body.options-discussion-php .wrap > form .form-table td p,
+body.options-discussion-php .wrap > form .form-table th,
+body.options-media-php .wrap > form .form-table,
+body.options-media-php .wrap > form .form-table td,
+body.options-media-php .wrap > form .form-table td p,
+body.options-media-php .wrap > form .form-table th,
+body.options-permalink-php .wrap > form .form-table,
+body.options-permalink-php .wrap > form .form-table td,
+body.options-permalink-php .wrap > form .form-table td p,
+body.options-permalink-php .wrap > form .form-table th {
+  font-size: 13px;
+}
+
+body.options-general-php .wrap > form .form-table th,
+body.options-writing-php .wrap > form .form-table th,
+body.options-reading-php .wrap > form .form-table th,
+body.options-discussion-php .wrap > form .form-table th,
+body.options-media-php .wrap > form .form-table th,
+body.options-permalink-php .wrap > form .form-table th {
+  padding-bottom: 8px;
+  font-weight: normal;
+}
+
+body.options-general-php .wrap > form input[type="text"],
+body.options-general-php .wrap > form input[type="url"],
+body.options-general-php .wrap > form input[type="email"],
+body.options-general-php .wrap > form input[type="number"],
+body.options-writing-php .wrap > form input[type="text"],
+body.options-writing-php .wrap > form input[type="url"],
+body.options-writing-php .wrap > form input[type="email"],
+body.options-writing-php .wrap > form input[type="number"],
+body.options-reading-php .wrap > form input[type="text"],
+body.options-reading-php .wrap > form input[type="url"],
+body.options-reading-php .wrap > form input[type="email"],
+body.options-reading-php .wrap > form input[type="number"],
+body.options-discussion-php .wrap > form input[type="text"],
+body.options-discussion-php .wrap > form input[type="url"],
+body.options-discussion-php .wrap > form input[type="email"],
+body.options-discussion-php .wrap > form input[type="number"],
+body.options-media-php .wrap > form input[type="text"],
+body.options-media-php .wrap > form input[type="url"],
+body.options-media-php .wrap > form input[type="email"],
+body.options-media-php .wrap > form input[type="number"],
+body.options-permalink-php .wrap > form input[type="text"],
+body.options-permalink-php .wrap > form input[type="url"],
+body.options-permalink-php .wrap > form input[type="email"],
+body.options-permalink-php .wrap > form input[type="number"] {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  min-height: 24px;
+  background: inherit;
+  font-size: 13px;
+  color: #23282d;
+  box-shadow: none;
+  transition: box-shadow 0.1s linear;
+  border-radius: 4px;
+  border: 1px solid #8d96a0;
+}
+
+body.options-general-php .wrap > form input[type="text"]:focus,
+body.options-general-php .wrap > form input[type="url"]:focus,
+body.options-general-php .wrap > form input[type="email"]:focus,
+body.options-general-php .wrap > form input[type="number"]:focus,
+body.options-writing-php .wrap > form input[type="text"]:focus,
+body.options-writing-php .wrap > form input[type="url"]:focus,
+body.options-writing-php .wrap > form input[type="email"]:focus,
+body.options-writing-php .wrap > form input[type="number"]:focus,
+body.options-reading-php .wrap > form input[type="text"]:focus,
+body.options-reading-php .wrap > form input[type="url"]:focus,
+body.options-reading-php .wrap > form input[type="email"]:focus,
+body.options-reading-php .wrap > form input[type="number"]:focus,
+body.options-discussion-php .wrap > form input[type="text"]:focus,
+body.options-discussion-php .wrap > form input[type="url"]:focus,
+body.options-discussion-php .wrap > form input[type="email"]:focus,
+body.options-discussion-php .wrap > form input[type="number"]:focus,
+body.options-media-php .wrap > form input[type="text"]:focus,
+body.options-media-php .wrap > form input[type="url"]:focus,
+body.options-media-php .wrap > form input[type="email"]:focus,
+body.options-media-php .wrap > form input[type="number"]:focus,
+body.options-permalink-php .wrap > form input[type="text"]:focus,
+body.options-permalink-php .wrap > form input[type="url"]:focus,
+body.options-permalink-php .wrap > form input[type="email"]:focus,
+body.options-permalink-php .wrap > form input[type="number"]:focus {
+  color: #191e23;
+  border-color: #007cba;
+  box-shadow: 0 0 0 1px #007cba;
+}
+
+body.options-general-php .wrap > form input[type="number"].small-text,
+body.options-writing-php .wrap > form input[type="number"].small-text,
+body.options-reading-php .wrap > form input[type="number"].small-text,
+body.options-discussion-php .wrap > form input[type="number"].small-text,
+body.options-media-php .wrap > form input[type="number"].small-text,
+body.options-permalink-php .wrap > form input[type="number"].small-text {
+  width: 65px;
+}
+
+body.options-general-php .wrap > form input[type="checkbox"],
+body.options-general-php .wrap > form input[type="radio"],
+body.options-writing-php .wrap > form input[type="checkbox"],
+body.options-writing-php .wrap > form input[type="radio"],
+body.options-reading-php .wrap > form input[type="checkbox"],
+body.options-reading-php .wrap > form input[type="radio"],
+body.options-discussion-php .wrap > form input[type="checkbox"],
+body.options-discussion-php .wrap > form input[type="radio"],
+body.options-media-php .wrap > form input[type="checkbox"],
+body.options-media-php .wrap > form input[type="radio"],
+body.options-permalink-php .wrap > form input[type="checkbox"],
+body.options-permalink-php .wrap > form input[type="radio"] {
+  border: 2px solid #6c7781;
+  margin-right: 8px;
+  transition: none;
+}
+
+body.options-general-php .wrap > form input[type="checkbox"]:focus,
+body.options-general-php .wrap > form input[type="radio"]:focus,
+body.options-writing-php .wrap > form input[type="checkbox"]:focus,
+body.options-writing-php .wrap > form input[type="radio"]:focus,
+body.options-reading-php .wrap > form input[type="checkbox"]:focus,
+body.options-reading-php .wrap > form input[type="radio"]:focus,
+body.options-discussion-php .wrap > form input[type="checkbox"]:focus,
+body.options-discussion-php .wrap > form input[type="radio"]:focus,
+body.options-media-php .wrap > form input[type="checkbox"]:focus,
+body.options-media-php .wrap > form input[type="radio"]:focus,
+body.options-permalink-php .wrap > form input[type="checkbox"]:focus,
+body.options-permalink-php .wrap > form input[type="radio"]:focus {
+  border-color: #6c7781;
+  box-shadow: 0 0 0 1px #6c7781;
+}
+
+body.options-general-php .wrap > form input[type="checkbox"]:checked,
+body.options-general-php .wrap > form input[type="radio"]:checked,
+body.options-writing-php .wrap > form input[type="checkbox"]:checked,
+body.options-writing-php .wrap > form input[type="radio"]:checked,
+body.options-reading-php .wrap > form input[type="checkbox"]:checked,
+body.options-reading-php .wrap > form input[type="radio"]:checked,
+body.options-discussion-php .wrap > form input[type="checkbox"]:checked,
+body.options-discussion-php .wrap > form input[type="radio"]:checked,
+body.options-media-php .wrap > form input[type="checkbox"]:checked,
+body.options-media-php .wrap > form input[type="radio"]:checked,
+body.options-permalink-php .wrap > form input[type="checkbox"]:checked,
+body.options-permalink-php .wrap > form input[type="radio"]:checked {
+  background: #11a0d2;
+  border-color: #11a0d2;
+}
+
+body.options-general-php .wrap > form input[type="checkbox"]:checked:focus,
+body.options-general-php .wrap > form input[type="radio"]:checked:focus,
+body.options-writing-php .wrap > form input[type="checkbox"]:checked:focus,
+body.options-writing-php .wrap > form input[type="radio"]:checked:focus,
+body.options-reading-php .wrap > form input[type="checkbox"]:checked:focus,
+body.options-reading-php .wrap > form input[type="radio"]:checked:focus,
+body.options-discussion-php .wrap > form input[type="checkbox"]:checked:focus,
+body.options-discussion-php .wrap > form input[type="radio"]:checked:focus,
+body.options-media-php .wrap > form input[type="checkbox"]:checked:focus,
+body.options-media-php .wrap > form input[type="radio"]:checked:focus,
+body.options-permalink-php .wrap > form input[type="checkbox"]:checked:focus,
+body.options-permalink-php .wrap > form input[type="radio"]:checked:focus {
+  box-shadow: 0 0 0 2px #555d66;
+}
+
+body.options-general-php .wrap > form input[type="checkbox"],
+body.options-writing-php .wrap > form input[type="checkbox"],
+body.options-reading-php .wrap > form input[type="checkbox"],
+body.options-discussion-php .wrap > form input[type="checkbox"],
+body.options-media-php .wrap > form input[type="checkbox"],
+body.options-permalink-php .wrap > form input[type="checkbox"] {
+  border-radius: 4px;
+}
+
+body.options-general-php .wrap > form input[type="checkbox"]:checked::before, body.options-general-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+body.options-writing-php .wrap > form input[type="checkbox"]:checked::before,
+body.options-writing-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+body.options-reading-php .wrap > form input[type="checkbox"]:checked::before,
+body.options-reading-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+body.options-discussion-php .wrap > form input[type="checkbox"]:checked::before,
+body.options-discussion-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+body.options-media-php .wrap > form input[type="checkbox"]:checked::before,
+body.options-media-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+body.options-permalink-php .wrap > form input[type="checkbox"]:checked::before,
+body.options-permalink-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before {
+  margin: -3px -5px;
+  color: white;
+}
+
+@media all and (min-width: 782px) {
+  body.options-general-php .wrap > form input[type="checkbox"]:checked::before, body.options-general-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+  body.options-writing-php .wrap > form input[type="checkbox"]:checked::before,
+  body.options-writing-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+  body.options-reading-php .wrap > form input[type="checkbox"]:checked::before,
+  body.options-reading-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+  body.options-discussion-php .wrap > form input[type="checkbox"]:checked::before,
+  body.options-discussion-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+  body.options-media-php .wrap > form input[type="checkbox"]:checked::before,
+  body.options-media-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before,
+  body.options-permalink-php .wrap > form input[type="checkbox"]:checked::before,
+  body.options-permalink-php .wrap > form input[type="checkbox"][aria-checked="mixed"]::before {
+    margin: -4px 0 0 -5px;
+  }
+}
+
+body.options-general-php .wrap > form input[type="radio"],
+body.options-writing-php .wrap > form input[type="radio"],
+body.options-reading-php .wrap > form input[type="radio"],
+body.options-discussion-php .wrap > form input[type="radio"],
+body.options-media-php .wrap > form input[type="radio"],
+body.options-permalink-php .wrap > form input[type="radio"] {
+  border-radius: 8px;
+}
+
+body.options-general-php .wrap > form input[type="radio"]:checked::before,
+body.options-writing-php .wrap > form input[type="radio"]:checked::before,
+body.options-reading-php .wrap > form input[type="radio"]:checked::before,
+body.options-discussion-php .wrap > form input[type="radio"]:checked::before,
+body.options-media-php .wrap > form input[type="radio"]:checked::before,
+body.options-permalink-php .wrap > form input[type="radio"]:checked::before {
+  margin: 6px 0 0 6px;
+  background-color: white;
+}
+
+@media all and (min-width: 782px) {
+  body.options-general-php .wrap > form input[type="radio"]:checked::before,
+  body.options-writing-php .wrap > form input[type="radio"]:checked::before,
+  body.options-reading-php .wrap > form input[type="radio"]:checked::before,
+  body.options-discussion-php .wrap > form input[type="radio"]:checked::before,
+  body.options-media-php .wrap > form input[type="radio"]:checked::before,
+  body.options-permalink-php .wrap > form input[type="radio"]:checked::before {
+    margin: 3px 0 0 3px;
+  }
+}
+
+body.options-general-php .wrap > form select,
+body.options-writing-php .wrap > form select,
+body.options-reading-php .wrap > form select,
+body.options-discussion-php .wrap > form select,
+body.options-media-php .wrap > form select,
+body.options-permalink-php .wrap > form select {
+  -webkit-appearance: none;
+  background: url("../assets/dropdown-arrow.svg") center right no-repeat;
+  padding: 4px 32px 4px 10px;
+  height: auto;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.1s linear;
+  border-radius: 4px;
+  border: 1px solid #8d96a0;
+  font-size: 13px;
+}
+
+body.options-general-php .wrap > form select:disabled,
+body.options-writing-php .wrap > form select:disabled,
+body.options-reading-php .wrap > form select:disabled,
+body.options-discussion-php .wrap > form select:disabled,
+body.options-media-php .wrap > form select:disabled,
+body.options-permalink-php .wrap > form select:disabled {
+  border: 1px solid #ccd0d4;
+}
+
+body.options-general-php .wrap > form select:not(:disabled):hover,
+body.options-writing-php .wrap > form select:not(:disabled):hover,
+body.options-reading-php .wrap > form select:not(:disabled):hover,
+body.options-discussion-php .wrap > form select:not(:disabled):hover,
+body.options-media-php .wrap > form select:not(:disabled):hover,
+body.options-permalink-php .wrap > form select:not(:disabled):hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  border-color: #999;
+  box-shadow: inset 0 -1px 0 #999;
+  color: #23282d;
+}
+
+body.options-general-php .wrap > form input[type="submit"].button-primary,
+body.options-writing-php .wrap > form input[type="submit"].button-primary,
+body.options-reading-php .wrap > form input[type="submit"].button-primary,
+body.options-discussion-php .wrap > form input[type="submit"].button-primary,
+body.options-media-php .wrap > form input[type="submit"].button-primary,
+body.options-permalink-php .wrap > form input[type="submit"].button-primary {
+  padding: 6px 12px;
+  height: auto;
+}
+
+body.options-writing-php #default_post_format {
+  padding-right: 32px;
+}
+
+body.options-writing-php #mailserver_url {
+  width: 25em;
+}
+
+body.options-writing-php #mailserver_url + label {
+  margin-left: 12px;
+}
+
+body.options-writing-php #mailserver_port {
+  width: 50px;
+}
+
+body.options-permalink-php code {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+body.options-permalink-php p > code {
+  font-size: 12px;
+}
+
+body.options-permalink-php #permalink_structure {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}

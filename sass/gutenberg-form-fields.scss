@@ -1,0 +1,189 @@
+/*
+Title: Gutenberg Form Fields
+Description: An experiment to see how Gutenberg form field styles might look in WP-Admin.
+PR: https://github.com/WordPress/design-experiments/pull/5
+*/
+
+body.options-general-php,
+body.options-writing-php,
+body.options-reading-php,
+body.options-discussion-php,
+body.options-media-php,
+body.options-permalink-php {
+ 	background: white;
+
+ 	.wrap > h1 {
+ 		max-width: 500px;
+ 		margin: 64px auto 0;
+ 	}
+
+ 	.wrap > form {
+ 		max-width: 500px;
+ 		margin: 0 auto;
+
+ 		tr {
+ 			flex-direction: column;
+			display: flex;
+ 		}
+
+ 		td {
+ 			padding: 0;
+ 		}
+
+ 		h2 {
+ 			margin-top: 48px;
+ 		}
+
+ 		.form-table, 
+ 		.form-table td, 
+ 		.form-table td p, 
+ 		.form-table th {
+ 			font-size: 13px;
+ 		}
+
+ 		.form-table th {
+ 			padding-bottom: 8px;
+ 			font-weight: normal;
+ 		}
+
+ 		input[type="text"],
+ 		input[type="url"],
+ 		input[type="email"],
+ 		input[type="number"] {
+ 			width: 100%;
+			max-width: 100%;
+			padding: 10px;
+			min-height: 24px;
+			background: inherit;
+ 			font-size: 13px;
+			color: #23282d;
+			box-shadow: none;
+			transition: box-shadow 0.1s linear;
+			border-radius: 4px;
+			border: 1px solid #8d96a0;
+
+			&:focus {
+				color: #191e23;
+				border-color: #007cba;
+				box-shadow: 0 0 0 1px #007cba;
+			}
+ 		}
+
+ 		input[type="number"].small-text {
+ 			width: 65px;
+ 		}
+
+ 		input[type="checkbox"],
+		input[type="radio"] {
+			border: 2px solid #6c7781;
+			margin-right: 8px;
+			transition: none;
+
+			&:focus {
+				border-color: #6c7781;
+				box-shadow: 0 0 0 1px #6c7781;
+			}
+
+			&:checked {
+				background: #11a0d2;
+				border-color: #11a0d2;
+			}
+
+			&:checked:focus {
+				box-shadow: 0 0 0 2px #555d66;
+			}
+		}
+
+		input[type="checkbox"] {
+			border-radius: 4px;
+
+			&:checked::before,
+			&[aria-checked="mixed"]::before {
+				margin: -3px -5px;
+				color: white;
+
+				@media all and (min-width: 782px) {
+					margin: -4px 0 0 -5px;
+				}
+			}
+		}
+
+		input[type="radio"] {
+			border-radius: 8px;
+
+			&:checked::before {
+				margin: 6px 0 0 6px;
+				background-color: white;
+
+				@media all and (min-width: 782px) {
+					margin: 3px 0 0 3px;
+				}
+			}
+		}
+
+		select {
+			-webkit-appearance: none;
+			background: url( '../assets/dropdown-arrow.svg' ) center right no-repeat;
+			padding: 4px 32px 4px 10px;
+			height: auto;
+			box-shadow: 0 0 0 transparent;
+			transition: box-shadow 0.1s linear;
+			border-radius: 4px;
+			border: 1px solid #8d96a0;
+			font-size: 13px;
+
+			&:disabled {
+				border: 1px solid #ccd0d4;
+			}
+
+			&:not(:disabled):hover {
+				cursor: pointer;
+				background-color: #fafafa;
+				border-color: #999;
+				box-shadow: inset 0 -1px 0 #999;
+				color: #23282d;
+			}
+		}
+
+		input[type="submit"].button-primary {
+			padding: 6px 12px;
+			height: auto;
+		}
+	}
+}
+
+body.options-writing-php {
+
+ 	#default_post_format {
+ 		padding-right: 32px;
+ 	}
+
+ 	#mailserver_url {
+ 		width: 25em;
+
+ 		+ label {
+ 			margin-left: 12px;
+ 		}
+ 	}
+
+ 	#mailserver_port {
+ 		width: 50px;
+ 	}
+}
+
+body.options-permalink-php {
+	
+	code {
+		display: inline-block;
+		margin-top: 4px;
+	}
+
+	p > code {
+		font-size: 12px;
+	}
+
+	#permalink_structure {
+		margin-top: 16px;
+		margin-bottom: 8px;
+	}
+}
