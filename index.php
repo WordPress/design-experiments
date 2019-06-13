@@ -6,6 +6,7 @@
  * Description: WP-Admin design experiments from the WordPress.org Design Team
  * Version: 0.1
  * Author: The WordPress.org Design Team
+ * Text Domain: design-experiments
  */
 
 class DesignExperiments {
@@ -27,6 +28,7 @@ class DesignExperiments {
 		// Add admin actions
 		add_action( 'admin_menu', array( $this, 'design_experiments_add_settings_page' ) );
 		add_action( 'admin_init', array( $this, 'design_experiments_settings' ) );
+		add_action( 'admin_notices', array( $this, 'design_experiments_admin_notice' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'design_experiments_enqueue_stylesheets' ), 100 );
 	}
 
@@ -179,6 +181,24 @@ class DesignExperiments {
 				wp_enqueue_style( $experiment_name );
 				break;
 			}
+		}
+	}
+
+	/**
+	 * Display a warning on the plugin page.
+	 */
+	function design_experiments_admin_notice() {
+		$screen = get_current_screen();
+
+		if ( $screen->id === 'settings_page_design-experiments' ) { 
+			?>
+			<div class="notice notice-warning">
+				<p>
+					<strong><?php _e( 'Warning:', 'design-experiments' ); ?> </strong>
+					<?php _e( 'These experiments may hide or visually break functionality in the admin area. This plugin is for testing concepts, and is not intended for use on a production site.', 'design-experiments' ) ?>
+				</p>
+			</div>
+			<?php 
 		}
 	}
 
