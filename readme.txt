@@ -1,6 +1,7 @@
 === Design Experiments ===
 Contributors: wordpressdotorg, kjellr, karmatosed, mapk, azaozz, andraganescu, melchoyce, tinkerbelly
-Tags: design, experiments, 
+Tags: design, experiments
+Stable tag: trunk
 Requires at least: 4.6
 Tested up to: 5.2
 Requires PHP: 5.2.4
