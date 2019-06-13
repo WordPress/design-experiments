@@ -1,5 +1,5 @@
 /*
-Title: Theme Install Page: Header Update
+Title: Header Update
 Description: A Gutenberg and Material Design-inspired header treatment in WP-Admin.
 PR: https://github.com/WordPress/design-experiments/pull/1
 */
@@ -7,16 +7,38 @@ PR: https://github.com/WordPress/design-experiments/pull/1
  * Colors
  */
 /*
- * Admin Styles: Add Theme Page
+ * Admin Styles: General Header
  */
-body.theme-install-php {
+body.wp-admin {
   overflow-x: hidden;
 }
 
-body.theme-install-php .wrap:before {
+body.update-core-php .wrap,
+body.media-new-php .wrap,
+body.user-new-php .wrap,
+body.profile-php .wrap,
+body.tools-php .wrap,
+body.export-php .wrap,
+body.import-php .wrap,
+body.tools_page_export_personal_data .wrap,
+body.tools_page_remove_personal_data .wrap,
+body.options-general-php .wrap,
+body.options-writing-php .wrap,
+body.options-reading-php .wrap,
+body.options-discussion-php .wrap,
+body.options-media-php .wrap,
+body.options-permalink-php .wrap,
+body.options-privacy-php .wrap,
+body.settings_page_design-experiments .wrap {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.wp-admin .wrap:before {
   content: "";
   display: block;
-  height: 200px;
+  height: 180px;
   width: calc( 100% + 20px);
   z-index: -1;
   position: absolute;
@@ -26,19 +48,51 @@ body.theme-install-php .wrap:before {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-body.theme-install-php .wrap h1.wp-heading-inline {
+body.wp-admin .wrap h1.wp-heading-inline,
+body.wp-admin .wrap h1:first-child {
   display: block;
   margin-top: 100px;
   margin-bottom: 10px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
+/* 
+ * Add Buttons
+ */
+body.theme-install-php .wrap .upload-view-toggle:before,
+body.wp-admin .wrap .page-title-action:before {
+  content: url("../assets/outline-add_circle_outline-24px.svg");
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  padding-right: 8px;
+}
+
+body.wp-admin .wrap .page-title-action {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  border: none;
+  background: none;
+}
+
+body.wp-admin .wrap .page-title-action:hover {
+  color: #00a0d2;
+}
+
+/*
+ * Admin Styles: Add Theme Page
+ */
 body.theme-install-php .wrap .theme-browser {
   margin-top: 10px;
   padding: 0 15px;
 }
 
 body.theme-install-php .wrap > .wp-filter {
+  top: -30px;
   left: -22px;
   width: calc( 100% + 44px);
   background-color: #f1f1f1;
@@ -70,6 +124,7 @@ body.theme-install-php .wrap > .wp-filter > .button.drawer-toggle {
   right: 0;
   top: 2px;
   width: 38px;
+  overflow: hidden;
 }
 
 body.theme-install-php .wrap > .wp-filter > .button.drawer-toggle:before {
@@ -102,29 +157,61 @@ body.theme-install-php .wrap .upload-view-toggle {
   border: none;
 }
 
-body.theme-install-php .wrap .upload-view-toggle:before {
-  content: url("../assets/outline-add_circle_outline-24px.svg");
-  display: inline-block;
-  position: relative;
-  top: 1px;
-  padding-right: 4px;
-}
-
 body.theme-install-php .wrap .search-form {
   display: none;
 }
 
-body.theme-install-php #screen-meta-links .screen-meta-toggle {
+/*
+ * Installed Themes Page
+ */
+body.themes-php .wp-filter-search {
+  top: -20px;
+  left: -24px;
+  width: calc( 100% + 44px);
+  min-height: 54px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: none;
+}
+
+/*
+ * Media Page
+ */
+body.upload-php #posts-filter .wp-filter {
+  top: -18px;
+  left: -24px;
+  width: calc( 100% + 44px);
+  margin-top: 0;
+  margin-bottom: 15px;
+  min-height: 54px;
+}
+
+/*
+ * Contextual Help Links
+ */
+body.wp-admin #screen-meta-links .screen-meta-toggle {
   border: none;
   margin-top: 20px;
 }
 
-body.theme-install-php #screen-meta-links .screen-meta-toggle #contextual-help-link {
-  box-shadow: none;
-  width: 36px;
+body.wp-admin #screen-meta-links .screen-meta-toggle button {
+  color: white;
 }
 
-body.theme-install-php #screen-meta-links .screen-meta-toggle #contextual-help-link:before {
+body.wp-admin #screen-meta-links .screen-meta-toggle #contextual-help-link,
+body.wp-admin #screen-meta-links .screen-meta-toggle #show-settings-link {
+  box-shadow: none;
+  width: 36px;
+  overflow: hidden;
+}
+
+body.wp-admin #screen-meta-links .screen-meta-toggle #show-settings-link {
+  position: relative;
+  top: 1px;
+  right: -8px;
+}
+
+body.wp-admin #screen-meta-links .screen-meta-toggle #contextual-help-link:before {
   content: url("../assets/outline-more_vert-24px.svg");
   display: inline-block;
   position: relative;
@@ -132,6 +219,19 @@ body.theme-install-php #screen-meta-links .screen-meta-toggle #contextual-help-l
   padding-right: 4px;
 }
 
-body.theme-install-php #screen-meta-links .screen-meta-toggle #contextual-help-link:after {
+body.wp-admin #screen-meta-links .screen-meta-toggle #show-settings-link:before {
+  content: url("../assets/outline-gear-24px.svg");
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  padding-right: 4px;
+}
+
+body.wp-admin #screen-meta-links .screen-meta-toggle #contextual-help-link:after {
   display: none;
+}
+
+body.wp-admin #screen-meta {
+  border: none;
+  z-index: 500;
 }
