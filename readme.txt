@@ -14,7 +14,7 @@ A plugin for trying out design experiments in WP-Admin. Brought to you by the Wo
 
 The Design Experiments plugin is a tool for prototyping designs within the context of WP-Admin. It contains a number of proof-of-concepts that the [WordPress Design Team](http://make.wordpress.org/design/) is exploring. 
 
-An important disclaimer: This plugin is called experimental for a reason. It is for testing concepts, and is not intended for use on a production site. These experiments may hide or visually break functionality in the admin area. Some of the experiments may break after a while, and will be removed from the plugin.
+An important disclaimer: This plugin is called experimental for a reason. It is for testing concepts, and is not intended for use on a production site. These experiments may hide or visually break functionality in the admin area. Some of the experiments may break after a while, and will be removed from the plugin. Do not rely on this plugin for permanent changes to your site.
 
 == Installation ==
 
@@ -35,4 +35,4 @@ These are rough proof-of-concepts, so some breakage is generally expected. If yo
 
 = I have an idea for an experiment, how do I submit it? =
 
-If you'd like to build your own experiment, or just submit an idea, you can do so by at [the plugin's GitHub page](https://github.com/WordPress/design-experiments). 
+There are instructions for submitting ideas and building your own experiments at [the plugin's GitHub page](https://github.com/WordPress/design-experiments). 
