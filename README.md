@@ -6,10 +6,9 @@ A simple plugin to prototype design ideas in WP-Admin. This repository is intend
 
 ## To try an experiment: 
 
-1. Download a zip of the repository.
-2. Upload to your test site as a plugin.
-3. Activate the "Design Experiments" Plugin.
-4. Visit `Settings > Design Experiments` to activate an experiment.
+1. Install the [Design Experiments plugin](https://wordpress.org/plugins/design-experiments/) from the WordPress Plugins Directory
+2. Activate the plugin.
+3. Visit `Settings > Design Experiments` to activate an experiment.
 
 ## To build your own quick experiment:
 
