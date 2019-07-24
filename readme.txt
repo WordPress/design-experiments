@@ -24,6 +24,9 @@ An important disclaimer: This plugin is called experimental for a reason. It is 
 
 == Changelog ==
 
+= 1.1 =
+* Adds the Animated Menu Hovers experiment.
+
 = 1.0 =
 * Initial release. Includes experiments for larger font sizes, Gutenberg-style form fields, an updated header treatment throughout WP-Admin, and a dark mode.
 
