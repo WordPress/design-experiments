@@ -1,6 +1,7 @@
 /*
 Title: Animated Menu Hovers
 Description: Trying Gutenberg's menu flyout animations in WP-Admin.
+PR: https://github.com/WordPress/design-experiments/pull/13
 */
 /* Keyframes */
 @keyframes appear-animation {
@@ -33,18 +34,4 @@ Description: Trying Gutenberg's menu flyout animations in WP-Admin.
 
 #wp-admin-bar-my-account.menupop.hover .ab-sub-wrapper {
   transform-origin: top right;
-}
-
-body.folded .adminmenuback,
-body.folded .adminmenuwrap {
-  animation: wide-animation 0.1s cubic-bezier(0, 0, 0.2, 1) 0s;
-  animation-fill-mode: forwards;
-  transform-origin: top left;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body.folded .adminmenuback,
-  body.folded .adminmenuwrap {
-    animation-duration: 1ms;
-  }
 }
