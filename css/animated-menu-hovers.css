@@ -1,0 +1,50 @@
+/*
+Title: Animated Menu Hovers
+Description: Trying Gutenberg's menu flyout animations in WP-Admin.
+*/
+/* Keyframes */
+@keyframes appear-animation {
+  from {
+    transform: translateY(-2em) scaleY(0) scaleX(0);
+  }
+  to {
+    transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+
+/* Animated Elements */
+#adminmenu a.wp-not-current-submenu.menu-top:focus + .wp-submenu,
+.js #adminmenu .opensub .wp-submenu,
+.js #adminmenu .sub-open,
+.menupop.hover .ab-sub-wrapper {
+  animation: appear-animation 0.1s cubic-bezier(0, 0, 0.2, 1) 0s;
+  animation-fill-mode: forwards;
+  transform-origin: top left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #adminmenu a.wp-not-current-submenu.menu-top:focus + .wp-submenu,
+  .js #adminmenu .opensub .wp-submenu,
+  .js #adminmenu .sub-open,
+  .menupop.hover .ab-sub-wrapper {
+    animation-duration: 1ms;
+  }
+}
+
+#wp-admin-bar-my-account.menupop.hover .ab-sub-wrapper {
+  transform-origin: top right;
+}
+
+body.folded .adminmenuback,
+body.folded .adminmenuwrap {
+  animation: wide-animation 0.1s cubic-bezier(0, 0, 0.2, 1) 0s;
+  animation-fill-mode: forwards;
+  transform-origin: top left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.folded .adminmenuback,
+  body.folded .adminmenuwrap {
+    animation-duration: 1ms;
+  }
+}
