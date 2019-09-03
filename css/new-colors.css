@@ -651,7 +651,7 @@ ul#add-to-blog-users {
 
 /* Colors for the tags autocomplete. */
 .wp-tags-autocomplete .ui-state-focus {
-  background-color: #0073aa;
+  background-color: var(--wp-blue-40);
   color: #fff;
 }
 
@@ -2183,7 +2183,7 @@ table.form-table td .updated p {
 #adminmenu .wp-menu-arrow,
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
 #adminmenu .wp-menu-arrow div {
-  background: #0073aa;
+  background: var(--wp-blue-40);
   color: #fff;
 }
 
@@ -2812,7 +2812,7 @@ li#wp-admin-bar-menu-toggle {
 
 .screen-reader-shortcut:focus {
   background: #f1f1f1;
-  color: #0073aa;
+  color: var(--wp-blue-40);
 }
 
 .hidden,
@@ -2904,7 +2904,7 @@ td {
 
 /* Any change to the default link style must be applied to button-link too. */
 a {
-  color: #0073aa;
+  color: var(--wp-blue-40);
   transition-property: border, background, color;
   transition-duration: .05s;
   transition-timing-function: ease-in-out;
@@ -3277,7 +3277,7 @@ code {
   font-size: 13px;
   line-height: normal;
   /* IE8-IE11 need this for buttons */
-  color: #0073aa;
+  color: var(--wp-blue-40);
   /* some of these controls are button elements and don't inherit from links */
   cursor: pointer;
 }
@@ -3465,7 +3465,7 @@ img.emoji {
 .tagchecklist .ntdelbutton .remove-tag-icon:before {
   margin-left: 2px;
   border-radius: 50%;
-  color: #0073aa;
+  color: var(--wp-blue-40);
   /* vertically center the icon cross browsers */
   line-height: 1.28;
 }
@@ -6716,7 +6716,7 @@ buttons.css
   cursor: pointer;
   text-align: left;
   /* Mimics the default link style in common.css */
-  color: #0073aa;
+  color: var(--wp-blue-40);
   text-decoration: underline;
   transition-property: border, background, color;
   transition-duration: .05s;
@@ -6753,7 +6753,7 @@ buttons.css
 ---------------------------------------------------------------------------- */
 .wp-core-ui .button-primary {
   background: #0085ba;
-  border-color: #0073aa #006799 #006799;
+  border-color: var(--wp-blue-40) #006799 #006799;
   box-shadow: 0 1px 0 #006799;
   color: #fff;
   text-decoration: none;
@@ -6771,14 +6771,14 @@ buttons.css
 
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary:focus {
-  box-shadow: 0 1px 0 #0073aa, 0 0 2px 1px #33b3db;
+  box-shadow: 0 1px 0 var(--wp-blue-40), 0 0 2px 1px #33b3db;
 }
 
 .wp-core-ui .button-primary.active,
 .wp-core-ui .button-primary.active:hover,
 .wp-core-ui .button-primary.active:focus,
 .wp-core-ui .button-primary:active {
-  background: #0073aa;
+  background: var(--wp-blue-40);
   border-color: #006799;
   box-shadow: inset 0 2px 0 #006799;
 }
@@ -6800,7 +6800,7 @@ buttons.css
 }
 
 .wp-core-ui .button.button-primary.button-hero:focus {
-  box-shadow: 0 2px 0 #006799, 0 1px 0 #0073aa, 0 0 2px 1px #33b3db;
+  box-shadow: 0 2px 0 #006799, 0 1px 0 var(--wp-blue-40), 0 0 2px 1px #33b3db;
 }
 
 .wp-core-ui .button.button-primary.button-hero.active,
