@@ -183,7 +183,7 @@ div {
 
 a:hover,
 a:active {
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 }
 
 a:focus,
@@ -554,7 +554,7 @@ code {
 .wrap .add-new-h2:hover, /* deprecated */
 .wrap .page-title-action:hover {
 	border-color: #008EC2;
-	background: #00a0d2;
+	background: var(--wp-blue-30);
 	color: #fff;
 }
 
@@ -985,7 +985,7 @@ th.action-links {
 .filter-links li > a:focus,
 .show-filters .filter-links a.current:hover,
 .show-filters .filter-links a.current:focus {
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 }
 
 .wp-filter .search-form {
@@ -1038,7 +1038,7 @@ th.action-links {
 .wp-filter .button.drawer-toggle:focus,
 .wp-filter .drawer-toggle:focus:before {
 	background-color: transparent;
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 }
 
 .wp-filter .button.drawer-toggle:hover,
@@ -1382,7 +1382,7 @@ div.error {
 }
 
 .notice-info {
-	border-left-color: #00a0d2;
+	border-left-color: var(--wp-blue-30);
 }
 
 .notice-info.notice-alt {
@@ -1800,7 +1800,7 @@ form.upgrade .hint {
 .contextual-help-tabs .active {
 	padding: 0;
 	margin: 0 -1px 0 0;
-	border-left: 2px solid #00a0d2;
+	border-left: 2px solid var(--wp-blue-30);
 	background: #f6fbfd;
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -2897,7 +2897,7 @@ div.action-links {
 
 .plugin-details-modal #TB_closeWindowButton:hover,
 .plugin-details-modal #TB_closeWindowButton:focus {
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 	outline: none;
 	box-shadow: none;
 }
@@ -6811,7 +6811,7 @@ ul.cat-checklist {
 
 .plugins .active th.check-column,
 .plugin-update-tr.active td {
-	border-left: 4px solid #00a0d2;
+	border-left: 4px solid var(--wp-blue-30);
 }
 
 .wp-list-table.plugins .plugin-title,
@@ -7691,7 +7691,7 @@ div.action-links,
 
 	.plugins .active.update + .plugin-update-tr:before {
 		background-color: #f7fcfe;
-		border-left: 4px solid #00a0d2;
+		border-left: 4px solid var(--wp-blue-30);
 	}
 
 	.plugins .plugin-update-tr .update-message {
@@ -8488,7 +8488,7 @@ span.wp-media-buttons-icon:before {
 }
 
 a.post-format-icon:hover:before {
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 }
 
 #post-formats-select {
@@ -9081,7 +9081,7 @@ table.diff .diff-addedline ins {
 
 #find-posts-close:hover,
 #find-posts-close:focus {
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 }
 
 #find-posts-close:focus {
@@ -10112,7 +10112,7 @@ audio, video {
 
 .theme-overlay .screenshot.selected {
 	background: transparent;
-	border: 2px solid #00a0d2;
+	border: 2px solid var(--wp-blue-30);
 }
 
 
@@ -10187,7 +10187,7 @@ audio, video {
 .theme-overlay .parent-theme {
 	background: #f7fcfe;
 	border: 1px solid #eee;
-	border-left: 4px solid #00a0d2;
+	border-left: 4px solid var(--wp-blue-30);
 	font-size: 14px;
 	font-weight: 400;
 	margin-top: 30px;
@@ -11177,7 +11177,7 @@ body.full-overlay-active {
 }
 
 .js #removing-widget {
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 }
 
 .widgets-chooser ul,
@@ -11272,7 +11272,7 @@ div#widgets-right .widget-top:hover,
 		stroke: #adc5d2;
 	}
 	50% {
-		stroke: #00a0d2;
+		stroke: var(--wp-blue-30);
 	}
 	100% {
 		stroke: #adc5d2;
@@ -11303,7 +11303,7 @@ div#widgets-right .widget-top:hover,
 
 .health-check-body .info::before {
 	content: "\f348";
-	color: #00a0d2;
+	color: var(--wp-blue-30);
 }
 
 .health-check-body .fail::before,
