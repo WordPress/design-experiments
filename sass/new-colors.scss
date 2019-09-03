@@ -2403,15 +2403,15 @@ table.form-table td .updated p {
 }
 
 div.wp-menu-image:before {
-	color: #a0a5aa;
-	color: rgba(240, 245, 250, 0.6);
+	color: var(--wp-gray-20);
+	color: var(--wp-gray-20);
 	padding: 7px 0;
 	transition: all .1s ease-in-out;
 }
 
 #adminmenu div.wp-menu-image:before {
-	color: #a0a5aa;
-	color: rgba(240, 245, 250, 0.6);
+	color: var(--wp-gray-20);
+	color: var(--wp-gray-20);
 }
 
 #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before,
@@ -2432,7 +2432,7 @@ div.wp-menu-image:before {
 
 /* IE8 doesn't redraw the pseudo elements unless you make a change to the content, this restore the initial color after hover */
 .ie8 #adminmenu li.opensub div.wp-menu-image:before {
-	color: #a0a5aa;
+	color: var(--wp-gray-20);
 }
 
 .folded #adminmenu div.wp-menu-image {
@@ -6277,7 +6277,7 @@ img {
 
 .accordion-section-title:hover:after,
 .accordion-section-title:focus:after {
-	border-color: #a0a5aa transparent;
+	border-color: var(--wp-gray-20) transparent;
 }
 
 .cannot-expand .accordion-section-title {
@@ -6911,7 +6911,7 @@ buttons.css
 .wp-core-ui .button-secondary:disabled,
 .wp-core-ui .button-secondary.disabled,
 .wp-core-ui .button-disabled {
-	color: #a0a5aa !important;
+	color: var(--wp-gray-20) !important;
 	border-color: var(--wp-gray-5) !important;
 	background: #f7f7f7 !important;
 	box-shadow: none !important;
