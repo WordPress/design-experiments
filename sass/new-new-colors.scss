@@ -82,7 +82,7 @@ $wp-blue: $wp-blue-50;
 	font-weight: 600;
 	padding: 15px 23px 14px;
 	background: #f1f1f1;
-	color: #0073aa;
+	color: var(--wp-blue-50);
 	z-index: 100000;
 	line-height: normal;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -170,7 +170,7 @@ td {
 
 /* Any change to the default link style must be applied to button-link too. */
 a {
-	color: #0073aa;
+	color: var(--wp-blue-50);
 	transition-property: border, background, color;
 	transition-duration: .05s;
 	transition-timing-function: ease-in-out;
@@ -543,7 +543,7 @@ code {
 	font-weight: 600;
 	font-size: 13px;
 	line-height: normal; /* IE8-IE11 need this for buttons */
-	color: #0073aa; /* some of these controls are button elements and don't inherit from links */
+	color: var(--wp-blue-50); /* some of these controls are button elements and don't inherit from links */
 	cursor: pointer;
 }
 
@@ -728,7 +728,7 @@ img.emoji {
 .tagchecklist .ntdelbutton .remove-tag-icon:before {
 	margin-left: 2px;
 	border-radius: 50%;
-	color: #0073aa;
+	color: var(--wp-blue-50);
 	/* vertically center the icon cross browsers */
 	line-height: 1.28;
 }
@@ -5660,14 +5660,14 @@ ul#adminmenu > li.current > a.current:after {
 .column-response .post-com-count-approved:focus .comment-count-approved,
 .column-comments .post-com-count-approved:hover .comment-count-approved,
 .column-comments .post-com-count-approved:focus .comment-count-approved {
-	background: #0073aa;
+	background: var(--wp-blue-50);
 }
 
 .column-response .post-com-count-approved:hover:after,
 .column-response .post-com-count-approved:focus:after,
 .column-comments .post-com-count-approved:hover:after,
 .column-comments .post-com-count-approved:focus:after {
-	border-top-color: #0073aa;
+	border-top-color: var(--wp-blue-50);
 }
 
 /* @todo: consider to use a single rule for these counters and the admin menu counters. */
@@ -6309,7 +6309,7 @@ th.asc a:focus span.sorting-indicator {
 }
 
 .view-switch a.current:before {
-	color: #0073aa;
+	color: var(--wp-blue-50);
 }
 
 .view-switch .view-list:before {
@@ -6902,7 +6902,7 @@ ul.cat-checklist {
 .plugins .paused .error-display code {
 	font-size: 90%;
 	font-style: italic;
-	color: rgb( 0, 0, 0, 0.7 );
+	color: rgba( 0, 0, 0, 0.7 );
 }
 
 .plugins .resume-link {
@@ -8712,7 +8712,7 @@ p.popular-tags a {
 
 .ac_results .ac_over,
 .ac_over .ac_match {
-	background-color: #0073aa;
+	background-color: var(--wp-blue-50);
 	color: #fff;
 	cursor: pointer;
 }
@@ -9005,7 +9005,7 @@ table.diff .diff-addedline ins {
 	height: 100%;
 	margin-top: -22px;
 	border-radius: 22px;
-	background-color: #0073aa;
+	background-color: var(--wp-blue-50);
 	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -9922,14 +9922,14 @@ audio, video {
 .theme-browser .theme.add-new-theme a:hover span:after,
 .theme-browser .theme.add-new-theme a:focus span:after {
 	background: #fff;
-	color: #0073aa;
+	color: var(--wp-blue-50);
 }
 
 .theme-browser .theme.add-new-theme a:hover:after,
 .theme-browser .theme.add-new-theme a:focus:after {
 	border-color: transparent;
 	color: #fff;
-	background: #0073aa;
+	background: var(--wp-blue-50);
 	content: "";
 }
 
@@ -10204,7 +10204,7 @@ audio, video {
 
 /* Already installed theme */
 .theme-browser .theme .theme-installed {
-	background: #0073aa;
+	background: var(--wp-blue-50);
 }
 .theme-browser .theme .notice-success p:before {
 	color: #79ba49;
@@ -10578,7 +10578,7 @@ body.full-overlay-active {
 
 .wp-core-ui .wp-full-overlay .collapse-sidebar:hover,
 .wp-core-ui .wp-full-overlay .collapse-sidebar:focus {
-	color: #0073aa;
+	color: var(--wp-blue-50);
 }
 
 .wp-full-overlay .collapse-sidebar-arrow,
@@ -10720,7 +10720,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:focus,
 .wp-full-overlay-footer .devices button.active:hover {
-	border-bottom-color: #0073aa;
+	border-bottom-color: var(--wp-blue-50);
 }
 
 .wp-full-overlay-footer .devices button.active:before {
@@ -10729,7 +10729,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:hover:before,
 .wp-full-overlay-footer .devices button:focus:before {
-	color: #0073aa;
+	color: var(--wp-blue-50);
 }
 
 .wp-full-overlay-footer .devices .preview-desktop:before {
@@ -10851,7 +10851,7 @@ body.full-overlay-active {
 }
 
 .wp-badge {
-	background: #0073aa url(../images/w-logo-white.png?ver=20160308) no-repeat;
+	background: var(--wp-blue-50) url(../images/w-logo-white.png?ver=20160308) no-repeat;
 	background-position: center 25px;
 	background-size: 80px 80px;
 	color: #fff;
@@ -10986,7 +10986,7 @@ body.full-overlay-active {
 	height: auto;
 	margin: 12px -10px 12px 0;
 	padding: 0;
-	color: #0073aa;
+	color: var(--wp-blue-50);
 	text-decoration: underline;
 	font-size: 12px;
 	line-height: 1.5;
@@ -11201,7 +11201,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .widgets-chooser .widgets-chooser-selected .widgets-chooser-button {
-	background: #0073aa;
+	background: var(--wp-blue-50);
 	color: #fff;
 }
 
