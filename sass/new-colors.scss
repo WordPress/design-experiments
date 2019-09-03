@@ -298,16 +298,16 @@ textarea[readonly] {
 }
 
 ::-webkit-input-placeholder {
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 ::-moz-placeholder {
-	color: #72777c;
+	color: var(--wp-gray-40);
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 .form-invalid input,
@@ -944,7 +944,7 @@ table.form-table td .updated p {
 }
 
 .pressthis-bookmarklet span:before {
-	color: #72777c;
+	color: var(--wp-gray-40);
 	font: normal 20px/1 dashicons;
 	content: "\f157";
 	position: relative;
@@ -1255,7 +1255,7 @@ table.form-table td .updated p {
 .status-label.status-request-pending {
 	font-weight: 400;
 	font-style: italic;
-	color: #6c7781;
+	color: var(--wp-gray-40);
 }
 
 .status-label.status-request-failed {
@@ -1696,7 +1696,7 @@ table.form-table td .updated p {
 }
 
 .welcome-panel p {
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 .welcome-panel-column p {
@@ -1767,13 +1767,13 @@ table.form-table td .updated p {
 }
 
 .rssSummary {
-	color: #72777c;
+	color: var(--wp-gray-40);
 	margin-top: 4px;
 }
 
 #dashboard_primary .rss-widget span,
 #dashboard_primary .rss-widget span.rss-date {
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 /* Dashboard right now */
@@ -1878,7 +1878,7 @@ table.form-table td .updated p {
 	margin-bottom: 1em;
 }
 #dashboard_quick_press .drafts li time {
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 #dashboard_quick_press .drafts p {
@@ -1921,7 +1921,7 @@ table.form-table td .updated p {
 
 
 #dashboard_activity .no-activity p {
-	color: #72777c;
+	color: var(--wp-gray-40);
 	font-size: 16px;
 }
 
@@ -1934,7 +1934,7 @@ table.form-table td .updated p {
 
 #dashboard_activity .subsubsub a .count,
 #dashboard_activity .subsubsub a.current .count {
-	color: #72777c; /* white background on the dashboard but var(--wp-gray-0) on list tables */
+	color: var(--wp-gray-40); /* white background on the dashboard but var(--wp-gray-0) on list tables */
 }
 
 
@@ -1943,7 +1943,7 @@ table.form-table td .updated p {
 	display: inline-block;
 	margin-right: 5px;
 	min-width: 150px;
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 .activity-block {
@@ -1996,7 +1996,7 @@ table.form-table td .updated p {
 }
 
 .rss-widget span.rss-date {
-	color: #72777c;
+	color: var(--wp-gray-40);
 	font-size: 13px;
 	margin-left: 3px;
 }
@@ -2279,7 +2279,7 @@ table.form-table td .updated p {
 #adminmenu li.opensub > a.menu-top,
 #adminmenu li > a.menu-top:focus {
 	position: relative;
-	background-color: #191e23;
+	background-color: var(--wp-gray-90);
 	color: var(--wp-blue-30);
 }
 
@@ -3603,7 +3603,7 @@ img.emoji {
 #bulk-titles div a:before,
 .notice-dismiss:before {
 	background: none;
-	color: #72777c;
+	color: var(--wp-gray-40);
 	content: "\f153";
 	display: block;
 	font: normal 16px/20px dashicons;
@@ -3836,7 +3836,7 @@ th.action-links {
 	top: -1px;
 	padding: 4px 10px;
 	border-radius: 30px;
-	background: #72777c;
+	background: var(--wp-gray-40);
 	color: #fff;
 	font-size: 14px;
 	font-weight: 600;
@@ -3924,7 +3924,7 @@ th.action-links {
 .wp-filter .drawer-toggle:before {
 	content: "\f111";
 	margin: 0 5px 0 0;
-	color: #72777c;
+	color: var(--wp-gray-40);
 	font: normal 16px/1 dashicons;
 	vertical-align: text-bottom;
 	-webkit-font-smoothing: antialiased;
@@ -3979,7 +3979,7 @@ th.action-links {
 
 .show-filters .wp-filter .button.drawer-toggle {
 	border-radius: 2px;
-	background: #72777c;
+	background: var(--wp-gray-40);
 	color: #fff;
 }
 
@@ -4234,7 +4234,7 @@ div.error p,
 	margin: 0;
 	padding: 9px;
 	background: none;
-	color: #72777c;
+	color: var(--wp-gray-40);
 	cursor: pointer;
 }
 
@@ -4510,7 +4510,7 @@ form.upgrade .hint {
 	padding: 3px 6px 3px 16px;
 	background: #fff;
 	border-radius: 0;
-	color: #72777c;
+	color: var(--wp-gray-40);
 	line-height: 1.7;
 	box-shadow: none;
 }
@@ -4543,7 +4543,7 @@ form.upgrade .hint {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-decoration: none !important;
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 #screen-meta-links .screen-meta-active:after {
@@ -5860,7 +5860,7 @@ img {
 .bulk-action-notice .toggle-indicator:before {
 	line-height: 16px;
 	vertical-align: top;
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 .js .postbox .handlediv:focus {
@@ -6172,7 +6172,7 @@ img {
 .item-edit,
 .toggle-indicator,
 .accordion-section-title:after {
-	color: #72777c;
+	color: var(--wp-gray-40);
 }
 
 .widget-action {
