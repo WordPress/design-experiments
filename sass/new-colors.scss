@@ -6,6 +6,7 @@ PR: #
 
 /* Colors */
 
+:root {
 --wp-white: #fff;
 --wp-black: #000;
 
@@ -36,6 +37,7 @@ PR: #
 --wp-blue-90: #01263a;
 --wp-blue-100: #00131c;
 --wp-blue: var(--wp-blue-50);
+}
 
 $wp-gray-0: #f6f7f7;
 $wp-gray-5: #dcdcde;
@@ -64,6 +66,7 @@ $wp-blue-80: #043959;
 $wp-blue-90: #01263a;
 $wp-blue-100: #00131c;
 $wp-blue: $wp-blue-50;
+
 
 // forms.css
 
