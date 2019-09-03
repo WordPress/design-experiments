@@ -171,7 +171,7 @@ input[type="radio"]:checked:before {
 input[type="checkbox"]:checked:before {
   content: "\f147";
   margin: -3px 0 0 -4px;
-  color: #1e8cbe;
+  color: var(--wp-blue-40);
 }
 
 input[type="radio"]:checked:before {
@@ -183,7 +183,7 @@ input[type="radio"]:checked:before {
   height: 6px;
   margin: 4px;
   line-height: 16px;
-  background-color: #1e8cbe;
+  background-color: var(--wp-blue-40);
 }
 
 @-moz-document url-prefix() {
@@ -3359,11 +3359,11 @@ ul.striped > :nth-child(odd),
 
 .wp-ui-highlight {
   color: #fff;
-  background-color: #1e8cbe;
+  background-color: var(--wp-blue-40);
 }
 
 .wp-ui-text-highlight {
-  color: #1e8cbe;
+  color: var(--wp-blue-40);
 }
 
 .wp-ui-notification {
