@@ -45,7 +45,7 @@ PR: #
   font-weight: 600;
   padding: 15px 23px 14px;
   background: #f1f1f1;
-  color: #0073aa;
+  color: var(--wp-blue-50);
   z-index: 100000;
   line-height: normal;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -133,7 +133,7 @@ td {
 
 /* Any change to the default link style must be applied to button-link too. */
 a {
-  color: #0073aa;
+  color: var(--wp-blue-50);
   transition-property: border, background, color;
   transition-duration: .05s;
   transition-timing-function: ease-in-out;
@@ -146,7 +146,7 @@ div {
 
 a:hover,
 a:active {
-  color: #00a0d2;
+  color: var(--wp-blue-50);
 }
 
 a:focus,
@@ -506,7 +506,7 @@ code {
   font-size: 13px;
   line-height: normal;
   /* IE8-IE11 need this for buttons */
-  color: #0073aa;
+  color: var(--wp-blue-50);
   /* some of these controls are button elements and don't inherit from links */
   cursor: pointer;
 }
@@ -518,7 +518,7 @@ code {
 .wrap .add-new-h2:hover,
 .wrap .page-title-action:hover {
   border-color: #008EC2;
-  background: #00a0d2;
+  background: var(--wp-blue-50);
   color: #fff;
 }
 
@@ -694,7 +694,7 @@ img.emoji {
 .tagchecklist .ntdelbutton .remove-tag-icon:before {
   margin-left: 2px;
   border-radius: 50%;
-  color: #0073aa;
+  color: var(--wp-blue-50);
   /* vertically center the icon cross browsers */
   line-height: 1.28;
 }
@@ -950,7 +950,7 @@ th.action-links {
 .filter-links li > a:focus,
 .show-filters .filter-links a.current:hover,
 .show-filters .filter-links a.current:focus {
-  color: #00a0d2;
+  color: var(--wp-blue-50);
 }
 
 .wp-filter .search-form {
@@ -1003,7 +1003,7 @@ th.action-links {
 .wp-filter .button.drawer-toggle:focus,
 .wp-filter .drawer-toggle:focus:before {
   background-color: transparent;
-  color: #00a0d2;
+  color: var(--wp-blue-50);
 }
 
 .wp-filter .button.drawer-toggle:hover,
@@ -1343,7 +1343,7 @@ div.error {
 }
 
 .notice-info {
-  border-left-color: #00a0d2;
+  border-left-color: var(--wp-blue-50);
 }
 
 .notice-info.notice-alt {
@@ -1758,7 +1758,7 @@ form.upgrade .hint {
 .contextual-help-tabs .active {
   padding: 0;
   margin: 0 -1px 0 0;
-  border-left: 2px solid #00a0d2;
+  border-left: 2px solid var(--wp-blue-50);
   background: #f6fbfd;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -2862,7 +2862,7 @@ div.action-links {
 
 .plugin-details-modal #TB_closeWindowButton:hover,
 .plugin-details-modal #TB_closeWindowButton:focus {
-  color: #00a0d2;
+  color: var(--wp-blue-50);
   outline: none;
   box-shadow: none;
 }
@@ -5610,14 +5610,14 @@ ul#adminmenu > li.current > a.current:after {
 .column-response .post-com-count-approved:focus .comment-count-approved,
 .column-comments .post-com-count-approved:hover .comment-count-approved,
 .column-comments .post-com-count-approved:focus .comment-count-approved {
-  background: #0073aa;
+  background: var(--wp-blue-50);
 }
 
 .column-response .post-com-count-approved:hover:after,
 .column-response .post-com-count-approved:focus:after,
 .column-comments .post-com-count-approved:hover:after,
 .column-comments .post-com-count-approved:focus:after {
-  border-top-color: #0073aa;
+  border-top-color: var(--wp-blue-50);
 }
 
 /* @todo: consider to use a single rule for these counters and the admin menu counters. */
@@ -6258,7 +6258,7 @@ th.asc a:focus span.sorting-indicator {
 }
 
 .view-switch a.current:before {
-  color: #0073aa;
+  color: var(--wp-blue-50);
 }
 
 .view-switch .view-list:before {
@@ -6757,7 +6757,7 @@ ul.cat-checklist {
 
 .plugins .active th.check-column,
 .plugin-update-tr.active td {
-  border-left: 4px solid #00a0d2;
+  border-left: 4px solid var(--wp-blue-50);
 }
 
 .wp-list-table.plugins .plugin-title,
@@ -7557,7 +7557,7 @@ div.action-links,
   }
   .plugins .active.update + .plugin-update-tr:before {
     background-color: #f7fcfe;
-    border-left: 4px solid #00a0d2;
+    border-left: 4px solid var(--wp-blue-50);
   }
   .plugins .plugin-update-tr .update-message {
     margin-left: 0;
@@ -8339,7 +8339,7 @@ span.wp-media-buttons-icon:before {
 }
 
 a.post-format-icon:hover:before {
-  color: #00a0d2;
+  color: var(--wp-blue-50);
 }
 
 #post-formats-select {
@@ -8561,7 +8561,7 @@ p.popular-tags a {
 
 .ac_results .ac_over,
 .ac_over .ac_match {
-  background-color: #0073aa;
+  background-color: var(--wp-blue-50);
   color: #fff;
   cursor: pointer;
 }
@@ -8848,7 +8848,7 @@ table.diff .diff-addedline ins {
   height: 100%;
   margin-top: -22px;
   border-radius: 22px;
-  background-color: #0073aa;
+  background-color: var(--wp-blue-50);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -8922,7 +8922,7 @@ table.diff .diff-addedline ins {
 
 #find-posts-close:hover,
 #find-posts-close:focus {
-  color: #00a0d2;
+  color: var(--wp-blue-50);
 }
 
 #find-posts-close:focus {
@@ -9749,14 +9749,14 @@ audio, video {
 .theme-browser .theme.add-new-theme a:hover span:after,
 .theme-browser .theme.add-new-theme a:focus span:after {
   background: #fff;
-  color: #0073aa;
+  color: var(--wp-blue-50);
 }
 
 .theme-browser .theme.add-new-theme a:hover:after,
 .theme-browser .theme.add-new-theme a:focus:after {
   border-color: transparent;
   color: #fff;
-  background: #0073aa;
+  background: var(--wp-blue-50);
   content: "";
 }
 
@@ -9935,7 +9935,7 @@ audio, video {
 
 .theme-overlay .screenshot.selected {
   background: transparent;
-  border: 2px solid #00a0d2;
+  border: 2px solid var(--wp-blue-50);
 }
 
 .theme-overlay .current-label {
@@ -10009,7 +10009,7 @@ audio, video {
 .theme-overlay .parent-theme {
   background: #f7fcfe;
   border: 1px solid #eee;
-  border-left: 4px solid #00a0d2;
+  border-left: 4px solid var(--wp-blue-50);
   font-size: 14px;
   font-weight: 400;
   margin-top: 30px;
@@ -10025,7 +10025,7 @@ audio, video {
 ------------------------------------------------------------------------------*/
 /* Already installed theme */
 .theme-browser .theme .theme-installed {
-  background: #0073aa;
+  background: var(--wp-blue-50);
 }
 
 .theme-browser .theme .notice-success p:before {
@@ -10395,7 +10395,7 @@ body.full-overlay-active {
 
 .wp-core-ui .wp-full-overlay .collapse-sidebar:hover,
 .wp-core-ui .wp-full-overlay .collapse-sidebar:focus {
-  color: #0073aa;
+  color: var(--wp-blue-50);
 }
 
 .wp-full-overlay .collapse-sidebar-arrow,
@@ -10533,7 +10533,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:focus,
 .wp-full-overlay-footer .devices button.active:hover {
-  border-bottom-color: #0073aa;
+  border-bottom-color: var(--wp-blue-50);
 }
 
 .wp-full-overlay-footer .devices button.active:before {
@@ -10542,7 +10542,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:hover:before,
 .wp-full-overlay-footer .devices button:focus:before {
-  color: #0073aa;
+  color: var(--wp-blue-50);
 }
 
 .wp-full-overlay-footer .devices .preview-desktop:before {
@@ -10659,7 +10659,7 @@ body.full-overlay-active {
 }
 
 .wp-badge {
-  background: #0073aa url(../images/w-logo-white.png?ver=20160308) no-repeat;
+  background: var(--wp-blue-50) url(../images/w-logo-white.png?ver=20160308) no-repeat;
   background-position: center 25px;
   background-size: 80px 80px;
   color: #fff;
@@ -10793,7 +10793,7 @@ body.full-overlay-active {
   height: auto;
   margin: 12px -10px 12px 0;
   padding: 0;
-  color: #0073aa;
+  color: var(--wp-blue-50);
   text-decoration: underline;
   font-size: 12px;
   line-height: 1.5;
@@ -10977,7 +10977,7 @@ body.full-overlay-active {
 }
 
 .js #removing-widget {
-  color: #00a0d2;
+  color: var(--wp-blue-50);
 }
 
 .widgets-chooser ul,
@@ -11001,7 +11001,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .widgets-chooser .widgets-chooser-selected .widgets-chooser-button {
-  background: #0073aa;
+  background: var(--wp-blue-50);
   color: #fff;
 }
 
@@ -11067,7 +11067,7 @@ div#widgets-right .widget-top:hover,
     stroke: #adc5d2;
   }
   50% {
-    stroke: #00a0d2;
+    stroke: var(--wp-blue-50);
   }
   100% {
     stroke: #adc5d2;
@@ -11098,7 +11098,7 @@ div#widgets-right .widget-top:hover,
 
 .health-check-body .info::before {
   content: "\f348";
-  color: #00a0d2;
+  color: var(--wp-blue-50);
 }
 
 .health-check-body .fail::before,
