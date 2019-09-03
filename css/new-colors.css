@@ -1826,7 +1826,7 @@ table.form-table td .updated p {
 #dashboard_activity .subsubsub a .count,
 #dashboard_activity .subsubsub a.current .count {
   color: #72777c;
-  /* white background on the dashboard but #f1f1f1 on list tables */
+  /* white background on the dashboard but #var(--wp-gray-0) on list tables */
 }
 
 #future-posts ul span,
@@ -2370,7 +2370,7 @@ ul#adminmenu > li.current > a.current:after {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-right-color: #f1f1f1;
+  border-right-color: #var --wp-gray-0;
   top: 50%;
   margin-top: -8px;
 }
@@ -2811,7 +2811,7 @@ li#wp-admin-bar-menu-toggle {
 }
 
 .screen-reader-shortcut:focus {
-  background: #f1f1f1;
+  background: #var --wp-gray-0;
   color: var(--wp-blue-40);
 }
 
@@ -2867,7 +2867,7 @@ body {
 }
 
 body {
-  background: #f1f1f1;
+  background: #var --wp-gray-0;
   color: #444;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 13px;
@@ -3095,7 +3095,7 @@ code {
 .subsubsub a .count,
 .subsubsub a.current .count {
   color: #555d66;
-  /* #f1f1f1 background */
+  /* #var(--wp-gray-0) background */
   font-weight: 400;
 }
 
@@ -4856,8 +4856,8 @@ h3 .nav-tab,
 .nav-tab-active:hover,
 .nav-tab-active:focus,
 .nav-tab-active:focus:active {
-  border-bottom: 1px solid #f1f1f1;
-  background: #f1f1f1;
+  border-bottom: 1px solid #var --wp-gray-0;
+  background: #var --wp-gray-0;
   color: #000;
 }
 
