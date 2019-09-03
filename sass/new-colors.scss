@@ -122,7 +122,7 @@ input[type="checkbox"]:focus,
 input[type="radio"]:focus,
 select:focus,
 textarea:focus {
-	border-color: #5b9dd9;
+	border-color: var(--wp-blue-30);
 	box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
@@ -667,7 +667,7 @@ ul#add-to-blog-users {
 	list-style: none;
 	position: absolute;
 	z-index: 10000;
-	border: 1px solid #5b9dd9;
+	border: 1px solid var(--wp-blue-30);
 	box-shadow: 0 1px 2px rgba(30, 140, 190, 0.8);
 	background-color: #fff;
 }
@@ -3089,14 +3089,14 @@ a:focus .media-icon img,
 .wp-person a:focus .gravatar {
 	color: #124964;
 	box-shadow:
-		0 0 0 1px #5b9dd9,
+		0 0 0 1px var(--wp-blue-30),
 		0 0 2px 1px rgba(30, 140, 190, 0.8);
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
 }
 
 .ie8 a:focus {
-	outline: #5b9dd9 solid 1px;
+	outline: var(--wp-blue-30) solid 1px;
 }
 
 #adminmenu a:focus {
@@ -3462,7 +3462,7 @@ code {
 }
 
 .wrap .page-title-action:focus {
-	border-color: #5b9dd9;
+	border-color: var(--wp-blue-30);
 	box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
@@ -3646,7 +3646,7 @@ img.emoji {
 
 .tagchecklist .ntdelbutton:focus .remove-tag-icon:before {
 	box-shadow:
-		0 0 0 1px #5b9dd9,
+		0 0 0 1px var(--wp-blue-30),
 		0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
@@ -3945,7 +3945,7 @@ th.action-links {
 }
 
 .wp-filter .button.drawer-toggle:focus {
-	border-color: #5b9dd9;
+	border-color: var(--wp-blue-30);
 }
 
 .wp-filter .button.drawer-toggle:active {
@@ -4246,11 +4246,11 @@ div.error p,
 
 .notice-dismiss:focus {
 	outline: none;
-	box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+	box-shadow: 0 0 0 1px var(--wp-blue-30), 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 .ie8 .notice-dismiss:focus {
-	outline: 1px solid #5b9dd9;
+	outline: 1px solid var(--wp-blue-30);
 }
 
 .notice-success,
@@ -4522,7 +4522,7 @@ form.upgrade .hint {
 }
 
 #screen-meta-links .show-settings:focus {
-	border-color: #5b9dd9;
+	border-color: var(--wp-blue-30);
 	box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
 }
 
@@ -5870,7 +5870,7 @@ img {
 
 .js .postbox .handlediv:focus .toggle-indicator:before {
 	box-shadow:
-		0 0 0 1px #5b9dd9,
+		0 0 0 1px var(--wp-blue-30),
 		0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
@@ -5966,7 +5966,7 @@ img {
 }
 [role="treeitem"] .folder-label.focus {
 	color: #124964;
-	box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+	box-shadow: 0 0 0 1px var(--wp-blue-30), 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 [role="treeitem"].hover,
 [role="treeitem"] .folder-label.hover {
@@ -6194,7 +6194,7 @@ img {
 
 .widget-top .widget-action:focus .toggle-indicator:before {
 	box-shadow:
-		0 0 0 1px #5b9dd9,
+		0 0 0 1px var(--wp-blue-30),
 		0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
@@ -6883,7 +6883,7 @@ buttons.css
 .wp-core-ui .button.focus,
 .wp-core-ui .button:focus,
 .wp-core-ui .button-secondary:focus {
-	border-color: #5b9dd9;
+	border-color: var(--wp-blue-30);
 	box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
 }
 
@@ -6898,7 +6898,7 @@ buttons.css
 }
 
 .wp-core-ui .button.active:focus {
-	border-color: #5b9dd9;
+	border-color: var(--wp-blue-30);
 	box-shadow:
 		inset 0 2px 5px -3px rgba(0, 0, 0, 0.5),
 		0 0 3px rgba(0, 115, 170, 0.8);
@@ -6946,7 +6946,7 @@ buttons.css
 .wp-core-ui .button-link:focus {
 	color: #124964;
 	box-shadow:
-		0 0 0 1px #5b9dd9,
+		0 0 0 1px var(--wp-blue-30),
 		0 0 2px 1px rgba(30, 140, 190, 0.8);
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
@@ -6962,7 +6962,7 @@ buttons.css
 }
 
 .ie8 .wp-core-ui .button-link:focus {
-	outline: #5b9dd9 solid 1px;
+	outline: var(--wp-blue-30) solid 1px;
 }
 
 /* ----------------------------------------------------------------------------
