@@ -563,7 +563,7 @@ div#widgets-right .widget-top:hover,
 
 .ac_match,
 .subsubsub a.current {
-	color: #000;
+	color: $wp-black;
 }
 
 .striped > tbody > :nth-child(odd),
@@ -581,7 +581,7 @@ ul.striped > :nth-child(odd),
 
 .highlight {
 	background-color: #e4f2fd;
-	color: #000;
+	color: $wp-black;
 }
 
 .wp-ui-primary {
@@ -661,7 +661,7 @@ img.emoji {
 .quicktags,
 .search {
 	background-color: #ccc;
-	color: #000;
+	color: $wp-black;
 	font-size: 12px;
 }
 
@@ -2101,7 +2101,7 @@ h3 .nav-tab, /* Back-compat for pre-4.4 */
 .nav-tab-active:focus:active {
 	border-bottom: 1px solid #f1f1f1;
 	background: #f1f1f1;
-	color: #000;
+	color: $wp-black;
 }
 
 h1.nav-tab-wrapper, /* Back-compat for pre-4.4 */
@@ -2259,7 +2259,7 @@ body.iframe {
 }
 
 .importer-title {
-	color: #000;
+	color: $wp-black;
 	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: .2em;
@@ -6363,7 +6363,7 @@ p.pagenav {
 
 .row-actions .network_only,
 .row-actions .network_active {
-	color: #000;
+	color: $wp-black;
 }
 
 .no-js .row-actions,
@@ -6697,7 +6697,7 @@ ul.cat-checklist {
 .plugins,
 .plugins th,
 .plugins td {
-	color: #000;
+	color: $wp-black;
 }
 
 .plugins tr {
@@ -8132,7 +8132,7 @@ span.wp-media-buttons-icon:before {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #000;
+	background: $wp-black;
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 	z-index: 1000000;
@@ -9088,7 +9088,7 @@ table.diff .diff-addedline ins {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #000;
+	background: $wp-black;
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 	z-index: 100100;
@@ -9350,7 +9350,7 @@ border color while dragging a file over the uploader drop area */
 .edit-attachment-frame .edit-media-header .right:focus {
 	background: #ddd;
 	border-color: #ccc;
-	color: #000;
+	color: $wp-black;
 	outline: none;
 	box-shadow: none;
 }
@@ -9365,7 +9365,7 @@ border color while dragging a file over the uploader drop area */
 
 .upload-php .media-modal-close:focus .media-modal-icon:before,
 .upload-php .media-modal-close:hover .media-modal-icon:before {
-	color: #000;
+	color: $wp-black;
 }
 
 .edit-attachment-frame .edit-media-header .left.disabled,
@@ -9981,12 +9981,12 @@ audio, video {
 .theme-overlay .theme-header .left:hover {
 	background: #ddd;
 	border-color: #ccc;
-	color: #000;
+	color: $wp-black;
 }
 
 .theme-overlay .theme-header .close:focus:before,
 .theme-overlay .theme-header .close:hover:before {
-	color: #000;
+	color: $wp-black;
 }
 
 .theme-overlay .theme-header .close:focus,
@@ -10474,7 +10474,7 @@ body.full-overlay-active {
 .theme-install-overlay .next-theme:focus {
 	background: #ddd;
 	border-color: #ccc;
-	color: #000;
+	color: $wp-black;
 	outline: none;
 	box-shadow: none;
 }
@@ -11048,7 +11048,7 @@ body.full-overlay-active {
 }
 
 .media-widget-control .media-widget-preview .wp-video-shortcode {
-	background: #000;
+	background: $wp-black;
 }
 
 .media-widget-video-link .dashicons {
@@ -11194,7 +11194,7 @@ div#widgets-right .widget-top:hover,
 // site-icon.css
 
 .site-icon-preview .app-icon-preview {
-	background-color: #000;
+	background-color: $wp-black;
 	border-radius: 16px;
 	height: 64px;
 	overflow: hidden;
