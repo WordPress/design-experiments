@@ -13,7 +13,7 @@ PR: #
   font-size: 14px;
   font-weight: 600;
   padding: 15px 23px 14px;
-  background: #f1f1f1;
+  background: #f6f7f7;
   color: #2271b1;
   z-index: 100000;
   line-height: normal;
@@ -65,7 +65,7 @@ body {
 }
 
 body {
-  background: #f1f1f1;
+  background: #f6f7f7;
   color: #444;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 13px;
@@ -293,7 +293,7 @@ code {
 .subsubsub a .count,
 .subsubsub a.current .count {
   color: #555d66;
-  /* #f1f1f1 background */
+  /* $wp-gray-0 background */
   font-weight: 400;
 }
 
@@ -2054,8 +2054,8 @@ h3 .nav-tab,
 .nav-tab-active:hover,
 .nav-tab-active:focus,
 .nav-tab-active:focus:active {
-  border-bottom: 1px solid #f1f1f1;
-  background: #f1f1f1;
+  border-bottom: 1px solid #f6f7f7;
+  background: #f6f7f7;
   color: #000000;
 }
 
@@ -7874,7 +7874,7 @@ form#tags-filter {
 
 /* End TinyMCE native fullscreen mode override */
 #wp-content-editor-tools {
-  background-color: #f1f1f1;
+  background-color: #f6f7f7;
   padding-top: 20px;
 }
 
@@ -8212,7 +8212,7 @@ span.wp-media-buttons-icon:before {
 ------------------------------------------------------------------------------*/
 #postcustomstuff thead th {
   padding: 5px 8px 8px;
-  background-color: #f1f1f1;
+  background-color: #f6f7f7;
 }
 
 #postcustom #postcustomstuff .submit {
@@ -9092,18 +9092,18 @@ border color while dragging a file over the uploader drop area */
 .media-frame.mode-grid .attachment:focus,
 .media-frame.mode-grid .selected.attachment:focus,
 .media-frame.mode-grid .attachment.details:focus {
-  box-shadow: inset 0 0 2px 3px #f1f1f1, inset 0 0 0 7px #5b9dd9;
+  box-shadow: inset 0 0 2px 3px #f6f7f7, inset 0 0 0 7px #5b9dd9;
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
   outline-offset: -6px;
 }
 
 .media-frame.mode-grid .selected.attachment {
-  box-shadow: inset 0 0 0 5px #f1f1f1, inset 0 0 0 7px #ccc;
+  box-shadow: inset 0 0 0 5px #f6f7f7, inset 0 0 0 7px #ccc;
 }
 
 .media-frame.mode-grid .attachment.details {
-  box-shadow: inset 0 0 0 3px #f1f1f1, inset 0 0 0 7px #1e8cbe;
+  box-shadow: inset 0 0 0 3px #f6f7f7, inset 0 0 0 7px #1e8cbe;
 }
 
 .media-frame.mode-grid .attachments-browser .no-media {
@@ -9454,7 +9454,7 @@ border color while dragging a file over the uploader drop area */
   height: 32px;
   margin: 0 8px 0 0;
   padding: 0;
-  background: #f1f1f1;
+  background: #f6f7f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 16px;
@@ -9745,7 +9745,7 @@ audio, video {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #f1f1f1;
+  background: #f6f7f7;
   background: rgba(238, 238, 238, 0.9);
   z-index: 10000;
   /* Over WP Pointers. */
@@ -10019,7 +10019,7 @@ audio, video {
 .upload-theme .install-help,
 .upload-plugin .install-help {
   color: #555d66;
-  /* #f1f1f1 background */
+  /* $wp-gray-0 background */
   font-size: 18px;
   font-style: normal;
   margin: 0;
@@ -10437,7 +10437,7 @@ body.full-overlay-active {
 }
 
 .wp-full-overlay-main {
-  background-color: #f1f1f1;
+  background-color: #f6f7f7;
 }
 
 .expanded .wp-full-overlay-footer {
@@ -10613,11 +10613,11 @@ body.full-overlay-active {
 .theme-install-overlay .wp-full-overlay-main {
   position: absolute;
   z-index: 0;
-  background-color: #f1f1f1;
+  background-color: #f6f7f7;
 }
 
 .customize-loading #customize-container {
-  background-color: #f1f1f1;
+  background-color: #f6f7f7;
 }
 
 .about-wrap hr {
@@ -10868,7 +10868,7 @@ body.full-overlay-active {
 }
 
 .media-widget-preview .placeholder {
-  background: #f1f1f1;
+  background: #f6f7f7;
 }
 
 .media-widget-gallery-preview .gallery-icon-placeholder {
