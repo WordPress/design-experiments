@@ -3328,7 +3328,7 @@ img {
 
 .accordion-section-title:hover:after,
 .accordion-section-title:focus:after {
-  border-color: #a0a5aa transparent;
+  border-color: #a7aaad transparent;
 }
 
 .cannot-expand .accordion-section-title {
@@ -8678,7 +8678,7 @@ table.links-table {
 .revisions-tickmarks > div {
   position: absolute;
   height: 100%;
-  border-left: 1px solid #a0a5aa;
+  border-left: 1px solid #a7aaad;
   box-sizing: border-box;
 }
 
@@ -8965,7 +8965,7 @@ form.upgrade .hint {
 }
 
 .drag-drop-inside p {
-  color: #a0a5aa;
+  color: #a7aaad;
   font-size: 14px;
   margin: 5px 0;
   display: none;
@@ -9416,7 +9416,7 @@ border color while dragging a file over the uploader drop area */
 .imgedit-settings .disabled {
   /* WCAG 1.4.3 Text or images of text that are part of an inactive user
 	   interface component ... have no contrast requirement. */
-  color: #a0a5aa;
+  color: #a7aaad;
 }
 
 .A1B1 {
@@ -10814,7 +10814,7 @@ body.full-overlay-active {
 
 .deleting .widget-title,
 .deleting .widget-top .widget-action .toggle-indicator:before {
-  color: #a0a5aa;
+  color: #a7aaad;
 }
 
 .media-widget-control .attachment-media-view .button-add-media,
