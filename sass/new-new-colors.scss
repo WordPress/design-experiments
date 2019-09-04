@@ -675,7 +675,7 @@ img.emoji {
 #bulk-titles div a:before,
 .notice-dismiss:before {
 	background: none;
-	color: #72777c;
+	color: $wp-gray-50;
 	content: "\f153";
 	display: block;
 	font: normal 16px/20px dashicons;
@@ -908,7 +908,7 @@ th.action-links {
 	top: -1px;
 	padding: 4px 10px;
 	border-radius: 30px;
-	background: #72777c;
+	background: $wp-gray-50;
 	color: $wp-white;
 	font-size: 14px;
 	font-weight: 600;
@@ -996,7 +996,7 @@ th.action-links {
 .wp-filter .drawer-toggle:before {
 	content: "\f111";
 	margin: 0 5px 0 0;
-	color: #72777c;
+	color: $wp-gray-50;
 	font: normal 16px/1 dashicons;
 	vertical-align: text-bottom;
 	-webkit-font-smoothing: antialiased;
@@ -1051,7 +1051,7 @@ th.action-links {
 
 .show-filters .wp-filter .button.drawer-toggle {
 	border-radius: 2px;
-	background: #72777c;
+	background: $wp-gray-50;
 	color: $wp-white;
 }
 
@@ -1306,7 +1306,7 @@ div.error p,
 	margin: 0;
 	padding: 9px;
 	background: none;
-	color: #72777c;
+	color: $wp-gray-50;
 	cursor: pointer;
 }
 
@@ -1582,7 +1582,7 @@ form.upgrade .hint {
 	padding: 3px 6px 3px 16px;
 	background: $wp-white;
 	border-radius: 0;
-	color: #72777c;
+	color: $wp-gray-50;
 	line-height: 1.7;
 	box-shadow: none;
 }
@@ -1615,7 +1615,7 @@ form.upgrade .hint {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-decoration: none !important;
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 #screen-meta-links .screen-meta-active:after {
@@ -2932,7 +2932,7 @@ img {
 .bulk-action-notice .toggle-indicator:before {
 	line-height: 16px;
 	vertical-align: top;
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 .js .postbox .handlediv:focus {
@@ -3244,7 +3244,7 @@ img {
 .item-edit,
 .toggle-indicator,
 .accordion-section-title:after {
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 .widget-action {
@@ -5599,7 +5599,7 @@ ul#adminmenu > li.current > a.current:after {
 	min-width: 24px;
 	height: 2em;
 	border-radius: 5px;
-	background-color: #72777c;
+	background-color: $wp-gray-50;
 	color: $wp-white;
 	font-size: 11px;
 	line-height: 21px;
@@ -5622,7 +5622,7 @@ ul#adminmenu > li.current > a.current:after {
 	margin-left: 8px;
 	width: 0;
 	height: 0;
-	border-top: 5px solid #72777c;
+	border-top: 5px solid $wp-gray-50;
 	border-right: 5px solid transparent;
 }
 
@@ -7748,7 +7748,7 @@ div.action-links,
 }
 
 #titlediv #title-prompt-text {
-	color: #72777c;
+	color: $wp-gray-50;
 	position: absolute;
 	font-size: 1.7em;
 	padding: 11px 10px;
@@ -8719,7 +8719,7 @@ p.popular-tags a {
 	content: "(" attr( href ) ")";
 	display: inline-block;
 	padding: 0 4px;
-	color: #72777C;
+	color: $wp-gray-50;
 	font-size: 13px;
 	word-break: break-all;
 }
@@ -8846,7 +8846,7 @@ table.links-table {
 }
 
 .revisions-controls .author-card .date {
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 .revisions-controls .author-card.autosave {
@@ -9220,7 +9220,7 @@ border color while dragging a file over the uploader drop area */
 	content: "\f153";
 	display: block;
 	font: normal 16px/1 dashicons;
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 .upload-php .mode-grid .media-sidebar .media-uploader-status .upload-dismiss-errors:focus:before,
@@ -9305,7 +9305,7 @@ border color while dragging a file over the uploader drop area */
 .edit-attachment-frame .edit-media-header .left,
 .edit-attachment-frame .edit-media-header .right {
 	cursor: pointer;
-	color: #72777c;
+	color: $wp-gray-50;
 	background-color: transparent;
 	height: 50px;
 	width: 50px;
@@ -9623,7 +9623,7 @@ border color while dragging a file over the uploader drop area */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	line-height: 16px;
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 .imgedit-menu .button:before {
@@ -9635,7 +9635,7 @@ border color while dragging a file over the uploader drop area */
 .imgedit-menu .button.disabled {
 	border-color: $wp-gray-10;
 	background-color: $wp-gray-5;
-	color: #72777c;
+	color: $wp-gray-50;
 	filter: alpha(opacity=50);
 	opacity: 0.5;
 	cursor: default;
@@ -9952,7 +9952,7 @@ audio, video {
 
 .theme-overlay .theme-header .close:before {
 	font: normal 22px/50px dashicons !important;
-	color: #72777c;
+	color: $wp-gray-50;
 	display: inline-block;
 	content: "\f335";
 	font-weight: 300;
@@ -9962,7 +9962,7 @@ audio, video {
 .theme-overlay .theme-header .right,
 .theme-overlay .theme-header .left {
 	cursor: pointer;
-	color: #72777c;
+	color: $wp-gray-50;
 	background-color: transparent;
 	height: 48px;
 	width: 54px;
@@ -10111,7 +10111,7 @@ audio, video {
 }
 
 .theme-overlay .theme-version {
-	color: #72777c;
+	color: $wp-gray-50;
 	font-size: 13px;
 	font-weight: 400;
 	float: none;
@@ -10121,7 +10121,7 @@ audio, video {
 
 .theme-overlay .theme-author {
 	margin: 15px 0 25px;
-	color: #72777c;
+	color: $wp-gray-50;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: inherit;
@@ -10220,7 +10220,7 @@ p.no-themes-local {
 .theme-details .num-ratings,
 .theme-details .no-rating {
 	font-size: 11px;
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 /*------------------------------------------------------------------------------
@@ -10777,7 +10777,7 @@ body.full-overlay-active {
 
 .theme-details .theme-description {
 	float: left;
-	color: #72777c;
+	color: $wp-gray-50;
 	line-height: 1.6;
 	max-width: 100%;
 }
@@ -10883,7 +10883,7 @@ body.full-overlay-active {
 }
 
 .theme-location-set {
-	color: #72777c;
+	color: $wp-gray-50;
 	font-size: 11px;
 }
 
@@ -10937,7 +10937,7 @@ body.full-overlay-active {
 }
 
 .menu-item-handle .menu-item-title.no-title {
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 /* Menu item controls */
@@ -10989,7 +10989,7 @@ body.full-overlay-active {
 	margin: 0 0 15px;
 	padding: 3px 5px 5px;
 	border: 1px solid $wp-gray-5;
-	color: #72777c;
+	color: $wp-gray-50;
 	font-size: 12px;
 	font-style: italic;
 }
@@ -11106,7 +11106,7 @@ body.full-overlay-active {
 	padding: 0 0 15px;
 	margin: 0;
 	font-style: normal;
-	color: #72777c;
+	color: $wp-gray-50;
 }
 
 .widget-holder .description,
@@ -11116,7 +11116,7 @@ body.full-overlay-active {
 
 /* Dragging a widget over a closed sidebar */
 #widgets-right .widgets-holder-wrap.widget-hover {
-	border-color: #72777c;
+	border-color: $wp-gray-50;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
