@@ -159,7 +159,7 @@ a:active {
 a:focus,
 a:focus .media-icon img,
 .wp-person a:focus .gravatar {
-	color: #124964;
+	color: $wp-blue-70;
 	box-shadow:
 		0 0 0 1px #5b9dd9,
 		0 0 2px 1px rgba(30, 140, 190, 0.8);
@@ -530,7 +530,7 @@ code {
 
 /* lower specificity: color needs to be overridden by :hover and :active */
 .page-title-action:focus {
-	color: #124964;
+	color: $wp-blue-70;
 }
 
 .wrap .page-title-action:focus {
@@ -3037,7 +3037,7 @@ img {
 	outline: 0;
 }
 [role="treeitem"] .folder-label.focus {
-	color: #124964;
+	color: $wp-blue-70;
 	box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 [role="treeitem"].hover,
