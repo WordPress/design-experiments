@@ -1823,7 +1823,7 @@ html.wp-toolbar {
 }
 
 .metabox-holder .postbox-container .empty-container {
-  border: 3px dashed #b4b9be;
+  border: 3px dashed #c3c4c7;
   height: 250px;
   position: relative;
 }
@@ -1905,7 +1905,7 @@ html.wp-toolbar {
 }
 
 .sortable-placeholder {
-  border: 1px dashed #b4b9be;
+  border: 1px dashed #c3c4c7;
   margin-bottom: 20px;
 }
 
@@ -6212,7 +6212,7 @@ th.asc a:focus span.sorting-indicator {
 }
 
 .view-switch a:before {
-  color: #b4b9be;
+  color: #c3c4c7;
   display: inline-block;
   font: normal 20px/1 dashicons;
   speak: none;
@@ -6223,7 +6223,7 @@ th.asc a:focus span.sorting-indicator {
 
 .view-switch a:hover:before,
 .view-switch a:focus:before {
-  color: #727272;
+  color: #646970;
 }
 
 .view-switch a.current:before {
@@ -6748,7 +6748,7 @@ ul.cat-checklist {
   background-color: #f6f7f7;
   box-shadow: inset 0 0 10px rgba(160, 165, 170, 0.15);
   font-size: 60px;
-  color: #B4B9BE;
+  color: #c3c4c7;
 }
 
 #update-themes-table .plugin-title img,
@@ -8955,7 +8955,7 @@ form.upgrade .hint {
 }
 
 .drag-drop #drag-drop-area {
-  border: 4px dashed #b4b9be;
+  border: 4px dashed #c3c4c7;
   height: 200px;
 }
 
@@ -9078,7 +9078,7 @@ border color while dragging a file over the uploader drop area */
   bottom: auto;
   padding-top: 0;
   margin-top: 20px;
-  border: 4px dashed #b4b9be;
+  border: 4px dashed #c3c4c7;
 }
 
 .media-frame.mode-select .attachments-browser.fixed .attachments {
@@ -10325,7 +10325,7 @@ body.full-overlay-active {
 .theme-install-overlay .previous-theme.disabled:focus,
 .theme-install-overlay .next-theme.disabled:hover,
 .theme-install-overlay .next-theme.disabled:focus {
-  color: #b4b9be;
+  color: #c3c4c7;
   background: #f6f7f7;
   cursor: default;
   pointer-events: none;
@@ -10819,7 +10819,7 @@ body.full-overlay-active {
 
 .media-widget-control .attachment-media-view .button-add-media,
 .media-widget-control .placeholder {
-  border: 1px dashed #b4b9be;
+  border: 1px dashed #c3c4c7;
   box-sizing: border-box;
   cursor: pointer;
   line-height: 1.6;
@@ -10890,7 +10890,7 @@ body.full-overlay-active {
 }
 
 .widget-placeholder {
-  border: 1px dashed #b4b9be;
+  border: 1px dashed #c3c4c7;
   margin: 0 auto 10px;
   height: 45px;
   width: 100%;
