@@ -1295,7 +1295,7 @@ div.updated {
 }
 
 .notice-warning {
-  border-left-color: #ffb900;
+  border-left-color: #dbae17;
 }
 
 .notice-warning.notice-alt {
@@ -2339,7 +2339,7 @@ div.star-holder .star-rating {
   vertical-align: top;
   transition: color .1s ease-in;
   text-align: center;
-  color: #ffb900;
+  color: #dbae17;
 }
 
 .star-rating .star-full:before {
@@ -5483,7 +5483,7 @@ ul#adminmenu > li.current > a.current:after {
 
 /* PHP Nag */
 #dashboard_php_nag .dashicons-warning {
-  color: #ffb900;
+  color: #dbae17;
   padding-right: 6px;
 }
 
@@ -11028,7 +11028,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .site-health-progress svg #bar.orange {
-  stroke: #ffb900;
+  stroke: #dbae17;
 }
 
 @keyframes loadingPulse {
@@ -11062,7 +11062,7 @@ div#widgets-right .widget-top:hover,
 
 .health-check-body .warning::before {
   content: "\f460";
-  color: #ffb900;
+  color: #dbae17;
 }
 
 .health-check-body .info::before {
@@ -11151,7 +11151,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-accordion-trigger .badge.orange {
-  border: 1px solid #ffb900;
+  border: 1px solid #dbae17;
 }
 
 .health-check-accordion-trigger .badge.red {
