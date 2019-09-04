@@ -7158,7 +7158,7 @@ div.action-links,
 
 .plugin-card .column-compatibility .compatibility-compatible:before {
 	content: "\f147";
-	color: #31843f;
+	color: $wp-green-30;
 }
 
 .plugin-card .notice {
@@ -11326,7 +11326,7 @@ div#widgets-right .widget-top:hover,
 
 .site-health-copy-buttons .success {
 	display: none;
-	color: #40860a;
+	color: $wp-green-30;
 	line-height: 1.8;
 	margin-left: 0.5rem;
 }

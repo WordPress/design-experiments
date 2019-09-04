@@ -7059,7 +7059,7 @@ div.action-links,
 
 .plugin-card .column-compatibility .compatibility-compatible:before {
   content: "\f147";
-  color: #31843f;
+  color: #00ba37;
 }
 
 .plugin-card .notice {
@@ -11078,7 +11078,7 @@ div#widgets-right .widget-top:hover,
 
 .site-health-copy-buttons .success {
   display: none;
-  color: #40860a;
+  color: #00ba37;
   line-height: 1.8;
   margin-left: 0.5rem;
 }
