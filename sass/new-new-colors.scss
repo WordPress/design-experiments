@@ -609,7 +609,7 @@ ul.striped > :nth-child(odd),
 }
 
 .wp-ui-text-icon {
-	color: #82878c; /* same as new icons */
+	color: $wp-gray-40; /* same as new icons */
 }
 
 /* For emoji replacement images */
@@ -3626,7 +3626,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label:before {
-	color: #82878c;
+	color: $wp-gray-40;
 }
 
 .wp-core-ui input[type="reset"]:hover,
@@ -4780,7 +4780,7 @@ table.form-table td .updated p {
 /* New Menu icons */
 
 .icon16:before {
-	color: #82878c; /* same as new icons */
+	color: $wp-gray-40; /* same as new icons */
 	font: normal 20px/1 dashicons;
 	speak: none;
 	padding: 6px 0;
@@ -5209,7 +5209,7 @@ ul#adminmenu > li.current > a.current:after {
 .welcome-panel .welcome-icon:before,
 #dashboard_right_now li a:before,
 #dashboard_right_now li span:before {
-	color: #82878c;
+	color: $wp-gray-40;
 	font: normal 20px/1 dashicons;
 	speak: none;
 	display: inline-block;
@@ -5254,7 +5254,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 .event-icon:before {
-	color: #82878C;
+	color: $wp-gray-40;
 	font-size: 18px;
 }
 
@@ -6088,7 +6088,7 @@ tr.wp-locked .locked-indicator {
 }
 
 tr.wp-locked .locked-indicator-icon:before {
-	color: #82878c;
+	color: $wp-gray-40;
 	content: "\f160";
 	display: inline-block;
 	font: normal 20px/1 dashicons;
@@ -8062,7 +8062,7 @@ form#tags-filter {
 .curtime #timestamp:before,
 #post-body .misc-pub-revisions:before,
 span.wp-media-buttons-icon:before {
-	color: #82878c;
+	color: $wp-gray-40;
 }
 
 #post-body .misc-pub-post-status:before,
@@ -10141,7 +10141,7 @@ audio, video {
 
 .theme-overlay .theme-tags {
 	border-top: 3px solid $wp-gray-0;
-	color: #82878c;
+	color: $wp-gray-40;
 	font-size: 13px;
 	font-weight: 400;
 	margin: 30px 0 0 0;

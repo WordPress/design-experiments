@@ -574,7 +574,7 @@ ul.striped > :nth-child(odd),
 }
 
 .wp-ui-text-icon {
-  color: #82878c;
+  color: #787c82;
   /* same as new icons */
 }
 
@@ -3603,7 +3603,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label:before {
-  color: #82878c;
+  color: #787c82;
 }
 
 .wp-core-ui input[type="reset"]:hover,
@@ -4746,7 +4746,7 @@ table.form-table td .updated p {
 
 /* New Menu icons */
 .icon16:before {
-  color: #82878c;
+  color: #787c82;
   /* same as new icons */
   font: normal 20px/1 dashicons;
   speak: none;
@@ -5168,7 +5168,7 @@ ul#adminmenu > li.current > a.current:after {
 .welcome-panel .welcome-icon:before,
 #dashboard_right_now li a:before,
 #dashboard_right_now li span:before {
-  color: #82878c;
+  color: #787c82;
   font: normal 20px/1 dashicons;
   speak: none;
   display: inline-block;
@@ -5213,7 +5213,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 .event-icon:before {
-  color: #82878C;
+  color: #787c82;
   font-size: 18px;
 }
 
@@ -6036,7 +6036,7 @@ tr.wp-locked .locked-indicator {
 }
 
 tr.wp-locked .locked-indicator-icon:before {
-  color: #82878c;
+  color: #787c82;
   content: "\f160";
   display: inline-block;
   font: normal 20px/1 dashicons;
@@ -7914,7 +7914,7 @@ form#tags-filter {
 .curtime #timestamp:before,
 #post-body .misc-pub-revisions:before,
 span.wp-media-buttons-icon:before {
-  color: #82878c;
+  color: #787c82;
 }
 
 #post-body .misc-pub-post-status:before,
@@ -9962,7 +9962,7 @@ audio, video {
 
 .theme-overlay .theme-tags {
   border-top: 3px solid #f6f7f7;
-  color: #82878c;
+  color: #787c82;
   font-size: 13px;
   font-weight: 400;
   margin: 30px 0 0 0;
