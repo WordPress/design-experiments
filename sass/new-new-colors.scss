@@ -586,10 +586,10 @@ ul.striped > :nth-child(odd),
 
 .wp-ui-primary {
 	color: $wp-white;
-	background-color: #32373c;
+	background-color: $wp-gray-80;
 }
 .wp-ui-text-primary {
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 .wp-ui-highlight {
@@ -1590,7 +1590,7 @@ form.upgrade .hint {
 #screen-meta-links .show-settings:hover,
 #screen-meta-links .show-settings:active,
 #screen-meta-links .show-settings:focus {
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 #screen-meta-links .show-settings:focus {
@@ -1764,7 +1764,7 @@ form.upgrade .hint {
 }
 
 .contextual-help-tabs a:hover {
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 .contextual-help-tabs .active {
@@ -1777,7 +1777,7 @@ form.upgrade .hint {
 
 .contextual-help-tabs .active a {
 	border-color: $wp-gray-5;
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 .contextual-help-tabs-wrap {
@@ -1831,7 +1831,7 @@ html.wp-toolbar {
 .widefat thead tr td,
 .widefat tfoot tr th,
 .widefat tfoot tr td {
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 .widefat td p {
@@ -1841,7 +1841,7 @@ html.wp-toolbar {
 .widefat p,
 .widefat ol,
 .widefat ul {
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 .widefat .column-comment p {
@@ -2508,7 +2508,7 @@ div.action-links {
 	border: 1px solid $wp-gray-5;
 	border-bottom-color: $wp-white;
 	padding-top: 8px;
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 #plugin-information-tabs.with-banner a.current {
@@ -7818,7 +7818,7 @@ ul.category-tabs li,
 .wp-tab-bar .wp-tab-active a,
 #post-body ul.category-tabs li.tabs a,
 #post-body ul.add-menu-item-tabs li.tabs a {
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 .category-tabs {
@@ -10087,7 +10087,7 @@ audio, video {
 
 
 .theme-overlay .current-label {
-	background: #32373c;
+	background: $wp-gray-80;
 	color: $wp-white;
 	font-size: 11px;
 	display: inline-block;
@@ -10840,7 +10840,7 @@ body.full-overlay-active {
 .about-wrap h1 {
 	margin: 0.2em 200px 0 0;
 	padding: 0;
-	color: #32373c;
+	color: $wp-gray-80;
 	line-height: 1.2;
 	font-size: 2.8em;
 	font-weight: 400;
@@ -11030,7 +11030,7 @@ body.full-overlay-active {
 .media-widget-control .attachment-media-view .button-add-media {
 	cursor: pointer;
 	background-color: #edeff0;
-	color: #32373c;
+	color: $wp-gray-80;
 }
 
 .media-widget-control .attachment-media-view .button-add-media:hover {
@@ -11305,7 +11305,7 @@ div#widgets-right .widget-top:hover,
 .health-check-accordion-trigger {
 	background: $wp-white;
 	border: 0;
-	color: #32373c;
+	color: $wp-gray-80;
 	cursor: pointer;
 	display: flex;
 	font-weight: 400;
@@ -11347,7 +11347,7 @@ div#widgets-right .widget-top:hover,
 
 .health-check-accordion-trigger .badge {
 	padding: 0.1rem 0.5rem 0.15rem;
-	color: #32373c;
+	color: $wp-gray-80;
 	font-weight: 600;
 	margin-left: 0.5rem;
 }
