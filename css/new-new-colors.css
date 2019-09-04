@@ -1380,7 +1380,7 @@ div.error {
 .updated-message p:before,
 .installed p:before,
 .button.updated-message:before {
-  color: #79ba49;
+  color: #1ed15a;
   content: "\f147";
 }
 
@@ -4732,7 +4732,7 @@ table.form-table td .updated p {
 }
 
 .email-personal-data--sent::before {
-  color: #79ba49;
+  color: #1ed15a;
   content: "\f147";
 }
 
@@ -6853,7 +6853,7 @@ ul.cat-checklist {
 }
 
 .plugin-card .updated-message:before {
-  color: #79ba49;
+  color: #1ed15a;
   content: "\f147";
 }
 
@@ -9998,7 +9998,7 @@ audio, video {
 }
 
 .theme-browser .theme .notice-success p:before {
-  color: #79ba49;
+  color: #1ed15a;
   content: "\f147";
   display: inline-block;
   font: normal 20px/1 'dashicons';
