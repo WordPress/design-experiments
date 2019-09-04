@@ -750,7 +750,7 @@ span.required,
 #media-items a.delete-permanently:hover,
 #nav-menu-footer .menu-delete:hover,
 #delete-link a.delete:hover {
-  color: #dc3232;
+  color: #d63638;
   border: none;
 }
 
@@ -1304,7 +1304,7 @@ div.updated {
 
 .notice-error,
 div.error {
-  border-left-color: #dc3232;
+  border-left-color: #d63638;
 }
 
 .notice-error.notice-alt {
@@ -1386,7 +1386,7 @@ div.error {
 
 /* Error icon. */
 .update-message.notice-error p:before {
-  color: #dc3232;
+  color: #d63638;
   content: "\f534";
 }
 
@@ -2155,7 +2155,7 @@ table .column-rating {
 
 .attention,
 .error-message {
-  color: #dc3232;
+  color: #d63638;
   font-weight: 600;
 }
 
@@ -3755,14 +3755,14 @@ textarea[readonly] {
 .form-invalid input:focus,
 .form-invalid select,
 .form-invalid select:focus {
-  border-color: #dc3232 !important;
+  border-color: #d63638 !important;
   box-shadow: 0 0 2px rgba(204, 0, 0, 0.8);
 }
 
 .form-table .form-required.form-invalid td:after {
   content: "\f534";
   font: normal 20px/1 dashicons;
-  color: #dc3232;
+  color: #d63638;
   margin-left: -25px;
   vertical-align: middle;
 }
@@ -3775,7 +3775,7 @@ textarea[readonly] {
 .form-table .form-required.user-pass1-wrap.form-invalid .password-input-wrapper:after {
   content: "\f534";
   font: normal 20px/1 dashicons;
-  color: #dc3232;
+  color: #d63638;
   margin: 0 6px 0 -29px;
   vertical-align: middle;
 }
@@ -5488,7 +5488,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #dashboard_php_nag.php-insecure .dashicons-warning {
-  color: #df3232;
+  color: #d63638;
 }
 
 .response-links {
@@ -6812,7 +6812,7 @@ ul.cat-checklist {
 
 .plugins tr.paused .plugin-title,
 .plugins .paused .dashicons-warning {
-  color: #dc3232;
+  color: #d63638;
 }
 
 .plugins .paused .error-display p,
@@ -6823,7 +6823,7 @@ ul.cat-checklist {
 }
 
 .plugins .resume-link {
-  color: #dc3232;
+  color: #d63638;
 }
 
 .plugin-card .update-now:before {
@@ -7054,7 +7054,7 @@ div.action-links,
 
 .plugin-card .column-compatibility .compatibility-incompatible:before {
   content: "\f158";
-  color: #c62d2d;
+  color: #d63638;
 }
 
 .plugin-card .column-compatibility .compatibility-compatible:before {
@@ -7335,14 +7335,14 @@ div.action-links,
     border: none;
     border-radius: 0;
     background: none;
-    color: #bb2a2a;
+    color: #d63638;
     font-size: inherit;
     line-height: inherit;
     text-align: left;
   }
   .column-response .post-com-count-pending:hover,
   .column-comments .post-com-count-pending:hover {
-    color: #dc3232;
+    color: #d63638;
   }
   .widefat thead td.check-column,
   .widefat tfoot td.check-column {
@@ -9531,7 +9531,7 @@ border color while dragging a file over the uploader drop area */
 }
 
 span.imgedit-scale-warn {
-  color: #dc3232;
+  color: #d63638;
   font-size: 20px;
   font-style: normal;
   visibility: hidden;
@@ -10864,7 +10864,7 @@ body.full-overlay-active {
 
 .media-frame #embed-url-field.invalid,
 .media-widget-image-link > .link:invalid {
-  border: 1px solid #dc3232;
+  border: 1px solid #d63638;
 }
 
 .media-widget-preview .placeholder {
@@ -11020,7 +11020,7 @@ div#widgets-right .widget-top:hover,
 
 .site-health-progress svg #bar {
   stroke-dashoffset: 565;
-  stroke: #dc3232;
+  stroke: #d63638;
 }
 
 .site-health-progress svg #bar.green {
@@ -11073,7 +11073,7 @@ div#widgets-right .widget-top:hover,
 .health-check-body .fail::before,
 .health-check-body .error::before {
   content: "\f335";
-  color: #dc3232;
+  color: #d63638;
 }
 
 .site-health-copy-buttons .success {
@@ -11155,7 +11155,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-accordion-trigger .badge.red {
-  border: 1px solid #dc3232;
+  border: 1px solid #d63638;
 }
 
 .health-check-accordion-trigger .badge.green {
