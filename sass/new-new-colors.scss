@@ -10618,7 +10618,7 @@ body.full-overlay-active {
 /* Device/preview size toggles */
 
 .wp-full-overlay {
-	background: #191e23;
+	background: $wp-gray-90;
 }
 
 .wp-full-overlay-main {
@@ -10680,7 +10680,7 @@ body.full-overlay-active {
 }
 
 .wp-full-overlay-footer .devices button.active {
-	border-bottom-color: #191e23;
+	border-bottom-color: $wp-gray-90;
 }
 
 .wp-full-overlay-footer .devices button:hover,
@@ -10694,7 +10694,7 @@ body.full-overlay-active {
 }
 
 .wp-full-overlay-footer .devices button.active:before {
-	color: #191e23;
+	color: $wp-gray-90;
 }
 
 .wp-full-overlay-footer .devices button:hover:before,
@@ -11250,7 +11250,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-tab:focus {
-	color: #191e23;
+	color: $wp-gray-90;
 	outline: 1px solid #6c7781;
 	box-shadow: none;
 }
@@ -11325,7 +11325,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-accordion-trigger:focus {
-	color: #191e23;
+	color: $wp-gray-90;
 	border: none;
 	box-shadow: none;
 	outline-offset: -2px;
