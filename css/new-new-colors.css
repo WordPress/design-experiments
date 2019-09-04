@@ -733,7 +733,7 @@ hr {
 #media-items a.delete-permanently,
 #nav-menu-footer .menu-delete,
 #delete-link a.delete {
-  color: #a00;
+  color: #8a2424;
 }
 
 abbr.required,
@@ -4691,7 +4691,7 @@ table.form-table td .updated p {
 }
 
 .status-label.status-request-failed {
-  color: #aa0000;
+  color: #8a2424;
   font-weight: 600;
 }
 
@@ -9865,7 +9865,7 @@ audio, video {
 
 .broken-themes a.delete-theme,
 .theme-overlay .theme-actions .delete-theme {
-  color: #a00;
+  color: #8a2424;
   text-decoration: none;
   border-color: transparent;
   box-shadow: none;

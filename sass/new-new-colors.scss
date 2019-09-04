@@ -782,7 +782,7 @@ hr {
 #media-items a.delete-permanently,
 #nav-menu-footer .menu-delete,
 #delete-link a.delete {
-	color: #a00;
+	color: $wp-red-70;
 }
 
 abbr.required,
@@ -4736,7 +4736,7 @@ table.form-table td .updated p {
 }
 
 .status-label.status-request-failed {
-	color: #aa0000;
+	color: $wp-red-70;
 	font-weight: 600;
 }
 
@@ -10053,7 +10053,7 @@ audio, video {
 
 .broken-themes a.delete-theme,
 .theme-overlay .theme-actions .delete-theme {
-	color: #a00;
+	color: $wp-red-70;
 	text-decoration: none;
 	border-color: transparent;
 	box-shadow: none;
