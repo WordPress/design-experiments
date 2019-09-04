@@ -1287,7 +1287,7 @@ div.error p,
 
 .notice-success,
 div.updated {
-  border-left-color: #46b450;
+  border-left-color: #1ed15a;
 }
 
 .notice-success.notice-alt {
@@ -11024,7 +11024,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .site-health-progress svg #bar.green {
-  stroke: #46b450;
+  stroke: #1ed15a;
 }
 
 .site-health-progress svg #bar.orange {
@@ -11057,7 +11057,7 @@ div#widgets-right .widget-top:hover,
 .health-check-body .pass::before,
 .health-check-body .good::before {
   content: "\f147";
-  color: #46b450;
+  color: #1ed15a;
 }
 
 .health-check-body .warning::before {
@@ -11159,7 +11159,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-accordion-trigger .badge.green {
-  border: 1px solid #46b450;
+  border: 1px solid #1ed15a;
 }
 
 .health-check-accordion-trigger .badge.purple {

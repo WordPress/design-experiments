@@ -1369,7 +1369,7 @@ div.error p,
 
 .notice-success,
 div.updated {
-	border-left-color: #46b450;
+	border-left-color: $wp-green-20;
 }
 
 .notice-success.notice-alt {
@@ -11272,7 +11272,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .site-health-progress svg #bar.green {
-	stroke: #46b450;
+	stroke: $wp-green-20;
 }
 
 .site-health-progress svg #bar.orange {
@@ -11305,7 +11305,7 @@ div#widgets-right .widget-top:hover,
 .health-check-body .pass::before,
 .health-check-body .good::before {
 	content: "\f147";
-	color: #46b450;
+	color: $wp-green-20;
 }
 
 .health-check-body .warning::before {
@@ -11407,7 +11407,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-accordion-trigger .badge.green {
-	border: 1px solid #46b450;
+	border: 1px solid $wp-green-20;
 }
 
 .health-check-accordion-trigger .badge.purple {
