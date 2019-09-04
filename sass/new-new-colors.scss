@@ -91,7 +91,7 @@ p.popular-tags,
 .feature-filter,
 .imgedit-group,
 .comment-ays {
-	background: #fff;
+	background: $wp-white;
 }
 
 /* general */
@@ -525,7 +525,7 @@ code {
 .wrap .page-title-action:hover {
 	border-color: #008EC2;
 	background: $wp-blue-30;
-	color: #fff;
+	color: $wp-white;
 }
 
 /* lower specificity: color needs to be overridden by :hover and :active */
@@ -545,7 +545,7 @@ code {
 }
 
 .wp-dialog {
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .widgets-chooser ul,
@@ -585,7 +585,7 @@ ul.striped > :nth-child(odd),
 }
 
 .wp-ui-primary {
-	color: #fff;
+	color: $wp-white;
 	background-color: #32373c;
 }
 .wp-ui-text-primary {
@@ -593,7 +593,7 @@ ul.striped > :nth-child(odd),
 }
 
 .wp-ui-highlight {
-	color: #fff;
+	color: $wp-white;
 	background-color: #1e8cbe;
 }
 .wp-ui-text-highlight {
@@ -601,7 +601,7 @@ ul.striped > :nth-child(odd),
 }
 
 .wp-ui-notification {
-	color: #fff;
+	color: $wp-white;
 	background-color: #d54e21;
 }
 .wp-ui-text-notification {
@@ -886,7 +886,7 @@ th.action-links {
 	width: 100%;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 	border: 1px solid #e5e5e5;
-	background: #fff;
+	background: $wp-white;
 	color: #555;
 	font-size: 13px;
 }
@@ -909,7 +909,7 @@ th.action-links {
 	padding: 4px 10px;
 	border-radius: 30px;
 	background: #72777c;
-	color: #fff;
+	color: $wp-white;
 	font-size: 14px;
 	font-weight: 600;
 }
@@ -940,7 +940,7 @@ th.action-links {
 	display: inline-block;
 	margin: 0 10px;
 	padding: 15px 0;
-	border-bottom: 4px solid #fff;
+	border-bottom: 4px solid $wp-white;
 	color: #666;
 	cursor: pointer;
 }
@@ -1027,7 +1027,7 @@ th.action-links {
 }
 
 .wp-filter .drawer-toggle.current:before {
-	color: #fff;
+	color: $wp-white;
 }
 
 .filter-drawer,
@@ -1052,7 +1052,7 @@ th.action-links {
 .show-filters .wp-filter .button.drawer-toggle {
 	border-radius: 2px;
 	background: #72777c;
-	color: #fff;
+	color: $wp-white;
 }
 
 .show-filters .wp-filter .drawer-toggle:hover,
@@ -1061,7 +1061,7 @@ th.action-links {
 }
 
 .show-filters .wp-filter .drawer-toggle:before {
-	color: #fff;
+	color: $wp-white;
 }
 
 .filter-group {
@@ -1071,7 +1071,7 @@ th.action-links {
 	margin: 0 1% 0 0;
 	padding: 20px 10px 10px;
 	width: 24%;
-	background: #fff;
+	background: $wp-white;
 	border: 1px solid #e5e5e5;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
@@ -1156,7 +1156,7 @@ th.action-links {
 	padding: 4px 8px;
 	border: 1px solid #e5e5e5;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	background: #fff;
+	background: $wp-white;
 	font-size: 11px;
 }
 
@@ -1251,8 +1251,8 @@ th.action-links {
 .notice,
 div.updated,
 div.error {
-	background: #fff;
-	border-left: 4px solid #fff;
+	background: $wp-white;
+	border-left: 4px solid $wp-white;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 	margin: 5px 15px 2px;
 	padding: 1px 12px;
@@ -1444,7 +1444,7 @@ div.error {
 	font-size: 14px;
 	text-align: left;
 	margin: 25px 20px 0 2px;
-	background-color: #fff;
+	background-color: $wp-white;
 	border-left: 4px solid #ffba00;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
@@ -1497,7 +1497,7 @@ form.upgrade .hint {
 }
 
 .button-primary.updating-message:before {
-	color: #fff;
+	color: $wp-white;
 }
 
 .button-primary.updated-message:before {
@@ -1556,7 +1556,7 @@ form.upgrade .hint {
 	display: none;
 	margin: 0 20px -1px 0px;
 	position: relative;
-	background-color: #fff;
+	background-color: $wp-white;
 	border: 1px solid #ddd;
 	border-top: none;
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.025);
@@ -1580,7 +1580,7 @@ form.upgrade .hint {
 	height: auto;
 	margin-bottom: 0;
 	padding: 3px 6px 3px 16px;
-	background: #fff;
+	background: $wp-white;
 	border-radius: 0;
 	color: #72777c;
 	line-height: 1.7;
@@ -2081,7 +2081,7 @@ h3 .nav-tab, /* Back-compat for pre-4.4 */
 
 .nav-tab:hover,
 .nav-tab:focus {
-	background-color: #fff;
+	background-color: $wp-white;
 	color: #444;
 }
 
@@ -2404,7 +2404,7 @@ div.action-links {
 
 /* Plugin install thickbox */
 #plugin-information {
-	background: #fff;
+	background: $wp-white;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -2456,7 +2456,7 @@ div.action-links {
 	max-width: 100%;
 	padding: 0 15px;
 	margin-top: 174px;
-	color: #fff;
+	color: $wp-white;
 	background: rgba(30, 30, 30, 0.9);
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
@@ -2504,9 +2504,9 @@ div.action-links {
 
 #plugin-information-tabs a.current {
 	margin: 0 -1px -1px;
-	background: #fff;
+	background: $wp-white;
 	border: 1px solid #ddd;
-	border-bottom-color: #fff;
+	border-bottom-color: $wp-white;
 	padding-top: 8px;
 	color: #32373c;
 }
@@ -2523,7 +2523,7 @@ div.action-links {
 
 #plugin-information-content {
 	overflow: hidden; /* equal height column trick */
-	background: #fff;
+	background: $wp-white;
 	position: relative;
 	top: 0;
 	right: 0;
@@ -3317,7 +3317,7 @@ img {
 	display: none;
 	padding: 10px 20px 15px;
 	overflow: hidden;
-	background: #fff;
+	background: $wp-white;
 }
 
 .accordion-section-title {
@@ -3366,7 +3366,7 @@ img {
 	border-right: none;
 	padding: 10px 10px 11px 14px;
 	line-height: 1.55;
-	background: #fff;
+	background: $wp-white;
 }
 
 .control-section .accordion-section-title:after,
@@ -3414,7 +3414,7 @@ img {
 
 @media only screen and (min-width: 600px) {
 	.my-sites.striped li {
-		background-color: #fff;
+		background-color: $wp-white;
 		position: relative;
 	}
 	.my-sites.striped li:after {
@@ -3434,7 +3434,7 @@ img {
 		width: 44%;
 	}
 	.my-sites.striped li {
-		background-color: #fff;
+		background-color: $wp-white;
 	}
 	.my-sites.striped li:nth-of-type(2n+1) {
 		clear: left;
@@ -3453,7 +3453,7 @@ img {
 	.my-sites li {
 		float: left;
 		width: 27.333333%;
-		background-color: #fff;
+		background-color: $wp-white;
 	}
 	.my-sites.striped li:nth-of-type(3n+3):after {
 		content: none;
@@ -3470,7 +3470,7 @@ img {
 		float: left;
 		width: 21%;
 		padding: 8px 2%;
-		background-color: #fff;
+		background-color: $wp-white;
 	}
 	.my-sites.striped li:nth-of-type(4n+1) {
 		clear: left;
@@ -3491,7 +3491,7 @@ img {
 		float: left;
 		width: 16%;
 		padding: 8px 2%;
-		background-color: #fff;
+		background-color: $wp-white;
 	}
 	.my-sites.striped li:nth-of-type(5n+1) {
 		clear: left;
@@ -3513,7 +3513,7 @@ img {
 		float: left;
 		width: 12.666666%;
 		padding: 8px 2%;
-		background-color: #fff;
+		background-color: $wp-white;
 	}
 	.my-sites.striped li:nth-of-type(6n+1) {
 		clear: left;
@@ -3560,7 +3560,7 @@ select,
 textarea {
 	border: 1px solid $wp-gray-5;
 	box-shadow: inset 0 1px 2px $wp-gray-0;
-	background-color: #fff;
+	background-color: $wp-white;
 	color: $wp-gray-80;
 	outline: none;
 	transition: 0.05s border-color ease-in-out;
@@ -3606,7 +3606,7 @@ input[type="number"] {
 input[type="checkbox"],
 input[type="radio"] {
 	border: 1px solid $wp-gray-10;
-	background: #fff;
+	background: $wp-white;
 	color: $wp-gray-60;
 	clear: none;
 	cursor: pointer;
@@ -4132,7 +4132,7 @@ ul#add-to-blog-users {
 	z-index: 10000;
 	border: 1px solid $wp-blue-30;
 	box-shadow: 0 1px 2px rgba(30, 140, 190, 0.8);
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .ui-autocomplete li {
@@ -4151,7 +4151,7 @@ ul#add-to-blog-users {
 /* Colors for the tags autocomplete. */
 .wp-tags-autocomplete .ui-state-focus {
 	background-color: $wp-blue-40;
-	color: #fff;
+	color: $wp-white;
 }
 
 /*------------------------------------------------------------------------------
@@ -4335,7 +4335,7 @@ table.form-table td .updated p {
 	max-width: 520px;
 	border: 1px solid #e5e5e5;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	background: #fff;
+	background: $wp-white;
 	box-sizing: border-box;
 }
 
@@ -4661,12 +4661,12 @@ table.form-table td .updated p {
 
 .privacy_requests thead td:first-child,
 .privacy_requests tfoot td:first-child {
-	border-left: 4px solid #fff;
+	border-left: 4px solid $wp-white;
 }
 
 .privacy_requests tbody th {
-	border-left: 4px solid #fff;
-	background: #fff;
+	border-left: 4px solid $wp-white;
+	background: $wp-white;
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -4679,7 +4679,7 @@ table.form-table td .updated p {
 }
 
 .privacy_requests tbody td {
-	background: #fff;
+	background: $wp-white;
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -4903,7 +4903,7 @@ table.form-table td .updated p {
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
 #adminmenu .wp-menu-arrow div {
 	background: $wp-blue-40;
-	color: #fff;
+	color: $wp-white;
 }
 
 .folded #adminmenu .wp-submenu.sub-open,
@@ -4942,7 +4942,7 @@ table.form-table td .updated p {
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
 #adminmenu .wp-submenu li.current a:hover,
 #adminmenu .wp-submenu li.current a:focus {
-	color: #fff;
+	color: $wp-white;
 }
 
 #adminmenu .wp-not-current-submenu li > a,
@@ -5015,7 +5015,7 @@ div.wp-menu-image:before {
 #adminmenu a.current:hover div.wp-menu-image:before,
 #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,
 #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before {
-	color: #fff;
+	color: $wp-white;
 }
 
 #adminmenu li:hover div.wp-menu-image:before,
@@ -5111,7 +5111,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #adminmenu .wp-submenu .wp-submenu-head {
-	color: #fff;
+	color: $wp-white;
 	font-weight: 400;
 	font-size: 14px;
 	padding: 8px 4px 8px 11px;
@@ -5130,7 +5130,7 @@ ul#adminmenu > li.current > a.current:after {
 	height: 18px;
 	border-radius: 9px;
 	background-color: #ca4a1f;
-	color: #fff;
+	color: $wp-white;
 	font-size: 11px;
 	line-height: 1.6;
 	text-align: center;
@@ -5140,7 +5140,7 @@ ul#adminmenu > li.current > a.current:after {
 #adminmenu li.current a .awaiting-mod,
 #adminmenu li a.wp-has-current-submenu .update-plugins {
 	background-color: #ca4a1f;
-	color: #fff;
+	color: $wp-white;
 }
 
 #collapse-button {
@@ -5190,7 +5190,7 @@ ul#adminmenu > li.current > a.current:after {
 	padding: 23px 10px 0;
 	border: 1px solid #e5e5e5;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	background: #fff;
+	background: $wp-white;
 	font-size: 13px;
 	line-height: 2.1em;
 }
@@ -5510,24 +5510,24 @@ ul#adminmenu > li.current > a.current:after {
 	background-color: #e29808;
 	background-image: none;
 	border-color: #edc048;
-	color: #fff;
+	color: $wp-white;
 	box-shadow: none;
 }
 
 #dashboard_browser_nag.postbox.browser-insecure h2 {
 	border-bottom-color: #cd5a5a;
-	color: #fff;
+	color: $wp-white;
 }
 
 #dashboard_browser_nag.postbox h2 {
 	border-bottom-color: #f6e2ac;
 	background: transparent none;
-	color: #fff;
+	color: $wp-white;
 	box-shadow: none;
 }
 
 #dashboard_browser_nag a {
-	color: #fff;
+	color: $wp-white;
 }
 
 /* PHP Nag */
@@ -5600,7 +5600,7 @@ ul#adminmenu > li.current > a.current:after {
 	height: 2em;
 	border-radius: 5px;
 	background-color: #72777c;
-	color: #fff;
+	color: $wp-white;
 	font-size: 11px;
 	line-height: 21px;
 	text-align: center;
@@ -5648,10 +5648,10 @@ ul#adminmenu > li.current > a.current:after {
 	padding: 0 5px;
 	min-width: 7px;
 	height: 17px;
-	border: 2px solid #fff;
+	border: 2px solid $wp-white;
 	border-radius: 11px;
 	background: #ca4a1f;
-	color: #fff;
+	color: $wp-white;
 	font-size: 9px;
 	line-height: 17px;
 	text-align: center;
@@ -6602,7 +6602,7 @@ ul.cat-checklist {
 	overflow-y: scroll;
 	padding: 0 5px;
 	margin: 0;
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 #bulk-titles {
@@ -6701,7 +6701,7 @@ ul.cat-checklist {
 }
 
 .plugins tr {
-	background: #fff;
+	background: $wp-white;
 }
 
 .plugins p {
@@ -6937,7 +6937,7 @@ ul.cat-checklist {
 	margin: 0 8px 16px;
 	width: 48.5%;
 	width: calc( 50% - 8px );
-	background-color: #fff;
+	background-color: $wp-white;
 	border: 1px solid #ddd;
 	box-sizing: border-box;
 }
@@ -7744,7 +7744,7 @@ div.action-links,
 	width: 100%;
 	outline: none;
 	margin: 0 0 3px;
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 #titlediv #title-prompt-text {
@@ -7768,7 +7768,7 @@ div.action-links,
 	min-width: 255px;
 	border: 1px solid #e5e5e5;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	background: #fff;
+	background: $wp-white;
 }
 
 #trackback_url {
@@ -8119,7 +8119,7 @@ span.wp-media-buttons-icon:before {
 	left: 50%;
 	width: 450px;
 	margin-left: -225px;
-	background: #fff;
+	background: $wp-white;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 	line-height: 1.5;
 	z-index: 1000005;
@@ -8280,7 +8280,7 @@ span.wp-media-buttons-icon:before {
 .privacy-text-box-toc {
 	float: right;
 	width: 250px;
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .privacy-text-box-toc p {
@@ -8666,7 +8666,7 @@ p.popular-tags a {
 	position: absolute;
 	z-index: 10000;
 	border: 1px solid #5b9dd9;
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .wp-customizer .ac_results {
@@ -8683,7 +8683,7 @@ p.popular-tags a {
 .ac_results .ac_over,
 .ac_over .ac_match {
 	background-color: $wp-blue-50;
-	color: #fff;
+	color: $wp-white;
 	cursor: pointer;
 }
 
@@ -8817,7 +8817,7 @@ table.links-table {
 	position: fixed;
 	top: 0;
 	height: 82px;
-	background: #fff;
+	background: $wp-white;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -8828,7 +8828,7 @@ table.links-table {
 	top: 7px;
 	max-width: 70%;
 	box-sizing: border-box;
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .revisions-tickmarks > div {
@@ -8840,7 +8840,7 @@ table.links-table {
 
 .revisions-meta {
 	margin-top: 20px;
-	background-color: #fff;
+	background-color: $wp-white;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
@@ -8855,7 +8855,7 @@ table.links-table {
 
 .revisions-diff {
 	padding: 15px;
-	background-color: #fff;
+	background-color: $wp-white;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -8878,12 +8878,12 @@ table.diff .diff-addedline ins {
 .revisions-tooltip,
 .revisions-tooltip-arrow > span {
 	border: 1px solid #ddd;
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .arrow:after {
 	z-index: 9999;
-	background-color: #fff;
+	background-color: $wp-white;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -8948,7 +8948,7 @@ table.diff .diff-addedline ins {
 	margin-bottom: 1px;
 	position: relative;
 	width: 100%;
-	background: #fff;
+	background: $wp-white;
 }
 
 .media-upload-form .media-item,
@@ -8984,7 +8984,7 @@ table.diff .diff-addedline ins {
 	position: relative;
 	width: 200px;
 	padding: 0;
-	color: #fff;
+	color: $wp-white;
 	text-align: center;
 	line-height: 22px;
 	font-weight: 400;
@@ -8997,7 +8997,7 @@ table.diff .diff-addedline ins {
 ------------------------------------------------------------------------------*/
 
 .find-box {
-	background-color: #fff;
+	background-color: $wp-white;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 	width: 600px;
 	overflow: hidden;
@@ -9026,7 +9026,7 @@ table.diff .diff-addedline ins {
 .find-box-inside {
 	overflow: auto;
 	padding: 16px;
-	background-color: #fff;
+	background-color: $wp-white;
 	position: absolute;
 	top: 37px;
 	bottom: 45px;
@@ -9189,7 +9189,7 @@ border color while dragging a file over the uploader drop area */
 	padding: 0 16px;
 	border-left: 4px solid #dd3d36;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .upload-php .mode-grid .hide-sidebar .media-sidebar {
@@ -9553,7 +9553,7 @@ border color while dragging a file over the uploader drop area */
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	background: #fff;
+	background: $wp-white;
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 	display: none;
@@ -9756,7 +9756,7 @@ audio, video {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	background: #fff;
+	background: $wp-white;
 	background: rgba(255, 255, 255, 0.65);
 }
 
@@ -9772,7 +9772,7 @@ audio, video {
 
 .theme-browser .theme:hover .theme-screenshot,
 .theme-browser .theme:focus .theme-screenshot {
-	background: #fff;
+	background: $wp-white;
 }
 
 .theme-browser .theme .more-details {
@@ -9784,7 +9784,7 @@ audio, video {
 	left: 20%;
 	background: #23282d;
 	background: rgba(0, 0, 0, 0.7);
-	color: #fff;
+	color: $wp-white;
 	font-size: 15px;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
 	-webkit-font-smoothing: antialiased;
@@ -9806,7 +9806,7 @@ audio, video {
  */
 .theme-browser .theme.active .theme-name {
 	background: #23282d;
-	color: #fff;
+	color: $wp-white;
 	padding-right: 110px;
 	font-weight: 300;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -9891,14 +9891,14 @@ audio, video {
 
 .theme-browser .theme.add-new-theme a:hover span:after,
 .theme-browser .theme.add-new-theme a:focus span:after {
-	background: #fff;
+	background: $wp-white;
 	color: $wp-blue-50;
 }
 
 .theme-browser .theme.add-new-theme a:hover:after,
 .theme-browser .theme.add-new-theme a:focus:after {
 	border-color: transparent;
-	color: #fff;
+	color: $wp-white;
 	background: $wp-blue-50;
 	content: "";
 }
@@ -9906,7 +9906,7 @@ audio, video {
 
 .theme-browser .theme.add-new-theme a:hover .theme-name,
 .theme-browser .theme.add-new-theme a:focus .theme-name {
-	color: #fff;
+	color: $wp-white;
 	z-index: 2;
 }
 
@@ -10012,7 +10012,7 @@ audio, video {
 	left: 190px;
 	right: 30px;
 	bottom: 3%;
-	background: #fff;
+	background: $wp-white;
 	box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
 	z-index: 10000; /* Over WP Pointers. */
 	box-sizing: border-box;
@@ -10052,14 +10052,14 @@ audio, video {
 .theme-overlay .theme-actions .delete-theme:hover,
 .theme-overlay .theme-actions .delete-theme:focus {
 	background: #d54e21;
-	color: #fff;
+	color: $wp-white;
 	border-color: #d54e21;
 }
 
 
 /* First screenshot, shown big */
 .theme-overlay .screenshot {
-	border: 1px solid #fff;
+	border: 1px solid $wp-white;
 	box-sizing: border-box;
 	overflow: hidden;
 	position: relative;
@@ -10088,7 +10088,7 @@ audio, video {
 
 .theme-overlay .current-label {
 	background: #32373c;
-	color: #fff;
+	color: $wp-white;
 	font-size: 11px;
 	display: inline-block;
 	padding: 2px 8px;
@@ -10685,7 +10685,7 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices button:hover,
 .wp-full-overlay-footer .devices button:focus {
-	background-color: #fff;
+	background-color: $wp-white;
 }
 
 .wp-full-overlay-footer .devices button:focus,
@@ -10795,7 +10795,7 @@ body.full-overlay-active {
 }
 
 .theme-install-overlay .wp-full-overlay-sidebar-content {
-	background: #fff;
+	background: $wp-white;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
@@ -10824,7 +10824,7 @@ body.full-overlay-active {
 	background: $wp-blue-50 url(../images/w-logo-white.png?ver=20160308) no-repeat;
 	background-position: center 25px;
 	background-size: 80px 80px;
-	color: #fff;
+	color: $wp-white;
 	font-size: 14px;
 	text-align: center;
 	font-weight: 600;
@@ -10889,9 +10889,9 @@ body.full-overlay-active {
 
 .nav-menus-php #post-body {
 	padding: 0 10px;
-	border-top: 1px solid #fff;
+	border-top: 1px solid $wp-white;
 	border-bottom: 1px solid #ddd;
-	background: #fff;
+	background: $wp-white;
 }
 
 #nav-menu-header,
@@ -11136,14 +11136,14 @@ body.full-overlay-active {
 
 #widgets-left .widget-control-edit:hover,
 #widgets-right .widget-control-edit:hover {
-	color: #fff;
+	color: $wp-white;
 	background: #444;
 	border-left: 0;
 	outline: 1px solid #444;
 }
 
 .widget-inside {
-	background: #fff;
+	background: $wp-white;
 }
 
 .js #removing-widget {
@@ -11165,14 +11165,14 @@ div#widgets-right .widget-top:hover,
 
 .widgets-chooser li {
 	border-bottom: 1px solid #ccc;
-	background: #fff;
+	background: $wp-white;
 	margin: 0;
 	position: relative;
 }
 
 .widgets-chooser .widgets-chooser-selected .widgets-chooser-button {
 	background: $wp-blue-50;
-	color: #fff;
+	color: $wp-white;
 }
 
 .widgets-chooser .widgets-chooser-selected:before {
@@ -11180,7 +11180,7 @@ div#widgets-right .widget-top:hover,
 	display: block;
 	-webkit-font-smoothing: antialiased;
 	font: normal 26px/1 dashicons;
-	color: #fff;
+	color: $wp-white;
 	position: absolute;
 	top: 7px;
 	left: 5px;
@@ -11207,7 +11207,7 @@ div#widgets-right .widget-top:hover,
 .health-check-header {
 	text-align: center;
 	margin: 0 0 1rem;
-	background: #fff;
+	background: $wp-white;
 	border-bottom: 1px solid #e2e4e7;
 }
 
@@ -11303,7 +11303,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-accordion-trigger {
-	background: #fff;
+	background: $wp-white;
 	border: 0;
 	color: #32373c;
 	cursor: pointer;
@@ -11379,5 +11379,5 @@ div#widgets-right .widget-top:hover,
 .health-check-accordion-panel {
 	margin: 0;
 	padding: 1em 1.5em;
-	background: #fff;
+	background: $wp-white;
 }
