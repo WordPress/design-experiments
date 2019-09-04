@@ -10353,7 +10353,7 @@ body.full-overlay-active {
   left: 0;
   padding: 9px 0 9px 10px;
   height: 45px;
-  color: #656a6f;
+  color: #646970;
   outline: 0;
   line-height: 1;
   background-color: transparent !important;
@@ -10488,7 +10488,7 @@ body.full-overlay-active {
   vertical-align: top;
   margin: 3px 0;
   padding: 4px 8px;
-  color: #656a6f;
+  color: #646970;
 }
 
 .wp-full-overlay-footer .devices button.active {
