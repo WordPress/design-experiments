@@ -40,7 +40,7 @@ p.popular-tags,
 .feature-filter,
 .imgedit-group,
 .comment-ays {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
 
@@ -849,7 +849,7 @@ th.action-links {
   padding: 0 10px;
   width: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   background: #ffffff;
   color: #555;
   font-size: 13px;
@@ -1036,7 +1036,7 @@ th.action-links {
   padding: 20px 10px 10px;
   width: 24%;
   background: #ffffff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
 
@@ -1118,7 +1118,7 @@ th.action-links {
 .filtered-by .tag {
   margin: 0 5px;
   padding: 4px 8px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
   background: #ffffff;
   font-size: 11px;
@@ -2021,7 +2021,7 @@ html.wp-toolbar {
   font-size: 14px;
   line-height: 1.71428571;
   font-weight: 600;
-  background: #e5e5e5;
+  background: #dcdcde;
   color: #555;
   text-decoration: none;
   white-space: nowrap;
@@ -2183,7 +2183,7 @@ body.iframe {
 }
 
 .media-icon img {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
@@ -2580,7 +2580,7 @@ div.action-links {
 #plugin-information .counter-back {
   height: 17px;
   width: 92px;
-  background-color: #e5e5e5;
+  background-color: #dcdcde;
   float: left;
 }
 
@@ -2686,7 +2686,7 @@ div.action-links {
   /* clearfix */
   width: 100%;
   margin-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #dcdcde;
 }
 
 #plugin-information .review-title-section {
@@ -4306,7 +4306,7 @@ table.form-table td .updated p {
   padding: 0.7em 2em 1em;
   min-width: 255px;
   max-width: 520px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
   background: #ffffff;
   box-sizing: border-box;
@@ -4341,7 +4341,7 @@ table.form-table td .updated p {
   position: relative;
   cursor: move;
   color: #2c3338;
-  background: #e5e5e5;
+  background: #dcdcde;
   border-radius: 5px;
   border: 1px solid #c3c4c7;
   font-style: normal;
@@ -5148,7 +5148,7 @@ ul#adminmenu > li.current > a.current:after {
   overflow: auto;
   margin: 16px 0;
   padding: 23px 10px 0;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
   background: #ffffff;
   font-size: 13px;
@@ -7618,7 +7618,7 @@ div.action-links,
 .postbox {
   position: relative;
   min-width: 255px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
   background: #ffffff;
 }
@@ -7774,7 +7774,7 @@ form#tags-filter {
 #post-status-info {
   width: 100%;
   border-spacing: 0;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   border-top: none;
   background-color: #f7f7f7;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
@@ -7825,7 +7825,7 @@ form#tags-filter {
 
 .wp-editor-expand #wp-content-editor-tools {
   z-index: 1000;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #dcdcde;
 }
 
 .wp-editor-expand #wp-content-editor-container {
@@ -7842,7 +7842,7 @@ form#tags-filter {
 }
 
 .wp-editor-expand #post-status-info {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #dcdcde;
 }
 
 .wp-editor-expand div.mce-toolbar-grp {
@@ -9693,7 +9693,7 @@ audio, video {
 }
 
 .theme-browser .theme.add-new-theme span:after {
-  background: #e5e5e5;
+  background: #dcdcde;
   background: rgba(153, 153, 153, 0.1);
   border-radius: 50%;
   display: inline-block;
@@ -10010,7 +10010,7 @@ audio, video {
 .upload-theme .wp-upload-form,
 .upload-plugin .wp-upload-form {
   background: #fafafa;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   padding: 30px;
   margin: 30px auto;
   max-width: 380px;
@@ -10784,7 +10784,7 @@ body.full-overlay-active {
   position: relative;
   z-index: 10;
   /* Keep .item-title's shadow from appearing on top of .menu-item-settings */
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
   border-top: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
@@ -10986,7 +10986,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .custom-html-widget-fields > p > .CodeMirror {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dcdcde;
 }
 
 .site-icon-preview .app-icon-preview {
