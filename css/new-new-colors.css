@@ -122,13 +122,13 @@ a:focus,
 a:focus .media-icon img,
 .wp-person a:focus .gravatar {
   color: #0a4b78;
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 1px solid transparent;
 }
 
 .ie8 a:focus {
-  outline: #5b9dd9 solid 1px;
+  outline: #5198d9 solid 1px;
 }
 
 #adminmenu a:focus {
@@ -497,7 +497,7 @@ code {
 }
 
 .wrap .page-title-action:focus {
-  border-color: #5b9dd9;
+  border-color: #5198d9;
   box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
@@ -682,7 +682,7 @@ img.emoji {
 }
 
 .tagchecklist .ntdelbutton:focus .remove-tag-icon:before {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 .key-labels label {
@@ -981,7 +981,7 @@ th.action-links {
 }
 
 .wp-filter .button.drawer-toggle:focus {
-  border-color: #5b9dd9;
+  border-color: #5198d9;
 }
 
 .wp-filter .button.drawer-toggle:active {
@@ -1278,11 +1278,11 @@ div.error p,
 
 .notice-dismiss:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 .ie8 .notice-dismiss:focus {
-  outline: 1px solid #5b9dd9;
+  outline: 1px solid #5198d9;
 }
 
 .notice-success,
@@ -1553,7 +1553,7 @@ form.upgrade .hint {
 }
 
 #screen-meta-links .show-settings:focus {
-  border-color: #5b9dd9;
+  border-color: #5198d9;
   box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
 }
 
@@ -2907,7 +2907,7 @@ img {
 }
 
 .js .postbox .handlediv:focus .toggle-indicator:before {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 /* @todo: appears to be Press This only and overridden */
@@ -3008,7 +3008,7 @@ img {
 
 [role="treeitem"] .folder-label.focus {
   color: #0a4b78;
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 [role="treeitem"].hover,
@@ -3246,7 +3246,7 @@ img {
 }
 
 .widget-top .widget-action:focus .toggle-indicator:before {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 .control-section .accordion-section-title:after,
@@ -5997,11 +5997,11 @@ th.asc a:focus span.sorting-indicator:before {
 }
 
 .wp-list-table .toggle-row:focus:before {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 .ie8 .wp-list-table .toggle-row:focus:before {
-  outline: #5b9dd9 solid 1px;
+  outline: #5198d9 solid 1px;
 }
 
 .wp-list-table .toggle-row:active {
@@ -8513,7 +8513,7 @@ p.popular-tags a {
   list-style: none;
   position: absolute;
   z-index: 10000;
-  border: 1px solid #5b9dd9;
+  border: 1px solid #5198d9;
   background-color: #ffffff;
 }
 
@@ -8895,7 +8895,7 @@ table.diff .diff-addedline ins {
 }
 
 #find-posts-close:focus {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
   outline-offset: -2px;
@@ -9092,7 +9092,7 @@ border color while dragging a file over the uploader drop area */
 .media-frame.mode-grid .attachment:focus,
 .media-frame.mode-grid .selected.attachment:focus,
 .media-frame.mode-grid .attachment.details:focus {
-  box-shadow: inset 0 0 2px 3px #f6f7f7, inset 0 0 0 7px #5b9dd9;
+  box-shadow: inset 0 0 2px 3px #f6f7f7, inset 0 0 0 7px #5198d9;
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
   outline-offset: -6px;
@@ -9524,7 +9524,7 @@ border color while dragging a file over the uploader drop area */
 
 .image-editor .imgedit-settings .imgedit-help-toggle:focus {
   color: #2271b1;
-  border-color: #5b9dd9;
+  border-color: #5198d9;
   box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
@@ -9625,7 +9625,7 @@ audio, video {
 }
 
 .theme-browser .theme:focus {
-  border-color: #5b9dd9;
+  border-color: #5198d9;
   box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
 }
 
@@ -10075,7 +10075,7 @@ div#custom-background-image img {
 }
 
 .background-position-control input[type="radio"]:focus ~ .button {
-  border-color: #5b9dd9;
+  border-color: #5198d9;
   box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 3px rgba(0, 115, 170, 0.8);
   color: #1d2327;
 }
@@ -10385,7 +10385,7 @@ body.full-overlay-active {
 
 .wp-full-overlay .collapse-sidebar:hover .collapse-sidebar-arrow,
 .wp-full-overlay .collapse-sidebar:focus .collapse-sidebar-arrow {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 .wp-full-overlay .collapse-sidebar-label {
@@ -10769,7 +10769,7 @@ body.full-overlay-active {
 }
 
 .nav-menus-php .item-edit:focus:before {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 /* Menu editing */
@@ -10842,7 +10842,7 @@ body.full-overlay-active {
 .media-widget-control .attachment-media-view .button-add-media:focus {
   background-color: #fbfbfc;
   border-style: solid;
-  border-color: #5b9dd9;
+  border-color: #5198d9;
   box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
@@ -10898,7 +10898,7 @@ body.full-overlay-active {
 }
 
 .sidebar-name .handlediv:focus .toggle-indicator:before {
-  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
 }
 
 .widgets-holder-wrap .description {
