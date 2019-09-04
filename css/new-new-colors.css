@@ -678,7 +678,7 @@ img.emoji {
 .tagchecklist .ntdelbutton:focus .remove-tag-icon:before,
 #bulk-titles div a:hover:before,
 #bulk-titles div a:focus:before {
-  color: #c00;
+  color: #d63638;
 }
 
 .tagchecklist .ntdelbutton:focus .remove-tag-icon:before {
@@ -1273,7 +1273,7 @@ div.error p,
 .notice-dismiss:hover:before,
 .notice-dismiss:active:before,
 .notice-dismiss:focus:before {
-  color: #c00;
+  color: #d63638;
 }
 
 .notice-dismiss:focus {
@@ -9062,7 +9062,7 @@ border color while dragging a file over the uploader drop area */
 
 .upload-php .mode-grid .media-sidebar .media-uploader-status .upload-dismiss-errors:focus:before,
 .upload-php .mode-grid .media-sidebar .media-uploader-status .upload-dismiss-errors:hover:before {
-  color: #c00;
+  color: #d63638;
 }
 
 .upload-php .mode-grid .media-sidebar .media-uploader-status.errors h3,
