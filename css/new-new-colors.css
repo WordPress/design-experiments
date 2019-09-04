@@ -9514,7 +9514,7 @@ border color while dragging a file over the uploader drop area */
   margin: -1px 0 0 -1px;
   padding: 0;
   background: transparent;
-  color: #0074a2;
+  color: #2271b1;
   font-size: 20px;
   line-height: 1;
   cursor: pointer;
@@ -9523,7 +9523,7 @@ border color while dragging a file over the uploader drop area */
 }
 
 .image-editor .imgedit-settings .imgedit-help-toggle:focus {
-  color: #0074a2;
+  color: #2271b1;
   border-color: #5b9dd9;
   box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
   /* Only visible in Windows High Contrast mode */
