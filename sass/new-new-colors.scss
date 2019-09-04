@@ -372,12 +372,12 @@ code {
 
 .widefat thead th,
 .widefat thead td {
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid $wp-gray-5;
 }
 
 .widefat tfoot th,
 .widefat tfoot td {
-	border-top: 1px solid #e1e1e1;
+	border-top: 1px solid $wp-gray-5;
 	border-bottom: none;
 }
 
@@ -506,7 +506,7 @@ code {
 	top: -3px;
 	text-decoration: none;
 	border: none;
-	border: 1px solid #ccc;
+	border: 1px solid $wp-gray-10;
 	border-radius: 2px;
 	background: #f7f7f7;
 	text-shadow: none;
@@ -655,12 +655,12 @@ img.emoji {
 
 .postbox .hndle,
 .stuffbox .hndle {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $wp-gray-0;
 }
 
 .quicktags,
 .search {
-	background-color: #ccc;
+	background-color: $wp-gray-10;
 	color: $wp-black;
 	font-size: 12px;
 }
@@ -753,7 +753,7 @@ p.install-help {
 
 hr {
 	border: 0;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $wp-gray-5;
 	border-bottom: 1px solid #fafafa;
 }
 
@@ -796,7 +796,7 @@ span.required,
 #major-publishing-actions {
 	padding: 10px;
 	clear: both;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $wp-gray-5;
 	background: #f5f5f5;
 }
 
@@ -1035,7 +1035,7 @@ th.action-links {
 	display: none;
 	margin: 0 -10px 0 -20px;
 	padding: 20px;
-	border-top: 1px solid #eee;
+	border-top: 1px solid $wp-gray-0;
 	background: #fafafa;
 	overflow: hidden;
 }
@@ -1194,7 +1194,7 @@ th.action-links {
 
 @media only screen and (max-width: 1120px) {
 	.filter-drawer {
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid $wp-gray-0;
 	}
 
 	.filter-group {
@@ -1557,7 +1557,7 @@ form.upgrade .hint {
 	margin: 0 20px -1px 0px;
 	position: relative;
 	background-color: $wp-white;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	border-top: none;
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.025);
 }
@@ -1574,9 +1574,9 @@ form.upgrade .hint {
 }
 
 #screen-meta-links .show-settings {
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	border-top: none;
-	border-bottom-color: #ccc;
+	border-bottom-color: $wp-gray-10;
 	height: auto;
 	margin-bottom: 0;
 	padding: 3px 6px 3px 16px;
@@ -1723,7 +1723,7 @@ form.upgrade .hint {
 	bottom: 0;
 	left: 150px;
 	right: 170px;
-	border: 1px solid #e1e1e1;
+	border: 1px solid $wp-gray-5;
 	border-top: none;
 	border-bottom: none;
 	background: #f6fbfd;
@@ -1776,7 +1776,7 @@ form.upgrade .hint {
 }
 
 .contextual-help-tabs .active a {
-	border-color: #e1e1e1;
+	border-color: $wp-gray-5;
 	color: #32373c;
 }
 
@@ -1883,7 +1883,7 @@ html.wp-toolbar {
 	height: 1em;
 	width: 200px;
 	text-align: center;
-	color: #ccc;
+	color: $wp-gray-10;
 	font-size: 18px;
 	display: none;
 }
@@ -2006,7 +2006,7 @@ html.wp-toolbar {
 }
 
 .temp-border {
-	border: 1px dotted #ccc;
+	border: 1px dotted $wp-gray-10;
 }
 
 .columns-prefs label {
@@ -2059,7 +2059,7 @@ html.wp-toolbar {
 
 .nav-tab {
 	float: left;
-	border: 1px solid #ccc;
+	border: 1px solid $wp-gray-10;
 	border-bottom: none;
 	margin-left: 0.5em; /* half the font size so set the font size properly */
 	padding: 5px 10px;
@@ -2107,7 +2107,7 @@ h3 .nav-tab, /* Back-compat for pre-4.4 */
 h1.nav-tab-wrapper, /* Back-compat for pre-4.4 */
 .wrap h2.nav-tab-wrapper, /* higher specificity to override .wrap > h2:first-child */
 .nav-tab-wrapper {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid $wp-gray-10;
 	margin: 0;
 	padding-top: 9px;
 	padding-bottom: 0;
@@ -2278,7 +2278,7 @@ body.iframe {
 
 .edit-comment-author {
 	color: $wp-gray-90;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $wp-gray-0;
 }
 
 #namediv h3 label, /* Back-compat for pre-4.4 */
@@ -2486,7 +2486,7 @@ div.action-links {
 	min-height: 36px;
 	font-size: 0;
 	z-index: 1;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 	background: #f3f3f3;
 }
 
@@ -2505,7 +2505,7 @@ div.action-links {
 #plugin-information-tabs a.current {
 	margin: 0 -1px -1px;
 	background: $wp-white;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	border-bottom-color: $wp-white;
 	padding-top: 8px;
 	color: #32373c;
@@ -2563,7 +2563,7 @@ div.action-links {
 	margin-bottom: -99939px; /* 60px less than the padding below to accommodate footer */
 	padding-bottom: 99999px; /* equal height column trick */
 	width: 217px;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid $wp-gray-5;
 	background: #f3f3f3;
 	color: $wp-gray-50;
 }
@@ -2655,7 +2655,7 @@ div.action-links {
 	bottom: 0;
 	left: 0;
 	height: 33px; /* 33+13+13+1=60 */
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $wp-gray-5;
 	background: #f3f3f3;
 }
 
@@ -2700,11 +2700,11 @@ div.action-links {
 #plugin-information pre {
 	padding: 7px;
 	overflow: auto;
-	border: 1px solid #ccc;
+	border: 1px solid $wp-gray-10;
 }
 
 #plugin-information blockquote {
-	border-left: 2px solid #ddd;
+	border-left: 2px solid $wp-gray-5;
 	color: $wp-gray-50;
 	font-style: italic;
 	margin: 1em 0;
@@ -2797,7 +2797,7 @@ div.action-links {
 
 	#plugin-information .fyi {
 		float: none;
-		border: 1px solid #ddd;
+		border: 1px solid $wp-gray-5;
 		position: static;
 		width: auto;
 		margin: 26px 26px 0;
@@ -2862,7 +2862,7 @@ div.action-links {
 .plugin-details-modal #TB_closeWindowButton {
 	left: auto;
 	right: -30px;
-	color: #eee;
+	color: $wp-gray-0;
 }
 
 .plugin-details-modal #TB_closeWindowButton:hover,
@@ -2970,7 +2970,7 @@ img {
 	width: 100%;
 	min-height: 60vh;
 	height: calc( 100vh - 295px );
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	box-sizing: border-box;
 }
 
@@ -2993,7 +2993,7 @@ img {
 	min-height: 60vh;
 	height: calc(100vh - 295px);
 	background-color: #f7f7f7;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	border-left: none;
 }
 #templateside ul ul {
@@ -3059,7 +3059,7 @@ img {
 	display: block;
 	position: absolute;
 	left: 2px;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid $wp-gray-10;
 	top: -13px;
 	bottom: 10px;
 }
@@ -3067,18 +3067,18 @@ img {
 	content: "";
 	position: absolute;
 	display: block;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid $wp-gray-10;
 	left: 2px;
 	top: -5px;
 	height: 18px;
 	width: 7px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid $wp-gray-10;
 }
 .tree-folder > li::after {
 	content: "";
 	position: absolute;
 	display: block;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid $wp-gray-10;
 	left: 2px;
 	bottom: -7px;
 	top: 0;
@@ -3300,7 +3300,7 @@ img {
 
 /* Accordion */
 .accordion-section {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 	margin: 0;
 }
 
@@ -3310,7 +3310,7 @@ img {
 }
 
 .accordion-section.open:hover {
-	border-bottom-color: #ddd;
+	border-bottom-color: $wp-gray-5;
 }
 
 .accordion-section-content {
@@ -3324,8 +3324,8 @@ img {
 	margin: 0;
 	padding: 12px 15px 15px;
 	position: relative;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
+	border-left: 1px solid $wp-gray-5;
+	border-right: 1px solid $wp-gray-5;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -3384,7 +3384,7 @@ img {
 
 .control-section.open .accordion-section-title {
 	/* When expanded */
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 }
 
 /* Edit Site */
@@ -3424,7 +3424,7 @@ img {
 		position: absolute;
 		top: 0;
 		right: 0;
-		background: #ccc;
+		background: $wp-gray-10;
 	}
 
 }
@@ -5153,7 +5153,7 @@ ul#adminmenu > li.current > a.current:after {
 	position: relative;
 	overflow: visible;
 	background: none;
-	color: #aaa;
+	color: $wp-gray-20;
 	cursor: pointer;
 }
 
@@ -5667,7 +5667,7 @@ ul#adminmenu > li.current > a.current:after {
 .commentlist li {
 	padding: 1em 1em .2em;
 	margin: 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid $wp-gray-10;
 }
 
 .commentlist li li {
@@ -5754,7 +5754,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #replyerror {
-	border-color: #ddd;
+	border-color: $wp-gray-5;
 	background-color: #f9f9f9;
 }
 
@@ -6349,7 +6349,7 @@ p.pagenav {
 }
 
 .row-actions {
-	color: #ddd;
+	color: $wp-gray-5;
 	font-size: 13px;
 	padding: 2px 0 0;
 	position: relative;
@@ -6598,7 +6598,7 @@ tr.inline-edit-row td,
 
 ul.cat-checklist {
 	height: 12em;
-	border: solid 1px #ddd;
+	border: solid 1px $wp-gray-5;
 	overflow-y: scroll;
 	padding: 0 5px;
 	margin: 0;
@@ -6608,7 +6608,7 @@ ul.cat-checklist {
 #bulk-titles {
 	display: block;
 	height: 12em;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	overflow-y: scroll;
 	padding: 0 5px;
 	margin: 0 0 5px;
@@ -6763,7 +6763,7 @@ ul.cat-checklist {
 .plugins tr.active + tr.inactive th,
 .plugins tr.active + tr.inactive td {
 	border-top: 1px solid rgba(0, 0, 0, 0.03);
-	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02), inset 0 -1px 0 #e1e1e1;
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02), inset 0 -1px 0 $wp-gray-5;
 }
 
 .plugins .update td,
@@ -6800,7 +6800,7 @@ ul.cat-checklist {
 
 .plugins .plugin-title .dashicons:before {
 	padding: 2px;
-	background-color: #eee;
+	background-color: $wp-gray-0;
 	box-shadow: inset 0 0 10px rgba(160, 165, 170, 0.15);
 	font-size: 60px;
 	color: #B4B9BE;
@@ -6938,7 +6938,7 @@ ul.cat-checklist {
 	width: 48.5%;
 	width: calc( 50% - 8px );
 	background-color: $wp-white;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	box-sizing: border-box;
 }
 
@@ -7047,7 +7047,7 @@ div.action-links,
 	clear: both;
 	padding: 12px 20px;
 	background-color: #fafafa;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $wp-gray-5;
 	overflow: hidden;
 }
 
@@ -7062,7 +7062,7 @@ div.action-links,
 .plugin-card-update-failed .notice-error {
 	margin: 0;
 	padding-left: 16px;
-	box-shadow: 0 -1px 0 #ddd;
+	box-shadow: 0 -1px 0 $wp-gray-5;
 }
 
 .plugin-card-update-failed .plugin-card-bottom {
@@ -7870,7 +7870,7 @@ ul.add-menu-item-tabs li {
 ul.category-tabs li.tabs,
 ul.add-menu-item-tabs li.tabs,
 .wp-tab-active {
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	border-bottom-color: #fdfdfd;
 	background-color: #fdfdfd;
 }
@@ -8286,7 +8286,7 @@ span.wp-media-buttons-icon:before {
 .privacy-text-box-toc p {
 	margin: 0;
 	padding: 0.7em 1em;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $wp-gray-0;
 }
 
 .privacy-text-box-toc ol {
@@ -8388,7 +8388,7 @@ span.wp-media-buttons-icon:before {
 #postcustomstuff table {
 	margin: 0;
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	border-spacing: 0;
 	background-color: #f9f9f9;
 }
@@ -8450,7 +8450,7 @@ span.wp-media-buttons-icon:before {
 	width: 20px;
 	margin-top: -4px;
 	margin-right: 7px;
-	color: #ddd;
+	color: $wp-gray-5;
 	font: normal 20px/1 dashicons;
 	speak: none;
 	-webkit-font-smoothing: antialiased;
@@ -8504,7 +8504,7 @@ label.post-format-icon {
 	max-height: 200px;
 	overflow: auto;
 	padding: 0 0.9em;
-	border: solid 1px #ddd;
+	border: solid 1px $wp-gray-5;
 	background-color: #fdfdfd;
 }
 
@@ -8877,7 +8877,7 @@ table.diff .diff-addedline ins {
 
 .revisions-tooltip,
 .revisions-tooltip-arrow > span {
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	background-color: $wp-white;
 }
 
@@ -8889,7 +8889,7 @@ table.diff .diff-addedline ins {
 
 .wp-slider.ui-slider {
 	position: relative;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	text-align: left;
 	cursor: pointer;
 }
@@ -8897,8 +8897,8 @@ table.diff .diff-addedline ins {
 .wp-slider .ui-slider-handle,
 .wp-slider .ui-slider-handle.focus {
 	background: #f7f7f7;
-	border: 1px solid #ccc;
-	box-shadow: 0 1px 0 #cccccc;
+	border: 1px solid $wp-gray-10;
+	box-shadow: 0 1px 0 $wp-gray-10;
 }
 
 .wp-slider .ui-slider-handle:hover,
@@ -8909,7 +8909,7 @@ table.diff .diff-addedline ins {
 
 .wp-slider .ui-slider-handle:active,
 .wp-slider .ui-slider-handle.ui-state-active {
-	background: #eee;
+	background: $wp-gray-0;
 	border-color: $wp-gray-30;
 	box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
 	transform: translateY(1px);
@@ -8938,7 +8938,7 @@ table.diff .diff-addedline ins {
 .media-item .describe {
 	border-collapse: collapse;
 	width: 100%;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $wp-gray-5;
 	clear: both;
 	cursor: default;
 }
@@ -8953,7 +8953,7 @@ table.diff .diff-addedline ins {
 
 .media-upload-form .media-item,
 .media-upload-form .media-item .error {
-	box-shadow: 0 1px 0 #ddd;
+	box-shadow: 0 1px 0 $wp-gray-5;
 }
 
 .media-item .progress {
@@ -8965,7 +8965,7 @@ table.diff .diff-addedline ins {
 	padding: 0;
 	overflow: hidden;
 	border-radius: 22px;
-	background: #ddd;
+	background: $wp-gray-5;
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -9011,7 +9011,7 @@ table.diff .diff-addedline ins {
 
 .find-box-head {
 	background: #fcfcfc;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 	height: 36px;
 	font-size: 18px;
 	font-weight: 600;
@@ -9075,7 +9075,7 @@ table.diff .diff-addedline ins {
 .find-box-buttons {
 	padding: 8px 16px;
 	background: #fcfcfc;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $wp-gray-5;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -9111,7 +9111,7 @@ form.upgrade .hint {
 #poststuff .inside .the-tagcloud {
 	margin: 5px 0 10px;
 	padding: 8px;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	line-height: 1.8em;
 	word-spacing: 3px;
 }
@@ -9264,7 +9264,7 @@ border color while dragging a file over the uploader drop area */
 .media-frame.mode-grid .selected.attachment {
 	box-shadow:
 		inset 0 0 0 5px $wp-gray-0,
-		inset 0 0 0 7px #ccc;
+		inset 0 0 0 7px $wp-gray-10;
 }
 
 .media-frame.mode-grid .attachment.details {
@@ -9313,7 +9313,7 @@ border color while dragging a file over the uploader drop area */
 	position: absolute;
 	text-align: center;
 	border: 0;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid $wp-gray-5;
 	transition: color .1s ease-in-out, background .1s ease-in-out;
 }
 
@@ -9348,8 +9348,8 @@ border color while dragging a file over the uploader drop area */
 .edit-attachment-frame .edit-media-header .right:hover,
 .edit-attachment-frame .edit-media-header .left:focus,
 .edit-attachment-frame .edit-media-header .right:focus {
-	background: #ddd;
-	border-color: #ccc;
+	background: $wp-gray-5;
+	border-color: $wp-gray-10;
 	color: $wp-black;
 	outline: none;
 	box-shadow: none;
@@ -9372,7 +9372,7 @@ border color while dragging a file over the uploader drop area */
 .edit-attachment-frame .edit-media-header .right.disabled,
 .edit-attachment-frame .edit-media-header .left.disabled:hover,
 .edit-attachment-frame .edit-media-header .right.disabled:hover {
-	color: #ccc;
+	color: $wp-gray-10;
 	background: inherit;
 	cursor: default;
 	pointer-events: none;
@@ -9449,7 +9449,7 @@ border color while dragging a file over the uploader drop area */
 	height: 100%;
 	box-shadow: inset 0px 4px 4px -4px rgba(0, 0, 0, 0.1);
 	border-bottom: 0;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid $wp-gray-5;
 	background: #f3f3f3;
 }
 
@@ -9460,7 +9460,7 @@ border color while dragging a file over the uploader drop area */
 	float: none;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 }
 
 .edit-attachment-frame .attachment-info .filename {
@@ -9633,8 +9633,8 @@ border color while dragging a file over the uploader drop area */
 }
 
 .imgedit-menu .button.disabled {
-	border-color: #ccc;
-	background-color: #ddd;
+	border-color: $wp-gray-10;
+	background-color: $wp-gray-5;
 	color: #72777c;
 	filter: alpha(opacity=50);
 	opacity: 0.5;
@@ -9740,7 +9740,7 @@ audio, video {
 // themes.css
 
 .theme-browser .theme {
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
 }
@@ -9839,7 +9839,7 @@ audio, video {
 
 .theme-browser .theme .theme-author {
 	background: #23282d;
-	color: #eee;
+	color: $wp-gray-0;
 	display: none;
 	font-size: 14px;
 	margin: 0 10px;
@@ -9931,7 +9931,7 @@ audio, video {
 	left: 0;
 	right: 0;
 	height: 48px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 }
 
 .theme-overlay .theme-header button {
@@ -9945,7 +9945,7 @@ audio, video {
 	text-align: center;
 	float: right;
 	border: 0;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid $wp-gray-5;
 	background-color: transparent;
 	transition: color .1s ease-in-out, background .1s ease-in-out;
 }
@@ -9969,7 +9969,7 @@ audio, video {
 	float: left;
 	text-align: center;
 	border: 0;
-	border-right: 1px solid #ddd;
+	border-right: 1px solid $wp-gray-5;
 	transition: color .1s ease-in-out, background .1s ease-in-out;
 }
 
@@ -9979,8 +9979,8 @@ audio, video {
 .theme-overlay .theme-header .right:hover,
 .theme-overlay .theme-header .left:focus,
 .theme-overlay .theme-header .left:hover {
-	background: #ddd;
-	border-color: #ccc;
+	background: $wp-gray-5;
+	border-color: $wp-gray-10;
 	color: $wp-black;
 }
 
@@ -10000,7 +10000,7 @@ audio, video {
 .theme-overlay .theme-header .right.disabled,
 .theme-overlay .theme-header .left.disabled:hover,
 .theme-overlay .theme-header .right.disabled:hover {
-	color: #ccc;
+	color: $wp-gray-10;
 	background: inherit;
 	cursor: inherit;
 }
@@ -10029,11 +10029,11 @@ audio, video {
 	background: #f3f3f3;
 	z-index: 30;
 	box-sizing: border-box;
-	border-top: 1px solid #eee;
+	border-top: 1px solid $wp-gray-0;
 }
 
 .ie8 .theme-overlay .theme-actions {
-	border: 1px solid #eee;
+	border: 1px solid $wp-gray-0;
 }
 
 
@@ -10069,8 +10069,8 @@ audio, video {
 
 /* Other screenshots, shown small and square */
 .theme-overlay .screenshot.thumb {
-	background: #ccc;
-	border: 1px solid #eee;
+	background: $wp-gray-10;
+	border: 1px solid $wp-gray-0;
 	float: none;
 	display: inline-block;
 	margin: 10px 5px 0;
@@ -10140,7 +10140,7 @@ audio, video {
 }
 
 .theme-overlay .theme-tags {
-	border-top: 3px solid #eee;
+	border-top: 3px solid $wp-gray-0;
 	color: #82878c;
 	font-size: 13px;
 	font-weight: 400;
@@ -10156,7 +10156,7 @@ audio, video {
 
 .theme-overlay .parent-theme {
 	background: #f7fcfe;
-	border: 1px solid #eee;
+	border: 1px solid $wp-gray-0;
 	border-left: 4px solid $wp-blue-30;
 	font-size: 14px;
 	font-weight: 400;
@@ -10228,7 +10228,7 @@ p.no-themes-local {
 ------------------------------------------------------------------------------*/
 
 .appearance_page_custom-header #headimg {
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	overflow: hidden;
 	width: 100%;
 }
@@ -10240,7 +10240,7 @@ p.no-themes-local {
 
 div#custom-background-image {
 	min-height: 100px;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 }
 
 div#custom-background-image img {
@@ -10249,7 +10249,7 @@ div#custom-background-image img {
 }
 
 .background-position-control input[type="radio"]:checked ~ .button {
-	background: #eee;
+	background: $wp-gray-0;
 	border-color: $wp-gray-30;
 	box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
 	z-index: 1;
@@ -10311,7 +10311,7 @@ div#custom-background-image img {
 }
 
 .background-position-control .button-group:last-child .button {
-	box-shadow: 0 1px 0 #ccc;
+	box-shadow: 0 1px 0 $wp-gray-10;
 }
 
 /*------------------------------------------------------------------------------
@@ -10350,7 +10350,7 @@ body.full-overlay-active {
 	padding: 0;
 	margin: 0;
 	z-index: 10;
-	background: #eee;
+	background: $wp-gray-0;
 	border-right: none;
 }
 
@@ -10458,8 +10458,8 @@ body.full-overlay-active {
 	width: 45px;
 	height: 45px;
 	padding-right: 2px;
-	background: #eee;
-	border-right: 1px solid #ddd;
+	background: $wp-gray-0;
+	border-right: 1px solid $wp-gray-5;
 	color: $wp-gray-70;
 	cursor: pointer;
 	text-decoration: none;
@@ -10472,8 +10472,8 @@ body.full-overlay-active {
 .theme-install-overlay .previous-theme:focus,
 .theme-install-overlay .next-theme:hover,
 .theme-install-overlay .next-theme:focus {
-	background: #ddd;
-	border-color: #ccc;
+	background: $wp-gray-5;
+	border-color: $wp-gray-10;
 	color: $wp-black;
 	outline: none;
 	box-shadow: none;
@@ -10510,7 +10510,7 @@ body.full-overlay-active {
 .theme-install-overlay .next-theme.disabled:hover,
 .theme-install-overlay .next-theme.disabled:focus {
 	color: #b4b9be;
-	background: #eee;
+	background: $wp-gray-0;
 	cursor: default;
 	pointer-events: none;
 }
@@ -10584,7 +10584,7 @@ body.full-overlay-active {
 .wp-full-overlay .collapse-sidebar-arrow:before {
 	display: block;
 	content: "\f148";
-	background: #eee;
+	background: $wp-gray-0;
 	font: normal 20px/1 dashicons;
 	speak: none;
 	padding: 0;
@@ -10634,8 +10634,8 @@ body.full-overlay-active {
 	width: 18%;
 	width: calc( 18% - 1px );
 	height: 45px;
-	border-top: 1px solid #ddd;
-	background: #eee;
+	border-top: 1px solid $wp-gray-5;
+	background: $wp-gray-0;
 }
 
 .wp-full-overlay-footer .devices-wrapper {
@@ -10644,8 +10644,8 @@ body.full-overlay-active {
 
 .wp-full-overlay-footer .devices {
 	position: relative;
-	background: #eee;
-	box-shadow: -20px 0 10px -5px #eee;
+	background: $wp-gray-0;
+	box-shadow: -20px 0 10px -5px $wp-gray-0;
 }
 
 .wp-full-overlay-footer .devices button {
@@ -10750,7 +10750,7 @@ body.full-overlay-active {
 
 #customize-container,
 #customize-controls .notice.notification-overlay {
-	background: #eee;
+	background: $wp-gray-0;
 	z-index: 500000;
 	position: fixed;
 	overflow: visible;
@@ -10764,7 +10764,7 @@ body.full-overlay-active {
 .install-theme-info .theme-screenshot {
 	margin: 15px 0;
 	width: 258px;
-	border: 1px solid #ccc;
+	border: 1px solid $wp-gray-10;
 }
 
 .install-theme-info .theme-details {
@@ -10790,14 +10790,14 @@ body.full-overlay-active {
 }
 
 .theme-install-overlay .wp-full-overlay-sidebar {
-	background: #eee;
-	border-right: 1px solid #ddd;
+	background: $wp-gray-0;
+	border-right: 1px solid $wp-gray-5;
 }
 
 .theme-install-overlay .wp-full-overlay-sidebar-content {
 	background: $wp-white;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	border-top: 1px solid $wp-gray-5;
+	border-bottom: 1px solid $wp-gray-5;
 }
 
 .theme-install-overlay .wp-full-overlay-main {
@@ -10858,7 +10858,7 @@ body.full-overlay-active {
 
 .about-wrap .point-releases {
 	margin-top: 5px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 }
 
 // nav-menus.css
@@ -10878,7 +10878,7 @@ body.full-overlay-active {
 }
 
 .menu-settings {
-	border-top: 1px solid #eee;
+	border-top: 1px solid $wp-gray-0;
 	margin-top: 2em;
 }
 
@@ -10890,7 +10890,7 @@ body.full-overlay-active {
 .nav-menus-php #post-body {
 	padding: 0 10px;
 	border-top: 1px solid $wp-white;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 	background: $wp-white;
 }
 
@@ -10901,17 +10901,17 @@ body.full-overlay-active {
 }
 
 #nav-menu-header {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $wp-gray-5;
 	margin-bottom: 0;
 }
 
 .locations-edit-menu-link {
 	padding-right: 3px;
-	border-right: 1px solid #ccc;
+	border-right: 1px solid $wp-gray-10;
 }
 
 .menu-item-bar .menu-item-handle {
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	position: relative;
 	padding: 10px 15px;
 	height: auto;
@@ -10988,7 +10988,7 @@ body.full-overlay-active {
 	display: block;
 	margin: 0 0 15px;
 	padding: 3px 5px 5px;
-	border: 1px solid #ddd;
+	border: 1px solid $wp-gray-5;
 	color: #72777c;
 	font-size: 12px;
 	font-style: italic;
@@ -11122,16 +11122,16 @@ body.full-overlay-active {
 
 .widgets_access #widgets-left .widget .widget-top:hover,
 .widgets_access #widgets-right .widget .widget-top:hover {
-	border-color: #ddd;
+	border-color: $wp-gray-5;
 }
 
 .widget-control-edit {
 	display: block;
 	color: $wp-gray-50;
-	background: #EEE;
+	background: $wp-gray-0;
 	padding: 0 15px;
 	line-height: 3.35;
-	border-left: 1px solid #DDD;
+	border-left: 1px solid $wp-gray-5;
 }
 
 #widgets-left .widget-control-edit:hover,
@@ -11160,11 +11160,11 @@ div#widgets-right .widget-top:hover,
 }
 
 .widgets-chooser ul {
-	border: 1px solid #ccc;
+	border: 1px solid $wp-gray-10;
 }
 
 .widgets-chooser li {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid $wp-gray-10;
 	background: $wp-white;
 	margin: 0;
 	position: relative;
@@ -11220,7 +11220,7 @@ div#widgets-right .widget-top:hover,
 .site-health-progress svg circle {
 	stroke-dashoffset: 0;
 	transition: stroke-dashoffset 1s linear;
-	stroke: #ccc;
+	stroke: $wp-gray-10;
 	stroke-width: 2em;
 }
 
