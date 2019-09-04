@@ -37,6 +37,20 @@ $wp-blue-90: #01263a;
 $wp-blue-100: #00131c;
 $wp-blue: $wp-blue-50;
 
+$wp-red-0: #f7edee;
+$wp-red-5: #ffccd0;
+$wp-red-10: #ffa6ab;
+$wp-red-20: #ff8085;
+$wp-red-30: #f86368;
+$wp-red-40: #e65054;
+$wp-red-50: #d63638;
+$wp-red-60: #b32d2e;
+$wp-red-70: #8a2424;
+$wp-red-80: #691c1c;
+$wp-red-90: #451313;
+$wp-red-100: #240a0a;
+$wp-red: $wp-red-50;
+
 
 
 // common.css
@@ -602,10 +616,10 @@ ul.striped > :nth-child(odd),
 
 .wp-ui-notification {
 	color: $wp-white;
-	background-color: #d54e21;
+	background-color: $wp-red-50;
 }
 .wp-ui-text-notification {
-	color: #d54e21;
+	color: $wp-red-50;
 }
 
 .wp-ui-text-icon {
@@ -5297,7 +5311,7 @@ ul#adminmenu > li.current > a.current:after {
 
 #dashboard_right_now .warning a:before,
 #dashboard_right_now .warning span:before {
-	color: #d54e21;
+	color: $wp-red-50;
 }
 
 /* Dashboard Quick Draft */
@@ -5480,7 +5494,7 @@ ul#adminmenu > li.current > a.current:after {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background: #d54e21;
+	background: $wp-red-50;
 	width: 4px;
 }
 
@@ -5774,7 +5788,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #the-comment-list .unapproved th.check-column {
-	border-left: 4px solid #d54e21;
+	border-left: 4px solid $wp-red-50;
 }
 
 #the-comment-list .unapproved th.check-column input {
@@ -6855,7 +6869,7 @@ ul.cat-checklist {
 }
 
 .plugins tr.paused th.check-column {
-	border-left: 4px solid #d54e21;
+	border-left: 4px solid $wp-red-50;
 }
 
 .plugins tr.paused th,
@@ -7647,7 +7661,7 @@ div.action-links,
 	}
 
 	.plugins .active.update + .plugin-update-tr:before {
-		border-left: 4px solid #d54e21;
+		border-left: 4px solid $wp-red-50;
 		background-color: #fef7f1;
 	}
 
@@ -8850,7 +8864,7 @@ table.links-table {
 }
 
 .revisions-controls .author-card.autosave {
-	color: #d54e21;
+	color: $wp-red-50;
 }
 
 .revisions-diff {
@@ -10051,9 +10065,9 @@ audio, video {
 .broken-themes a.delete-theme:focus,
 .theme-overlay .theme-actions .delete-theme:hover,
 .theme-overlay .theme-actions .delete-theme:focus {
-	background: #d54e21;
+	background: $wp-red-50;
 	color: $wp-white;
-	border-color: #d54e21;
+	border-color: $wp-red-50;
 }
 
 

@@ -566,11 +566,11 @@ ul.striped > :nth-child(odd),
 
 .wp-ui-notification {
   color: #ffffff;
-  background-color: #d54e21;
+  background-color: #d63638;
 }
 
 .wp-ui-text-notification {
-  color: #d54e21;
+  color: #d63638;
 }
 
 .wp-ui-text-icon {
@@ -5254,7 +5254,7 @@ ul#adminmenu > li.current > a.current:after {
 
 #dashboard_right_now .warning a:before,
 #dashboard_right_now .warning span:before {
-  color: #d54e21;
+  color: #d63638;
 }
 
 /* Dashboard Quick Draft */
@@ -5431,7 +5431,7 @@ ul#adminmenu > li.current > a.current:after {
   left: 0;
   top: 0;
   bottom: 0;
-  background: #d54e21;
+  background: #d63638;
   width: 4px;
 }
 
@@ -5722,7 +5722,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #the-comment-list .unapproved th.check-column {
-  border-left: 4px solid #d54e21;
+  border-left: 4px solid #d63638;
 }
 
 #the-comment-list .unapproved th.check-column input {
@@ -6802,7 +6802,7 @@ ul.cat-checklist {
 }
 
 .plugins tr.paused th.check-column {
-  border-left: 4px solid #d54e21;
+  border-left: 4px solid #d63638;
 }
 
 .plugins tr.paused th,
@@ -7515,7 +7515,7 @@ div.action-links,
     display: table-cell;
   }
   .plugins .active.update + .plugin-update-tr:before {
-    border-left: 4px solid #d54e21;
+    border-left: 4px solid #d63638;
     background-color: #fef7f1;
   }
   .plugins #the-list .plugin-update-tr .plugin-update {
@@ -8694,7 +8694,7 @@ table.links-table {
 }
 
 .revisions-controls .author-card.autosave {
-  color: #d54e21;
+  color: #d63638;
 }
 
 .revisions-diff {
@@ -9876,9 +9876,9 @@ audio, video {
 .broken-themes a.delete-theme:focus,
 .theme-overlay .theme-actions .delete-theme:hover,
 .theme-overlay .theme-actions .delete-theme:focus {
-  background: #d54e21;
+  background: #d63638;
   color: #ffffff;
-  border-color: #d54e21;
+  border-color: #d63638;
 }
 
 /* First screenshot, shown big */
