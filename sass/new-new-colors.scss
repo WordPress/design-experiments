@@ -565,7 +565,7 @@ code {
 
 .wrap .add-new-h2:hover, /* deprecated */
 .wrap .page-title-action:hover {
-	border-color: #008EC2;
+	border-color: $wp-blue-40;
 	background: $wp-blue-30;
 	color: $wp-white;
 }
@@ -11395,7 +11395,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .health-check-accordion-trigger .badge.blue {
-	border: 1px solid #bfe7f3;
+	border: 1px solid $wp-blue-5;
 }
 
 .health-check-accordion-trigger .badge.orange {
@@ -11422,4 +11422,188 @@ div#widgets-right .widget-top:hover,
 	margin: 0;
 	padding: 1em 1.5em;
 	background: $wp-white;
+}
+
+
+/* ----------------------------------------------------------------------------
+  2.0 - Default Button Style
+---------------------------------------------------------------------------- */
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+	color: #555;
+	border-color: #cccccc;
+	background: #f7f7f7;
+	box-shadow: 0 1px 0 #cccccc;
+	vertical-align: top;
+}
+
+.wp-core-ui p .button {
+	vertical-align: baseline;
+}
+
+.wp-core-ui .button.hover,
+.wp-core-ui .button:hover,
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button.focus,
+.wp-core-ui .button:focus,
+.wp-core-ui .button-secondary:focus {
+	background: #fafafa;
+	border-color: #999;
+	color: #23282d;
+}
+
+.wp-core-ui .button.focus,
+.wp-core-ui .button:focus,
+.wp-core-ui .button-secondary:focus {
+	border-color: #5b9dd9;
+	box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+}
+
+.wp-core-ui .button.active,
+.wp-core-ui .button.active:hover,
+.wp-core-ui .button:active,
+.wp-core-ui .button-secondary:active {
+	background: #eee;
+	border-color: #999;
+	box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
+	transform: translateY(1px);
+}
+
+.wp-core-ui .button.active:focus {
+	border-color: #5b9dd9;
+	box-shadow:
+		inset 0 2px 5px -3px rgba(0, 0, 0, 0.5),
+		0 0 3px rgba(0, 115, 170, 0.8);
+}
+
+.wp-core-ui .button[disabled],
+.wp-core-ui .button:disabled,
+.wp-core-ui .button.disabled,
+.wp-core-ui .button-secondary[disabled],
+.wp-core-ui .button-secondary:disabled,
+.wp-core-ui .button-secondary.disabled,
+.wp-core-ui .button-disabled {
+	color: #a0a5aa !important;
+	border-color: #ddd !important;
+	background: #f7f7f7 !important;
+	box-shadow: none !important;
+	text-shadow: 0 1px 0 #fff !important;
+	cursor: default;
+	transform: none !important;
+}
+
+/* Buttons that look like links, for a cross of good semantics with the visual */
+.wp-core-ui .button-link {
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	cursor: pointer;
+	text-align: left;
+	/* Mimics the default link style in common.css */
+	color: $wp-blue-50;
+	text-decoration: underline;
+	transition-property: border, background, color;
+	transition-duration: .05s;
+	transition-timing-function: ease-in-out;
+}
+
+.wp-core-ui .button-link:hover,
+.wp-core-ui .button-link:active {
+	color: #00a0d2;
+}
+
+.wp-core-ui .button-link:focus {
+	color: #124964;
+	box-shadow:
+		0 0 0 1px #5b9dd9,
+		0 0 2px 1px rgba(30, 140, 190, 0.8);
+	/* Only visible in Windows High Contrast mode */
+	outline: 1px solid transparent;
+}
+
+.wp-core-ui .button-link-delete {
+	color: #a00;
+}
+
+.wp-core-ui .button-link-delete:hover,
+.wp-core-ui .button-link-delete:focus {
+	color: #dc3232;
+}
+
+.ie8 .wp-core-ui .button-link:focus {
+	outline: #5b9dd9 solid 1px;
+}
+
+/* ----------------------------------------------------------------------------
+  3.0 - Primary Button Style
+---------------------------------------------------------------------------- */
+
+.wp-core-ui .button-primary {
+	background: $wp-blue-50;
+	border-color: $wp-blue-50 $wp-blue-60 $wp-blue-60;
+	box-shadow: 0 1px 0 $wp-blue-60;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px $wp-blue-60,
+		1px 0 1px $wp-blue-60,
+		0 1px 1px $wp-blue-60,
+		-1px 0 1px $wp-blue-60;
+}
+
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+	background: $wp-blue-40;
+	border-color: $wp-blue-60;
+	color: #fff;
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+	box-shadow: 0 1px 0 $wp-blue-50,
+		0 0 2px 1px $wp-blue-30;
+}
+
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary.active:hover,
+.wp-core-ui .button-primary.active:focus,
+.wp-core-ui .button-primary:active {
+	background: $wp-blue-50;
+	border-color: $wp-blue-60;
+	box-shadow: inset 0 2px 0 $wp-blue-60;
+}
+
+.wp-core-ui .button-primary[disabled],
+.wp-core-ui .button-primary:disabled,
+.wp-core-ui .button-primary-disabled,
+.wp-core-ui .button-primary.disabled {
+	color: $wp-blue-20 !important;
+	background: $wp-blue-40 !important;
+	border-color: $wp-blue-40 !important;
+	box-shadow: none !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+	cursor: default;
+}
+
+.wp-core-ui .button.button-primary.button-hero {
+	box-shadow: 0 2px 0 $wp-blue-60;
+}
+
+.wp-core-ui .button.button-primary.button-hero:focus {
+	box-shadow:
+		0 2px 0 $wp-blue-60,
+		0 1px 0 $wp-blue-50,
+		0 0 2px 1px $wp-blue-30;
+}
+
+.wp-core-ui .button.button-primary.button-hero.active,
+.wp-core-ui .button.button-primary.button-hero.active:hover,
+.wp-core-ui .button.button-primary.button-hero.active:focus,
+.wp-core-ui .button.button-primary.button-hero:active {
+	box-shadow: inset 0 3px 0 $wp-blue-60;
 }
