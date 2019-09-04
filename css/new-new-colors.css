@@ -1364,7 +1364,7 @@ div.error {
 .import-php .updating-message:before,
 .button.updating-message:before,
 .button.installing:before {
-  color: #f56e28;
+  color: #907300;
   content: "\f463";
 }
 
@@ -4726,7 +4726,7 @@ table.form-table td .updated p {
 }
 
 .email-personal-data--sending::before {
-  color: #f56e28;
+  color: #907300;
   content: "\f463";
   animation: rotation 2s infinite linear;
 }
@@ -5734,7 +5734,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #the-comment-list .unapprove a {
-  color: #d98500;
+  color: #907300;
 }
 
 #the-comment-list th,
@@ -6827,7 +6827,7 @@ ul.cat-checklist {
 }
 
 .plugin-card .update-now:before {
-  color: #f56e28;
+  color: #907300;
   content: "\f463";
   display: inline-block;
   font: normal 20px/1 dashicons;
