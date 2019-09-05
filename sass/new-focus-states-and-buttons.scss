@@ -6,6 +6,7 @@ PR: https://github.com/WordPress/design-experiments/pull/14
 
 /*
  * https://core.trac.wordpress.org/attachment/ticket/47153/47153.3.diff
+ * Note: This also applies these changes to the .media-frame fields too.
  */
 
 .wrap .add-new-h2, /* deprecated */
@@ -41,7 +42,8 @@ input[type="time"],
 input[type="url"],
 input[type="week"],
 select,
-textarea {
+textarea,
+.media-frame input[type=email], .media-frame input[type=number], .media-frame input[type=password], .media-frame input[type=search], .media-frame input[type=text], .media-frame input[type=url], .media-frame select, .media-frame textarea {
 	padding: 6px 8px;
 	box-shadow: 0 0 0 transparent;
 	transition: box-shadow 0.1s linear;
@@ -77,13 +79,14 @@ input[type="radio"] {
 
 /*
  * https://core.trac.wordpress.org/attachment/ticket/34904/34904.6.diff
+ * Note: All instances of #a1acb5 borders have been replaced with #7e8993 to match the form field borders.
  */
 
 .wrap .add-new-h2, /* deprecated */
 .wrap .add-new-h2:active, /* deprecated */
 .wrap .page-title-action,
 .wrap .page-title-action:active {
-	border: 1px solid #a1acb5;
+	border: 1px solid #7e8993;
 	background: #fff;
 	color: #006799; /* some of these controls are button elements and don't inherit from links */
 }
@@ -91,7 +94,7 @@ input[type="radio"] {
 .wrap .add-new-h2:hover, /* deprecated */
 .wrap .page-title-action:hover {
 	background: #f3f5f6;
-	border-color: #a1acb5;
+	border-color: #7e8993;
 	color: #006799;
 }
 
@@ -130,7 +133,7 @@ textarea:focus {
 .wp-core-ui .button,
 .wp-core-ui .button-secondary {
 	color: #006799;
-	border-color: #a1acb5;
+	border-color: #7e8993;
 	background: #fff;
 	box-shadow: none;
 }
@@ -142,7 +145,7 @@ textarea:focus {
 .wp-core-ui .button:focus,
 .wp-core-ui .button-secondary:focus {
 	background: #f3f5f6;
-	border-color: #a1acb5;
+	border-color: #7e8993;
 	color: #006799;
 }
 
@@ -244,7 +247,8 @@ textarea:focus {
  * Partially from: https://core.trac.wordpress.org/attachment/ticket/47477/47477.3.diff
  */
 
-.wp-admin select {
+.wp-admin select,
+.media-modal-content .media-frame select.attachment-filters {
 	font-size: 13px;
 	line-height: 1;
 	color: #555;
@@ -279,41 +283,18 @@ textarea:focus {
  * Additional Adjustments
  */
 
-.wrap .add-new-h2, /* deprecated */
-.wrap .add-new-h2:active, /* deprecated */
-.wrap .page-title-action,
-.wrap .page-title-action:active {
-	border-color: 1px solid #7e8993;
-}
-
-.wrap .add-new-h2:hover, /* deprecated */
-.wrap .page-title-action:hover {
-	border-color: #7e8993;
-}
-
-.wp-core-ui .button,
-.wp-core-ui .button-secondary {
-	border-color: #7e8993;
-}
-
-.wp-core-ui .button.hover,
-.wp-core-ui .button:hover,
-.wp-core-ui .button-secondary:hover,
-.wp-core-ui .button.focus,
-.wp-core-ui .button:focus,
-.wp-core-ui .button-secondary:focus {
-	border-color: #7e8993;
-}
-
-// Borders
+// Darken container/card borders to offset the dark fields.
 
 #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat,
 .wp-filter,
 .widefat thead td, .widefat thead th,
 .widefat tfoot td, .widefat tfoot th,
 .postbox, .postbox .hndle, .stuffbox .hndle,
-.theme-browser .theme {
-	border-color: #e2e4e7;
+.theme-browser .theme,
+#screen-meta-links .screen-meta-active,
+.health-check-accordion,
+.card {
+	border-color: #ccd0d4;
 }
 
 // Remove the top rounded border for the meta links at the top of the screen. 
@@ -331,7 +312,8 @@ textarea:focus {
 // Borrow Gutenberg-like outlines on focus.
 
 .wp-person a:focus .gravatar, a:focus, a:focus .media-icon img,
-.wp-core-ui .button-link:focus {
+.wp-core-ui .button-link:focus,
+#screen-meta-links .show-settings:focus {
 	outline: 1px dotted #6c7781;
 	box-shadow: none;
 }
