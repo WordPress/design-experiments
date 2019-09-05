@@ -270,7 +270,7 @@ kbd,
 code {
   padding: 3px 5px 2px 5px;
   margin: 0 1px;
-  background: #eaeaea;
+  background: #f6f7f7;
   background: rgba(0, 0, 0, 0.07);
   font-size: 13px;
 }
@@ -3013,7 +3013,7 @@ img {
 
 [role="treeitem"].hover,
 [role="treeitem"] .folder-label.hover {
-  background-color: #eaeaea;
+  background-color: #f6f7f7;
 }
 
 .tree-folder {

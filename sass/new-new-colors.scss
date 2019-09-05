@@ -352,7 +352,7 @@ kbd,
 code {
 	padding: 3px 5px 2px 5px;
 	margin: 0 1px;
-	background: #eaeaea;
+	background: $wp-gray-0;
 	background: rgba(0, 0, 0, 0.07);
 	font-size: 13px;
 }
@@ -3084,7 +3084,7 @@ img {
 }
 [role="treeitem"].hover,
 [role="treeitem"] .folder-label.hover {
-	background-color: #eaeaea;
+	background-color: $wp-gray-0;
 }
 
 .tree-folder {
