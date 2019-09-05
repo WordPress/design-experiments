@@ -8916,19 +8916,19 @@ table.links-table {
 }
 
 table.diff .diff-deletedline {
-	background-color: #ffe9e9;
+	background-color: $wp-red-0;
 }
 
 table.diff .diff-deletedline del {
-	background-color: #faa;
+	background-color: $wp-red-10;
 }
 
 table.diff .diff-addedline {
-	background-color: #e9ffe9;
+	background-color: $wp-green-0;
 }
 
 table.diff .diff-addedline ins {
-	background-color: #afa;
+	background-color: $wp-green-5;
 }
 
 .revisions-tooltip,

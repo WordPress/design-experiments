@@ -8704,19 +8704,19 @@ table.links-table {
 }
 
 table.diff .diff-deletedline {
-  background-color: #ffe9e9;
+  background-color: #f7edee;
 }
 
 table.diff .diff-deletedline del {
-  background-color: #faa;
+  background-color: #ffa6ab;
 }
 
 table.diff .diff-addedline {
-  background-color: #e9ffe9;
+  background-color: #ebf7f1;
 }
 
 table.diff .diff-addedline ins {
-  background-color: #afa;
+  background-color: #a4f5c8;
 }
 
 .revisions-tooltip,
