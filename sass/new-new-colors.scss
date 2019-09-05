@@ -4759,8 +4759,8 @@ table.form-table td .updated p {
 
 .privacy_requests .status-request-failed th,
 .privacy_requests .status-request-failed td {
-	background-color: #fef7f1;
-	border-left-color: #d64d21;
+	background-color: $wp-red-0;
+	border-left-color: $wp-red-50;
 }
 
 .privacy_requests .export_personal_data_failed a {
