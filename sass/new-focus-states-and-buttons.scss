@@ -293,7 +293,10 @@ textarea:focus {
 .theme-browser .theme,
 #screen-meta-links .screen-meta-active,
 .health-check-accordion,
-.card {
+.card,
+.welcome-panel,
+.updated,
+#message {
 	border-color: #ccd0d4;
 }
 
@@ -301,9 +304,9 @@ textarea:focus {
 
 .notice,
 #update-nag, .update-nag {
-	border-right: 1px solid #e2e4e7;
-	border-top: 1px solid #e2e4e7;
-	border-bottom-color: #e2e4e7;
+	border-right: 1px solid #ccd0d4;
+	border-top: 1px solid #ccd0d4;
+	border-bottom-color: #ccd0d4;
 }
 
 // Remove the top rounded border for the meta links at the top of the screen. 
