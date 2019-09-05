@@ -2661,7 +2661,7 @@ div.action-links {
 
 #plugin-information .counter-bar {
 	height: 17px;
-	background-color: #ffc733; /* slightly lighter than stars due to larger expanse */
+	background-color: $wp-yellow-20; /* slightly lighter than stars due to larger expanse */
 	float: left;
 }
 
@@ -4063,7 +4063,7 @@ fieldset label,
 
 #pass-strength-result.good {
 	background-color: #ffe399;
-	border-color: #ffc733;
+	border-color: $wp-yellow-20;
 	opacity: 1;
 }
 
@@ -4082,7 +4082,7 @@ fieldset label,
 }
 
 #pass1.good, #pass1-text.good {
-	border-color: #ffc733;
+	border-color: $wp-yellow-20;
 }
 
 #pass1.strong, #pass1-text.strong {
