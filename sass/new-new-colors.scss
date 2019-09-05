@@ -622,7 +622,7 @@ ul.striped > :nth-child(odd),
 /* Helper classes for plugins to leverage the active WordPress color scheme */
 
 .highlight {
-	background-color: #e4f2fd;
+	background-color: $wp-blue-0;
 	color: $wp-black;
 }
 
@@ -5850,7 +5850,7 @@ ul#adminmenu > li.current > a.current:after {
 .vim-current,
 .vim-current th,
 .vim-current td {
-	background-color: #e4f2fd !important;
+	background-color: $wp-blue-0 !important;
 }
 
 th .comment-grey-bubble {
