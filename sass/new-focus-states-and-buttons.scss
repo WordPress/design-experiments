@@ -297,6 +297,15 @@ textarea:focus {
 	border-color: #ccd0d4;
 }
 
+// Darken notice borders
+
+.notice,
+#update-nag, .update-nag {
+	border-right: 1px solid #e2e4e7;
+	border-top: 1px solid #e2e4e7;
+	border-bottom-color: #e2e4e7;
+}
+
 // Remove the top rounded border for the meta links at the top of the screen. 
 
 #screen-meta-links .show-settings {
