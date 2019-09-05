@@ -1,6 +1,7 @@
 /*
-Title: Darker field borders and solid color buttons.
-Description: Smashing a bunch of different patches together to think holistically.
+Title: Darker Field Borders and New Buttons
+Description: Combining changes from Trac issues #47153, #34904, and #47477
+PR: https://github.com/WordPress/design-experiments/pull/14
 */
 /*
  * https://core.trac.wordpress.org/attachment/ticket/47153/47153.3.diff
@@ -315,6 +316,8 @@ textarea:focus {
   border-radius: 0;
 }
 
-.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img {
-  box-shadow: inset 0 0 0 1px #6c7781, inset 0 0 0 2px transparent;
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img,
+.wp-core-ui .button-link:focus {
+  outline: 1px dotted #6c7781;
+  box-shadow: none;
 }
