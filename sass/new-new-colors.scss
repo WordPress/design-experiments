@@ -79,6 +79,20 @@ $wp-green-90: #003008;
 $wp-green-100: #001c05;
 $wp-green: $wp-green-50;
 
+$wp-orange-0: #f7f0ea;
+$wp-orange-5: #fcd7ba;
+$wp-orange-10: #ffbf86;
+$wp-orange-20: #faa754;
+$wp-orange-30: #e68b28;
+$wp-orange-40: #d67709;
+$wp-orange-50: #b26200;
+$wp-orange-60: #8a4d00;
+$wp-orange-70: #704000;
+$wp-orange-80: #543100;
+$wp-orange-90: #361f00;
+$wp-orange-100: #1f1200;
+$wp-orange: $wp-orange-50;
+
 
 
 // common.css
@@ -4051,34 +4065,34 @@ fieldset label,
 
 #pass-strength-result.short {
 	background-color: $wp-red-10;
-	border-color: #e35b5b;
+	border-color: $wp-red-40;
 	opacity: 1;
 }
 
 #pass-strength-result.bad {
-	background-color: #fbc5a9;
-	border-color: #f78b53;
+	background-color: $wp-orange-5;
+	border-color: $wp-orange-20;
 	opacity: 1;
 }
 
 #pass-strength-result.good {
-	background-color: #ffe399;
+	background-color: $wp-yellow-5;
 	border-color: $wp-yellow-20;
 	opacity: 1;
 }
 
 #pass-strength-result.strong {
-	background-color: #c1e1b9;
-	border-color: #83c373;
+	background-color: $wp-green-5;
+	border-color: $wp-green-10;
 	opacity: 1;
 }
 
 #pass1.short, #pass1-text.short {
-	border-color: #e35b5b;
+	border-color: $wp-red-40;
 }
 
 #pass1.bad, #pass1-text.bad {
-	border-color: #f78b53;
+	border-color: $wp-orange-20;
 }
 
 #pass1.good, #pass1-text.good {
@@ -4086,7 +4100,7 @@ fieldset label,
 }
 
 #pass1.strong, #pass1-text.strong {
-	border-color: #83c373;
+	border-color: $wp-green-10;
 }
 
 .pw-weak {

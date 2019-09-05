@@ -3985,34 +3985,34 @@ fieldset label,
 
 #pass-strength-result.short {
   background-color: #ffa6ab;
-  border-color: #e35b5b;
+  border-color: #e65054;
   opacity: 1;
 }
 
 #pass-strength-result.bad {
-  background-color: #fbc5a9;
-  border-color: #f78b53;
+  background-color: #fcd7ba;
+  border-color: #faa754;
   opacity: 1;
 }
 
 #pass-strength-result.good {
-  background-color: #ffe399;
+  background-color: #f7e1ae;
   border-color: #f0c443;
   opacity: 1;
 }
 
 #pass-strength-result.strong {
-  background-color: #c1e1b9;
-  border-color: #83c373;
+  background-color: #a4f5c8;
+  border-color: #59e38f;
   opacity: 1;
 }
 
 #pass1.short, #pass1-text.short {
-  border-color: #e35b5b;
+  border-color: #e65054;
 }
 
 #pass1.bad, #pass1-text.bad {
-  border-color: #f78b53;
+  border-color: #faa754;
 }
 
 #pass1.good, #pass1-text.good {
@@ -4020,7 +4020,7 @@ fieldset label,
 }
 
 #pass1.strong, #pass1-text.strong {
-  border-color: #83c373;
+  border-color: #59e38f;
 }
 
 .pw-weak {
