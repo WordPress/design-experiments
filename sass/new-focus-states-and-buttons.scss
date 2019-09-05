@@ -304,7 +304,7 @@ textarea:focus {
 	border-color: #7e8993;
 }
 
-// Table Borders
+// Borders
 
 #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat,
 .wp-filter,
@@ -315,8 +315,20 @@ textarea:focus {
 	border-color: #e2e4e7;
 }
 
-// Un-round some corners 
+// Remove the top rounded border for the meta links at the top of the screen. 
 
 #screen-meta-links .show-settings {
 	border-top: none;
+}
+
+// Fix the rounded corners on the post title in Gutenberg.
+
+.editor-post-title__input {
+	border-radius: 0;
+}
+
+// Borrow Gutenberg-like outlines on focus.
+
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img {
+	box-shadow: inset 0 0 0 1px #6c7781, inset 0 0 0 2px transparent;
 }
