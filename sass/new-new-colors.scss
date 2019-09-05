@@ -5558,8 +5558,8 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #dashboard_browser_nag.postbox.browser-insecure {
-	background-color: #ac1b1b;
-	border-color: #ac1b1b;
+	background-color: $wp-red-50;
+	border-color: $wp-red-50;
 }
 
 #dashboard_browser_nag.postbox {

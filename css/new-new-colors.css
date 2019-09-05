@@ -5453,8 +5453,8 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #dashboard_browser_nag.postbox.browser-insecure {
-  background-color: #ac1b1b;
-  border-color: #ac1b1b;
+  background-color: #d63638;
+  border-color: #d63638;
 }
 
 #dashboard_browser_nag.postbox {
