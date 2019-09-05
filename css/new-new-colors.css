@@ -761,7 +761,7 @@ span.required,
   padding: 10px;
   clear: both;
   border-top: 1px solid #dcdcde;
-  background: #f5f5f5;
+  background: #f6f7f7;
 }
 
 #delete-action {
@@ -2383,7 +2383,7 @@ div.action-links {
 
 #plugin-information-title {
   padding: 0 26px;
-  background: #f5f5f5;
+  background: #f6f7f7;
   font-size: 22px;
   font-weight: 600;
   line-height: 2.4;
@@ -3359,7 +3359,7 @@ img {
 .js .control-section.open .accordion-section-title,
 .js .control-section .accordion-section-title:focus {
   color: #1d2327;
-  background: #f5f5f5;
+  background: #f6f7f7;
 }
 
 .control-section.open .accordion-section-title {
@@ -5239,7 +5239,7 @@ ul#adminmenu > li.current > a.current:after {
 /* Dashboard right now - Colors */
 #dashboard_right_now .sub {
   color: #50575e;
-  background: #f5f5f5;
+  background: #f6f7f7;
   border-top: 1px solid #f6f7f7;
   padding: 10px 12px 6px 12px;
 }
@@ -5458,9 +5458,9 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #dashboard_browser_nag.postbox {
-  background-color: #e29808;
+  background-color: #dbae17;
   background-image: none;
-  border-color: #edc048;
+  border-color: #f0c443;
   color: #ffffff;
   box-shadow: none;
 }
@@ -5713,7 +5713,7 @@ ul#adminmenu > li.current > a.current:after {
 
 #the-comment-list tr.undo,
 #the-comment-list div.undo {
-  background-color: #f5f5f5;
+  background-color: #f6f7f7;
 }
 
 #the-comment-list .unapproved th,
@@ -10703,7 +10703,7 @@ body.full-overlay-active {
 #nav-menu-header,
 #nav-menu-footer {
   padding: 0 10px;
-  background: #f5f5f5;
+  background: #f6f7f7;
 }
 
 #nav-menu-header {
