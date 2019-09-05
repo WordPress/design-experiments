@@ -11650,13 +11650,13 @@ div#widgets-right .widget-top:hover,
 #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
 #wpadminbar .ab-top-menu > li.hover > .ab-item {
 	background: $wp-gray-80;
-	color: $wp-blue-30;
+	color: $wp-blue-20;
 }
 
 #wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
 #wpadminbar > #wp-toolbar li.hover span.ab-label,
 #wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label {
-	color: $wp-blue-30;
+	color: $wp-blue-20;
 }
 
 #wpadminbar .ab-icon:before,
@@ -11699,7 +11699,7 @@ div#widgets-right .widget-top:hover,
 #wpadminbar li.hover .ab-item:before,
 #wpadminbar li:hover #adminbarsearch:before,
 #wpadminbar li #adminbarsearch.adminbar-focused:before {
-	color: $wp-blue-30;
+	color: $wp-blue-20;
 }
 
 #wpadminbar.mobile .quicklinks .ab-icon:before,
@@ -11709,7 +11709,7 @@ div#widgets-right .widget-top:hover,
 
 #wpadminbar.mobile .quicklinks .hover .ab-icon:before,
 #wpadminbar.mobile .quicklinks .hover .ab-item:before {
-	color: $wp-blue-30;
+	color: $wp-blue-20;
 }
 
 #wpadminbar .ab-top-secondary .menupop .menupop > .ab-item .wp-admin-bar-arrow:before {
@@ -11725,7 +11725,7 @@ div#widgets-right .widget-top:hover,
 
 #wpadminbar .quicklinks .menupop .ab-sub-secondary > li > a:hover,
 #wpadminbar .quicklinks .menupop .ab-sub-secondary > li .ab-item:focus a {
-	color: $wp-blue-30;
+	color: $wp-blue-20;
 }
 
 #wpadminbar .quicklinks a span#ab-updates {
@@ -11793,7 +11793,7 @@ div#widgets-right .widget-top:hover,
 #wpadminbar .quicklinks li a:hover .blavatar,
 #wpadminbar .quicklinks li a:focus .blavatar,
 #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a .blavatar {
-	color: $wp-blue-30;
+	color: $wp-blue-20;
 }
 
 /* The admin bar search field needs to reset many styles that might be inherited from the active Theme CSS. See ticket #40313. */
