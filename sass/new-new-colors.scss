@@ -7927,8 +7927,8 @@ ul.category-tabs li.tabs,
 ul.add-menu-item-tabs li.tabs,
 .wp-tab-active {
 	border: 1px solid $wp-gray-5;
-	border-bottom-color: #fdfdfd;
-	background-color: #fdfdfd;
+	border-bottom-color: $wp-gray-0;
+	background-color: $wp-gray-0;
 }
 
 ul.category-tabs li,
@@ -8561,7 +8561,7 @@ label.post-format-icon {
 	overflow: auto;
 	padding: 0 0.9em;
 	border: solid 1px $wp-gray-5;
-	background-color: #fdfdfd;
+	background-color: $wp-gray-0;
 }
 
 div.tabs-panel-active {
