@@ -4753,7 +4753,7 @@ table.form-table td .updated p {
 
 .privacy_requests .status-request-confirmed th,
 .privacy_requests .status-request-confirmed td {
-	background-color: #f7fcfe;
+	background-color: $wp-gray-0;
 	border-left-color: $wp-blue-30;
 }
 
@@ -6796,7 +6796,7 @@ ul.cat-checklist {
 
 .plugins .active td,
 .plugins .active th {
-	background-color: #f7fcfe;
+	background-color: $wp-gray-0;
 }
 
 .plugins .update th,
@@ -7716,7 +7716,7 @@ div.action-links,
 	}
 
 	.plugins .active.update + .plugin-update-tr:before {
-		background-color: #f7fcfe;
+		background-color: $wp-gray-0;
 		border-left: 4px solid $wp-blue-30;
 	}
 
@@ -10211,7 +10211,7 @@ audio, video {
 }
 
 .theme-overlay .parent-theme {
-	background: #f7fcfe;
+	background: $wp-gray-0;
 	border: 1px solid $wp-gray-0;
 	border-left: 4px solid $wp-blue-30;
 	font-size: 14px;

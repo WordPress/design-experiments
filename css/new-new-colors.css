@@ -4666,7 +4666,7 @@ table.form-table td .updated p {
 
 .privacy_requests .status-request-confirmed th,
 .privacy_requests .status-request-confirmed td {
-  background-color: #f7fcfe;
+  background-color: #f6f7f7;
   border-left-color: #5198d9;
 }
 
@@ -6685,7 +6685,7 @@ ul.cat-checklist {
 
 .plugins .active td,
 .plugins .active th {
-  background-color: #f7fcfe;
+  background-color: #f6f7f7;
 }
 
 .plugins .update th,
@@ -7525,7 +7525,7 @@ div.action-links,
     margin-left: 0;
   }
   .plugins .active.update + .plugin-update-tr:before {
-    background-color: #f7fcfe;
+    background-color: #f6f7f7;
     border-left: 4px solid #5198d9;
   }
   .plugins .plugin-update-tr .update-message {
@@ -9976,7 +9976,7 @@ audio, video {
 }
 
 .theme-overlay .parent-theme {
-  background: #f7fcfe;
+  background: #f6f7f7;
   border: 1px solid #f6f7f7;
   border-left: 4px solid #5198d9;
   font-size: 14px;
