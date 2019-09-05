@@ -521,7 +521,7 @@ div#widgets-right .widget-top:hover,
 }
 
 .sorthelper {
-  background-color: #ccf3fa;
+  background-color: #c6def6;
 }
 
 .ac_match,
@@ -532,7 +532,7 @@ div#widgets-right .widget-top:hover,
 .striped > tbody > :nth-child(odd),
 ul.striped > :nth-child(odd),
 .alternate {
-  background-color: #f9f9f9;
+  background-color: #f6f7f7;
 }
 
 .bar {
@@ -2923,7 +2923,7 @@ img {
 #template textarea {
   font-family: Consolas, Monaco, monospace;
   font-size: 13px;
-  background: #f9f9f9;
+  background: #f6f7f7;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
@@ -3424,7 +3424,7 @@ img {
   }
   .my-sites li:nth-of-type(4n+1),
   .my-sites li:nth-of-type(4n+2) {
-    background-color: #f9f9f9;
+    background-color: #f6f7f7;
   }
 }
 
@@ -3440,7 +3440,7 @@ img {
   .my-sites li:nth-of-type(6n+1),
   .my-sites li:nth-of-type(6n+2),
   .my-sites li:nth-of-type(6n+3) {
-    background-color: #f9f9f9;
+    background-color: #f6f7f7;
   }
 }
 
@@ -3461,7 +3461,7 @@ img {
   .my-sites li:nth-of-type(8n+2),
   .my-sites li:nth-of-type(8n+3),
   .my-sites li:nth-of-type(8n+4) {
-    background-color: #f9f9f9;
+    background-color: #f6f7f7;
   }
 }
 
@@ -3483,7 +3483,7 @@ img {
   .my-sites li:nth-of-type(10n+3),
   .my-sites li:nth-of-type(10n+4),
   .my-sites li:nth-of-type(10n+5) {
-    background-color: #f9f9f9;
+    background-color: #f6f7f7;
   }
 }
 
@@ -3506,7 +3506,7 @@ img {
   .my-sites li:nth-of-type(12n+4),
   .my-sites li:nth-of-type(12n+5),
   .my-sites li:nth-of-type(12n+6) {
-    background-color: #f9f9f9;
+    background-color: #f6f7f7;
   }
 }
 
@@ -5703,7 +5703,7 @@ ul#adminmenu > li.current > a.current:after {
 
 #replyerror {
   border-color: #dcdcde;
-  background-color: #f9f9f9;
+  background-color: #f6f7f7;
 }
 
 /* @todo: is this used? */
@@ -8241,7 +8241,7 @@ span.wp-media-buttons-icon:before {
   width: 100%;
   border: 1px solid #dcdcde;
   border-spacing: 0;
-  background-color: #f9f9f9;
+  background-color: #f6f7f7;
 }
 
 #postcustomstuff tr {
