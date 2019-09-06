@@ -7201,19 +7201,19 @@ div.action-links,
 /* Background Color for Site Status */
 .wp-list-table .site-deleted,
 .wp-list-table tr.site-deleted {
-	background: #ff8573;
+	background: $wp-red-20;
 }
 .wp-list-table .site-spammed,
 .wp-list-table tr.site-spammed {
-	background: #faafaa;
+	background: $wp-red-10;
 }
 .wp-list-table .site-archived,
 .wp-list-table tr.site-archived {
-	background: #ffebe8;
+	background: $wp-orange-0;
 }
 .wp-list-table .site-mature,
 .wp-list-table tr.site-mature {
-	background: #fecac2;
+	background: $wp-red-5;
 }
 
 .sites.fixed .column-lastupdated,
@@ -10925,7 +10925,7 @@ body.full-overlay-active {
 	margin-top: 23px;
 	padding: 10px;
 	overflow: hidden;
-	background: #fbfbfb;
+	background: $wp-gray-0;
 }
 
 .menu-settings {
