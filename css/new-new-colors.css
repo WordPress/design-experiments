@@ -1554,7 +1554,7 @@ form.upgrade .hint {
 
 #screen-meta-links .show-settings:focus {
   border-color: #5198d9;
-  box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+  box-shadow: 0 0 3px rgba(34, 113, 177, 0.8);
 }
 
 #screen-meta-links .show-settings:active {
@@ -3791,9 +3791,9 @@ select.disabled,
 textarea:disabled,
 textarea.disabled {
   background: rgba(255, 255, 255, 0.5);
-  border-color: rgba(222, 222, 222, 0.75);
+  border-color: rgba(220, 220, 222, 0.75);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
-  color: rgba(51, 51, 51, 0.5);
+  color: rgba(44, 51, 56, 0.5);
 }
 
 input[type="file"]:disabled,
@@ -4783,7 +4783,7 @@ table.form-table td .updated p {
 
 #adminmenu .wp-submenu a {
   color: #c3c4c7;
-  color: rgba(240, 245, 250, 0.7);
+  color: rgba(239, 243, 247, 0.7);
 }
 
 #adminmenu .wp-submenu a:hover,
@@ -6746,7 +6746,7 @@ ul.cat-checklist {
 .plugins .plugin-title .dashicons:before {
   padding: 2px;
   background-color: #f6f7f7;
-  box-shadow: inset 0 0 10px rgba(160, 165, 170, 0.15);
+  box-shadow: inset 0 0 10px rgba(167, 170, 173, 0.15);
   font-size: 60px;
   color: #c3c4c7;
 }
@@ -9019,7 +9019,7 @@ form.upgrade .hint {
   width: auto;
   margin-top: 12px;
   padding: 0 16px;
-  border-left: 4px solid #dd3d36;
+  border-left: 4px solid #d63638;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
@@ -9520,7 +9520,7 @@ form.upgrade .hint {
 .image-editor .imgedit-settings .imgedit-help-toggle:focus {
   color: #2271b1;
   border-color: #5198d9;
-  box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+  box-shadow: 0 0 3px rgba(34, 113, 177, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
 }
@@ -10071,7 +10071,7 @@ div#custom-background-image img {
 
 .background-position-control input[type="radio"]:focus ~ .button {
   border-color: #5198d9;
-  box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 3px rgba(0, 115, 170, 0.8);
+  box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 3px rgba(34, 113, 177, 0.8);
   color: #1d2327;
 }
 
@@ -10838,7 +10838,7 @@ body.full-overlay-active {
   background-color: #f6f7f7;
   border-style: solid;
   border-color: #5198d9;
-  box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+  box-shadow: 0 0 3px rgba(34, 113, 177, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
   outline-offset: -2px;
@@ -11202,7 +11202,7 @@ div#widgets-right .widget-top:hover,
 .wp-core-ui .button:focus,
 .wp-core-ui .button-secondary:focus {
   border-color: #5198d9;
-  box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+  box-shadow: 0 0 3px rgba(34, 113, 177, 0.8);
 }
 
 .wp-core-ui .button.active,
@@ -11217,7 +11217,7 @@ div#widgets-right .widget-top:hover,
 
 .wp-core-ui .button.active:focus {
   border-color: #5198d9;
-  box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 3px rgba(0, 115, 170, 0.8);
+  box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 3px rgba(34, 113, 177, 0.8);
 }
 
 .wp-core-ui .button[disabled],
