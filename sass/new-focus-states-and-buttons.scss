@@ -1,0 +1,331 @@
+/*
+Title: Darker Field Borders and New Buttons
+Description: Combining changes from Trac issues #47153, #34904, and #47477
+PR: https://github.com/WordPress/design-experiments/pull/14
+*/
+
+/*
+ * https://core.trac.wordpress.org/attachment/ticket/47153/47153.3.diff
+ * Note: This also applies these changes to the .media-frame fields too.
+ */
+
+.wrap .add-new-h2, /* deprecated */
+.wrap .add-new-h2:active, /* deprecated */
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+	border: 1px solid #7e8993;
+	box-shadow: 0 0 0 transparent;
+}
+
+#screen-meta-links .show-settings {
+	border: 1px solid #7e8993;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 0 0 transparent;
+	transition: box-shadow 0.1s linear;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="search"],
+input[type="radio"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea,
+.media-frame input[type=email], .media-frame input[type=number], .media-frame input[type=password], .media-frame input[type=search], .media-frame input[type=text], .media-frame input[type=url], .media-frame select, .media-frame textarea {
+	padding: 6px 8px;
+	box-shadow: 0 0 0 transparent;
+	transition: box-shadow 0.1s linear;
+	border-radius: 4px;
+	border: 1px solid #7e8993;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+select:focus,
+textarea:focus {
+	box-shadow: inherit;
+}
+
+input[type="radio"] {
+	border-radius: 50%;
+}
+
+/*
+ * https://core.trac.wordpress.org/attachment/ticket/34904/34904.6.diff
+ * Note: All instances of #a1acb5 borders have been replaced with #7e8993 to match the form field borders.
+ */
+
+.wrap .add-new-h2, /* deprecated */
+.wrap .add-new-h2:active, /* deprecated */
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+	border: 1px solid #7e8993;
+	background: #fff;
+	color: #006799; /* some of these controls are button elements and don't inherit from links */
+}
+
+.wrap .add-new-h2:hover, /* deprecated */
+.wrap .page-title-action:hover {
+	background: #f3f5f6;
+	border-color: #7e8993;
+	color: #006799;
+}
+
+.page-title-action:focus {
+	color: #016087;
+}
+
+.wrap .page-title-action:focus {
+	border-color: #006799;
+	box-shadow: 0 0 0 1px #006799;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+select:focus,
+textarea:focus {
+	border-color: #006799;
+	box-shadow: 0 0 0 1px #006799;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+	color: #006799;
+	border-color: #7e8993;
+	background: #fff;
+	box-shadow: none;
+}
+
+.wp-core-ui .button.hover,
+.wp-core-ui .button:hover,
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button.focus,
+.wp-core-ui .button:focus,
+.wp-core-ui .button-secondary:focus {
+	background: #f3f5f6;
+	border-color: #7e8993;
+	color: #006799;
+}
+
+.wp-core-ui .button.focus,
+.wp-core-ui .button:focus,
+.wp-core-ui .button-secondary:focus {
+	background: #f3f5f6;
+	border-color: #006799;
+	color: #016087;
+	box-shadow: 0 0 0 1px #006799;
+}
+
+.wp-core-ui .button.active,
+.wp-core-ui .button.active:hover,
+.wp-core-ui .button:active,
+.wp-core-ui .button-secondary:active {
+	background: #eee;
+	border-color: #999;
+	transform: translateY(1px);
+	box-shadow: none;
+}
+
+.wp-core-ui .button.active:focus {
+	border-color: #5b9dd9;
+	box-shadow:
+		inset 0 2px 5px -3px rgba(0, 0, 0, 0.5),
+		0 0 3px rgba(0, 115, 170, 0.8);
+}
+
+.wp-core-ui .button[disabled],
+.wp-core-ui .button:disabled,
+.wp-core-ui .button.disabled,
+.wp-core-ui .button-secondary[disabled],
+.wp-core-ui .button-secondary:disabled,
+.wp-core-ui .button-secondary.disabled,
+.wp-core-ui .button-disabled {
+	color: #a0a5aa !important;
+	border-color: #ddd !important;
+	background: #f7f7f7 !important;
+	box-shadow: none !important;
+	text-shadow: 0 1px 0 #fff !important;
+	cursor: default;
+	transform: none !important;
+}
+
+.wp-core-ui .button-primary {
+	background: #006799;
+	border-color: #006799;
+	color: #fff;
+	text-decoration: none;
+}
+
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+	background: #46799a;
+	border-color: #46799a;
+	color: #fff;
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #006799;
+}
+
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary.active:hover,
+.wp-core-ui .button-primary.active:focus,
+.wp-core-ui .button-primary:active {
+	background: #006799;
+	border-color: #006799;
+	transform: translateY(1px);
+	box-shadow: none;
+}
+
+.wp-core-ui .button-primary[disabled],
+.wp-core-ui .button-primary:disabled,
+.wp-core-ui .button-primary-disabled,
+.wp-core-ui .button-primary.disabled {
+	color: #66C6E4 !important;
+	background: #008EC2 !important;
+	border-color: #008EC2 !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	cursor: default;
+}
+
+.wp-core-ui .button-group > .button-primary + .button {
+	border-left: 0;
+}
+
+.wp-core-ui .button-group > .button:active {
+	transform: translateY(0);
+}
+
+/*
+ * Select control adjustments
+ * Partially from: https://core.trac.wordpress.org/attachment/ticket/47477/47477.3.diff
+ */
+
+.wp-admin select,
+.media-modal-content .media-frame select.attachment-filters {
+	font-size: 13px;
+	line-height: 1;
+	color: #555;
+	border-radius: 3px;
+	padding: 2px 24px 2px 8px;
+	min-height: 28px;
+	-webkit-appearance: none;
+	/* The SVG is arrow-down-alt2 from Dashicons. */
+	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 4px top 50%;
+	background-size: 16px 16px;
+}
+
+.wp-admin select:hover {
+	background-color: #f3f5f6;
+	color: #006799;
+}
+ 
+.wp-admin select:focus {
+	background-color: #f3f5f6;
+	border-color: #006799;
+	color: #016087;
+	box-shadow: 0 0 0 1px #006799
+}
+
+.wp-admin select:active {
+	background-color: #eee;
+	border-color: #999;
+	box-shadow: none;
+}
+
+/* 
+ * Additional Adjustments
+ */
+
+// Darken container/card borders to offset the dark fields.
+
+#menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat,
+.wp-filter,
+.widefat thead td, .widefat thead th,
+.widefat tfoot td, .widefat tfoot th,
+.postbox, .postbox .hndle, .stuffbox .hndle,
+.theme-browser .theme,
+#screen-meta-links .screen-meta-active,
+.health-check-accordion,
+.card,
+.welcome-panel,
+.updated,
+#message {
+	border-color: #ccd0d4;
+}
+
+// Darken notice borders
+
+.notice,
+#update-nag, .update-nag {
+	border-right: 1px solid #ccd0d4;
+	border-top: 1px solid #ccd0d4;
+	border-bottom-color: #ccd0d4;
+}
+
+// Remove the top rounded border for the meta links at the top of the screen. 
+
+#screen-meta-links .show-settings {
+	border-top: none;
+}
+
+// Fix the rounded corners on the post title in Gutenberg.
+
+.editor-post-title__input {
+	border-radius: 0;
+}
+
+// Borrow Gutenberg-like outlines on focus.
+
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img,
+.wp-core-ui .button-link:focus,
+#screen-meta-links .show-settings:focus {
+	outline: 1px dotted #6c7781;
+	box-shadow: none;
+}
