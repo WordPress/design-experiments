@@ -5526,7 +5526,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #activity-widget #the-comment-list .unapproved {
-	background-color: #fef7f1;
+	background-color: $wp-gray-0;
 }
 
 #activity-widget #the-comment-list .unapproved:before {
@@ -5826,7 +5826,7 @@ ul#adminmenu > li.current > a.current:after {
 
 #the-comment-list .unapproved th,
 #the-comment-list .unapproved td {
-	background-color: #fef7f1;
+	background-color: $wp-gray-0;
 }
 
 #the-comment-list .unapproved th.check-column {
@@ -6916,7 +6916,7 @@ ul.cat-checklist {
 
 .plugins tr.paused th,
 .plugins tr.paused td {
-	background-color: #fef7f1;
+	background-color: $wp-gray-0;
 }
 
 .plugins tr.paused .plugin-title,
@@ -7704,7 +7704,7 @@ div.action-links,
 
 	.plugins .active.update + .plugin-update-tr:before {
 		border-left: 4px solid $wp-red-50;
-		background-color: #fef7f1;
+		background-color: $wp-gray-0;
 	}
 
 	.plugins #the-list .plugin-update-tr .plugin-update {
