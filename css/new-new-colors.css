@@ -537,7 +537,7 @@ ul.striped > :nth-child(odd),
 
 .bar {
   background-color: #f6f7f7;
-  border-right-color: #99d;
+  border-right-color: #5198d9;
 }
 
 /* Helper classes for plugins to leverage the active WordPress color scheme */
@@ -1683,7 +1683,7 @@ form.upgrade .hint {
   border: 1px solid #dcdcde;
   border-top: none;
   border-bottom: none;
-  background: #f6fbfd;
+  background: #f6f7f7;
 }
 
 #contextual-help-wrap.no-sidebar #contextual-help-back {
@@ -1728,7 +1728,7 @@ form.upgrade .hint {
   padding: 0;
   margin: 0 -1px 0 0;
   border-left: 2px solid #5198d9;
-  background: #f6fbfd;
+  background: #f6f7f7;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
 
@@ -2448,7 +2448,7 @@ div.action-links {
   font-size: 0;
   z-index: 1;
   border-bottom: 1px solid #dcdcde;
-  background: #f3f3f3;
+  background: #f6f7f7;
 }
 
 #plugin-information-tabs a {
@@ -2531,7 +2531,7 @@ div.action-links {
   /* equal height column trick */
   width: 217px;
   border-left: 1px solid #dcdcde;
-  background: #f3f3f3;
+  background: #f6f7f7;
   color: #646970;
 }
 
@@ -2625,7 +2625,7 @@ div.action-links {
   height: 33px;
   /* 33+13+13+1=60 */
   border-top: 1px solid #dcdcde;
-  background: #f3f3f3;
+  background: #f6f7f7;
 }
 
 /* rtl:ignore */
@@ -5466,12 +5466,12 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #dashboard_browser_nag.postbox.browser-insecure h2 {
-  border-bottom-color: #cd5a5a;
+  border-bottom-color: #e65054;
   color: #ffffff;
 }
 
 #dashboard_browser_nag.postbox h2 {
-  border-bottom-color: #f6e2ac;
+  border-bottom-color: #f7e1ae;
   background: transparent none;
   color: #ffffff;
   box-shadow: none;
@@ -8984,13 +8984,8 @@ form.upgrade .hint {
   display: block;
 }
 
-/*
-#drag-drop-area:-moz-drag-over {
-	border-color: #83b4d8;
-}
-border color while dragging a file over the uploader drop area */
 .drag-drop.drag-over #drag-drop-area {
-  border-color: #83b4d8;
+  border-color: #5198d9;
 }
 
 #plupload-upload-ui {
@@ -9285,7 +9280,7 @@ border color while dragging a file over the uploader drop area */
   box-shadow: inset 0px 4px 4px -4px rgba(0, 0, 0, 0.1);
   border-bottom: 0;
   border-left: 1px solid #dcdcde;
-  background: #f3f3f3;
+  background: #f6f7f7;
 }
 
 .edit-attachment-frame .attachment-info .details,
@@ -9853,7 +9848,7 @@ audio, video {
   left: 0;
   right: 0;
   padding: 10px 25px 5px;
-  background: #f3f3f3;
+  background: #f6f7f7;
   z-index: 30;
   box-sizing: border-box;
   border-top: 1px solid #f6f7f7;
@@ -10733,8 +10728,8 @@ body.full-overlay-active {
 }
 
 #menu-to-edit .menu-item-invalid .menu-item-handle {
-  background: #f6c9cc;
-  border-color: #f1acb1;
+  background: #ffccd0;
+  border-color: #ffa6ab;
 }
 
 .menu li.deleting .menu-item-handle {
@@ -11115,7 +11110,7 @@ div#widgets-right .widget-top:hover,
 
 .health-check-accordion-trigger:hover,
 .health-check-accordion-trigger:active {
-  background: #f8f9f9;
+  background: #f6f7f7;
 }
 
 .health-check-accordion-trigger:focus {
