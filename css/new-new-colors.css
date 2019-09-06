@@ -486,8 +486,8 @@ code {
 
 .wrap .add-new-h2:hover,
 .wrap .page-title-action:hover {
-  border-color: #3582c4;
-  background: #5198d9;
+  border-color: #2271b1;
+  background: #2271b1;
   color: #ffffff;
 }
 
@@ -4868,7 +4868,7 @@ table.form-table td .updated p {
 #adminmenu .wp-menu-arrow,
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
 #adminmenu .wp-menu-arrow div {
-  background: #3582c4;
+  background: #2271b1;
   color: #ffffff;
 }
 
@@ -11295,7 +11295,7 @@ div#widgets-right .widget-top:hover,
 .wp-core-ui .button-primary:hover,
 .wp-core-ui .button-primary.focus,
 .wp-core-ui .button-primary:focus {
-  background: #3582c4;
+  background: #2271b1;
   border-color: #135e96;
   color: #ffffff;
 }
