@@ -1021,7 +1021,7 @@ th.action-links {
 
 .show-filters .wp-filter .drawer-toggle:hover,
 .show-filters .wp-filter .drawer-toggle:focus {
-  background: #2ea2cc;
+  background: #5198d9;
 }
 
 .show-filters .wp-filter .drawer-toggle:before {
@@ -9699,7 +9699,7 @@ audio, video {
   height: 100px;
   vertical-align: middle;
   text-align: center;
-  color: #999999;
+  color: #8e9196;
   position: absolute;
   top: 30%;
   left: 50%;

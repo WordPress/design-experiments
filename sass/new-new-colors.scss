@@ -1113,7 +1113,7 @@ th.action-links {
 
 .show-filters .wp-filter .drawer-toggle:hover,
 .show-filters .wp-filter .drawer-toggle:focus {
-	background: rgb(46, 162, 204);
+	background: $wp-blue-30;
 }
 
 .show-filters .wp-filter .drawer-toggle:before {
@@ -9928,7 +9928,7 @@ audio, video {
 	height: 100px;
 	vertical-align: middle;
 	text-align: center;
-	color: rgb(153, 153, 153);
+	color: $wp-gray-30;
 	position: absolute;
 	top: 30%;
 	left: 50%;
