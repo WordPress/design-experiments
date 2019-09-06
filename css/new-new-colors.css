@@ -122,7 +122,7 @@ a:focus,
 a:focus .media-icon img,
 .wp-person a:focus .gravatar {
   color: #0a4b78;
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 1px solid transparent;
 }
@@ -498,7 +498,7 @@ code {
 
 .wrap .page-title-action:focus {
   border-color: #5198d9;
-  box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 2px rgba(53, 130, 196, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
 }
@@ -682,7 +682,7 @@ img.emoji {
 }
 
 .tagchecklist .ntdelbutton:focus .remove-tag-icon:before {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 .key-labels label {
@@ -1278,7 +1278,7 @@ div.error p,
 
 .notice-dismiss:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 .ie8 .notice-dismiss:focus {
@@ -2907,7 +2907,7 @@ img {
 }
 
 .js .postbox .handlediv:focus .toggle-indicator:before {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 /* @todo: appears to be Press This only and overridden */
@@ -3008,7 +3008,7 @@ img {
 
 [role="treeitem"] .folder-label.focus {
   color: #0a4b78;
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 [role="treeitem"].hover,
@@ -3246,7 +3246,7 @@ img {
 }
 
 .widget-top .widget-action:focus .toggle-indicator:before {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 .control-section .accordion-section-title:after,
@@ -3563,7 +3563,7 @@ input[type="radio"]:focus,
 select:focus,
 textarea:focus {
   border-color: #5198d9;
-  box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 2px rgba(53, 130, 196, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
 }
@@ -4107,7 +4107,7 @@ ul#add-to-blog-users {
   position: absolute;
   z-index: 10000;
   border: 1px solid #5198d9;
-  box-shadow: 0 1px 2px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 1px 2px rgba(53, 130, 196, 0.8);
   background-color: #ffffff;
 }
 
@@ -5997,7 +5997,7 @@ th.asc a:focus span.sorting-indicator:before {
 }
 
 .wp-list-table .toggle-row:focus:before {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 .ie8 .wp-list-table .toggle-row:focus:before {
@@ -8895,7 +8895,7 @@ table.diff .diff-addedline ins {
 }
 
 #find-posts-close:focus {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 2px solid transparent;
   outline-offset: -2px;
@@ -9621,7 +9621,7 @@ audio, video {
 
 .theme-browser .theme:focus {
   border-color: #5198d9;
-  box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 2px rgba(53, 130, 196, 0.8);
 }
 
 /**
@@ -10380,7 +10380,7 @@ body.full-overlay-active {
 
 .wp-full-overlay .collapse-sidebar:hover .collapse-sidebar-arrow,
 .wp-full-overlay .collapse-sidebar:focus .collapse-sidebar-arrow {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 .wp-full-overlay .collapse-sidebar-label {
@@ -10764,7 +10764,7 @@ body.full-overlay-active {
 }
 
 .nav-menus-php .item-edit:focus:before {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 /* Menu editing */
@@ -10893,7 +10893,7 @@ body.full-overlay-active {
 }
 
 .sidebar-name .handlediv:focus .toggle-indicator:before {
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
 }
 
 .widgets-holder-wrap .description {
@@ -11261,7 +11261,7 @@ div#widgets-right .widget-top:hover,
 
 .wp-core-ui .button-link:focus {
   color: #0a4b78;
-  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 0 1px #5198d9, 0 0 2px 1px rgba(53, 130, 196, 0.8);
   /* Only visible in Windows High Contrast mode */
   outline: 1px solid transparent;
 }
