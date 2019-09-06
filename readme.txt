@@ -24,6 +24,9 @@ An important disclaimer: This plugin is called experimental for a reason. It is 
 
 == Changelog ==
 
+= 1.2 =
+* Adds the "Darker Field Borders and New Buttons" experiment.
+
 = 1.1 =
 * Adds the Animated Menu Hovers experiment.
 

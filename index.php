@@ -4,7 +4,7 @@
  * Plugin Name: Design Experiments
  * Plugin URI: https://github.com/wordpress/design-experiments/
  * Description: WP-Admin design experiments from the WordPress.org Design Team
- * Version: 1.1
+ * Version: 1.2
  * Author: The WordPress.org Design Team
  * Text Domain: design-experiments
  */
