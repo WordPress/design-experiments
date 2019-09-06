@@ -3756,7 +3756,7 @@ textarea[readonly] {
 .form-invalid select,
 .form-invalid select:focus {
   border-color: #d63638 !important;
-  box-shadow: 0 0 2px rgba(204, 0, 0, 0.8);
+  box-shadow: 0 0 2px rgba(214, 54, 56, 0.8);
 }
 
 .form-table .form-required.form-invalid td:after {

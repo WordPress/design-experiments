@@ -3834,7 +3834,7 @@ textarea[readonly] {
 .form-invalid select,
 .form-invalid select:focus {
 	border-color: $wp-red-50 !important;
-	box-shadow: 0 0 2px rgba(204, 0, 0, 0.8);
+	box-shadow: 0 0 2px rgba($wp-red-50, 0.8);
 }
 
 .form-table .form-required.form-invalid td:after {
