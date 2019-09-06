@@ -2879,7 +2879,7 @@ div.action-links {
 
 /* Thickbox for the Plugin details modal. */
 #TB_window.plugin-details-modal {
-	background: #fcfcfc;
+	background: $wp-gray-0;
 }
 
 #TB_window.plugin-details-modal.thickbox-loading:before {
@@ -2892,7 +2892,7 @@ div.action-links {
 	top: 50%;
 	z-index: -1;
 	margin: -10px 0 0 -10px;
-	background: #fcfcfc url(../images/spinner.gif) no-repeat center;
+	background: $wp-gray-0 url(../images/spinner.gif) no-repeat center;
 	background-size: 20px 20px;
 	transform: translateZ(0);
 }
@@ -9066,7 +9066,7 @@ table.diff .diff-addedline ins {
 }
 
 .find-box-head {
-	background: #fcfcfc;
+	background: $wp-gray-0;
 	border-bottom: 1px solid $wp-gray-5;
 	height: 36px;
 	font-size: 18px;
@@ -9130,7 +9130,7 @@ table.diff .diff-addedline ins {
 
 .find-box-buttons {
 	padding: 8px 16px;
-	background: #fcfcfc;
+	background: $wp-gray-0;
 	border-top: 1px solid $wp-gray-5;
 	position: absolute;
 	bottom: 0;
