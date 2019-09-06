@@ -2418,7 +2418,7 @@ div.action-links {
   padding: 0 15px;
   margin-top: 174px;
   color: #ffffff;
-  background: rgba(30, 30, 30, 0.9);
+  background: rgba(29, 35, 39, 0.9);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -9590,7 +9590,7 @@ audio, video {
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
   height: auto;
-  background: rgba(244, 244, 244, 0.7);
+  background: rgba(246, 247, 247, 0.7);
   border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -9636,7 +9636,7 @@ audio, video {
 }
 
 .theme-browser .theme.active .theme-actions {
-  background: rgba(49, 49, 49, 0.7);
+  background: rgba(44, 51, 56, 0.7);
   border-left: none;
   opacity: 1;
 }
@@ -9689,7 +9689,7 @@ audio, video {
 
 .theme-browser .theme.add-new-theme span:after {
   background: #dcdcde;
-  background: rgba(153, 153, 153, 0.1);
+  background: rgba(142, 145, 150, 0.1);
   border-radius: 50%;
   display: inline-block;
   content: "\f132";
@@ -9741,7 +9741,7 @@ audio, video {
   top: 0;
   bottom: 0;
   background: #f6f7f7;
-  background: rgba(238, 238, 238, 0.9);
+  background: rgba(246, 247, 247, 0.9);
   z-index: 10000;
   /* Over WP Pointers. */
 }
@@ -11395,12 +11395,12 @@ div#widgets-right .widget-top:hover,
 #wpadminbar .ab-item:before,
 #wpadminbar #adminbarsearch:before {
   color: #a7aaad;
-  color: rgba(240, 245, 250, 0.6);
+  color: rgba(239, 243, 247, 0.6);
 }
 
 #wpadminbar .ab-submenu .ab-item {
   color: #c3c4c7;
-  color: rgba(240, 245, 250, 0.7);
+  color: rgba(239, 243, 247, 0.7);
 }
 
 #wpadminbar .quicklinks .menupop ul li a,
@@ -11408,7 +11408,7 @@ div#widgets-right .widget-top:hover,
 #wpadminbar .quicklinks .menupop.hover ul li a,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li a {
   color: #c3c4c7;
-  color: rgba(240, 245, 250, 0.7);
+  color: rgba(239, 243, 247, 0.7);
 }
 
 #wpadminbar .quicklinks .menupop ul li a:hover,

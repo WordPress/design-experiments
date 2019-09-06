@@ -2513,7 +2513,7 @@ div.action-links {
 	padding: 0 15px;
 	margin-top: 174px;
 	color: $wp-white;
-	background: rgba(30, 30, 30, 0.9);
+	background: rgba($wp-gray-90, 0.9);
 	text-shadow: 0 1px 3px rgba($wp-black, 0.4);
 	box-shadow: 0 0 30px rgba($wp-white, 0.1);
 	border-radius: 8px;
@@ -9817,7 +9817,7 @@ audio, video {
 	opacity: 0;
 	transition: opacity 0.1s ease-in-out;
 	height: auto;
-	background: rgba(244, 244, 244, 0.7);
+	background: rgba($wp-gray-0, 0.7);
 	border-left: 1px solid rgba($wp-black, 0.05);
 }
 
@@ -9865,7 +9865,7 @@ audio, video {
 
 
 .theme-browser .theme.active .theme-actions {
-	background: rgba(49, 49, 49, 0.7);
+	background: rgba($wp-gray-80, 0.7);
 	border-left: none;
 	opacity: 1;
 }
@@ -9918,7 +9918,7 @@ audio, video {
 
 .theme-browser .theme.add-new-theme span:after {
 	background: $wp-gray-5;
-	background: rgba(153, 153, 153, 0.1);
+	background: rgba($wp-gray-30, 0.1);
 	border-radius: 50%;
 	display: inline-block;
 	content: "\f132";
@@ -9972,7 +9972,7 @@ audio, video {
 	top: 0;
 	bottom: 0;
 	background: $wp-gray-0;
-	background: rgba(238, 238, 238, 0.9);
+	background: rgba($wp-gray-0, 0.9);
 	z-index: 10000; /* Over WP Pointers. */
 }
 
@@ -11672,12 +11672,12 @@ div#widgets-right .widget-top:hover,
 #wpadminbar .ab-item:before,
 #wpadminbar #adminbarsearch:before {
 	color: $wp-gray-20;
-	color: rgba(240, 245, 250, 0.6);
+	color: rgba($wp-blue-0, 0.6);
 }
 
 #wpadminbar .ab-submenu .ab-item {
 	color: $wp-gray-10;
-	color: rgba(240, 245, 250, 0.7);
+	color: rgba($wp-blue-0, 0.7);
 }
 
 #wpadminbar .quicklinks .menupop ul li a,
@@ -11685,7 +11685,7 @@ div#widgets-right .widget-top:hover,
 #wpadminbar .quicklinks .menupop.hover ul li a,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li a {
 	color: $wp-gray-10;
-	color: rgba(240, 245, 250, 0.7);
+	color: rgba($wp-blue-0, 0.7);
 }
 
 #wpadminbar .quicklinks .menupop ul li a:hover,
