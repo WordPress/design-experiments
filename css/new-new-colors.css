@@ -10739,7 +10739,7 @@ body.full-overlay-active {
 
 .menu li.deleting .menu-item-handle {
   background-image: none;
-  background-color: #f66;
+  background-color: #f86368;
 }
 
 .menu-item-handle .menu-item-title.no-title {
@@ -10831,16 +10831,16 @@ body.full-overlay-active {
 
 .media-widget-control .attachment-media-view .button-add-media {
   cursor: pointer;
-  background-color: #edeff0;
+  background-color: #f6f7f7;
   color: #2c3338;
 }
 
 .media-widget-control .attachment-media-view .button-add-media:hover {
-  background-color: #fbfbfc;
+  background-color: #f6f7f7;
 }
 
 .media-widget-control .attachment-media-view .button-add-media:focus {
-  background-color: #fbfbfc;
+  background-color: #f6f7f7;
   border-style: solid;
   border-color: #5198d9;
   box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);

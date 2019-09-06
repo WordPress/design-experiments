@@ -10989,7 +10989,7 @@ body.full-overlay-active {
 
 .menu li.deleting .menu-item-handle {
 	background-image: none;
-	background-color: #f66;
+	background-color: $wp-red-30;
 }
 
 .menu-item-handle .menu-item-title.no-title {
@@ -11085,16 +11085,16 @@ body.full-overlay-active {
 
 .media-widget-control .attachment-media-view .button-add-media {
 	cursor: pointer;
-	background-color: #edeff0;
+	background-color: $wp-gray-0;
 	color: $wp-gray-80;
 }
 
 .media-widget-control .attachment-media-view .button-add-media:hover {
-	background-color: #fbfbfc;
+	background-color: $wp-gray-0;
 }
 
 .media-widget-control .attachment-media-view .button-add-media:focus {
-	background-color: #fbfbfc;
+	background-color: $wp-gray-0;
 	border-style: solid;
 	border-color: $wp-blue-30;
 	box-shadow: 0 0 3px rgba( 0, 115, 170, .8 );
