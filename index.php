@@ -30,6 +30,9 @@ class DesignExperiments {
 		add_action( 'admin_init', array( $this, 'design_experiments_settings' ) );
 		add_action( 'admin_notices', array( $this, 'design_experiments_admin_notice' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'design_experiments_enqueue_stylesheets' ), 100 );
+
+		// Filters
+		add_filter( 'plugin_action_links_design-experiments/index.php', array( $this, 'design_experiments_add_settings_link' ) );
 	}
 
 	/**
@@ -200,6 +203,15 @@ class DesignExperiments {
 			</div>
 			<?php 
 		}
+	}
+
+	/**
+	 * Include a link to the plugin settings on the main plugins page.
+	 */
+	function design_experiments_add_settings_link( $links ) {
+		$settings_link = '<a href="options-general.php?page=design-experiments">' . __( 'Settings' ) . '</a>';
+		array_push( $links, $settings_link );
+		return $links;
 	}
 
 }
