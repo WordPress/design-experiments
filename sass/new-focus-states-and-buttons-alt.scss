@@ -1,6 +1,7 @@
 /*
 Title: Darker Field Borders and New Buttons (Alternate)
-Description: Combining changes from Trac issues #47153, #34904, and #47477 (Alternate)
+Description: Combining changes from Trac issues #47153, #34904, and #47477
+PR: https://github.com/WordPress/design-experiments/pull/16
 */
 
 /*
@@ -77,8 +78,8 @@ input[type="radio"] {
 }
 
 /*
- * https://core.trac.wordpress.org/attachment/ticket/34904/34904.6.diff
- * Note: All instances of #a1acb5 borders have been replaced with #7e8993 to match the form field borders.
+ * Loosely based on https://core.trac.wordpress.org/attachment/ticket/34904/34904.6.diff
+ * Many of the blues and grays are different.
  */
 
 .wrap .add-new-h2, /* deprecated */
