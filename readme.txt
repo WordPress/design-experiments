@@ -24,6 +24,10 @@ An important disclaimer: This plugin is called experimental for a reason. It is 
 
 == Changelog ==
 
+= 1.3 =
+* Adds the "Darker Field Borders and New Buttons (Alternate)" experiment.
+* Adds the "New Colors" experiment.
+
 = 1.2 =
 * Adds the "Darker Field Borders and New Buttons" experiment.
 
