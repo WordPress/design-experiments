@@ -1,0 +1,374 @@
+$admin-bar-height: 46px;
+$main-theme-color: #0071a1;
+
+@mixin break-medium() {
+	@media only screen and (max-width: 782px) {
+		@content;
+	}
+}
+
+@mixin break-small() {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+@mixin folded() {
+	@media only screen and (min-width: 600px) and (max-width: 960px) {
+		@content;
+	}
+
+	.folded & {
+		@content
+	}
+}
+
+/* Layout of the page */
+#wpwrap {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#wpfooter {
+	display: none;
+}
+
+#wpcontent {
+    flex-grow: 1;
+    margin: 0;
+	overflow-y: auto;
+	
+	@include folded {
+		margin: 0;
+	}
+
+	@include break-small {
+		.wp-responsive-open & #wpbody {
+			display: none;
+		}
+	}
+}
+
+#adminmenumain {
+    background: white;
+    overflow-y: auto;
+    height: 100%;
+	flex-shrink: 0;
+	border-right: 1px solid #ccd0d4;
+
+	@include break-small {
+		display: none;
+
+		.wp-responsive-open & {
+			display: block;
+			position: absolute;
+			top: $admin-bar-height;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 99998;
+			height: auto;
+		}
+	}
+}
+
+/* Main Admin Menu */
+#adminmenuwrap {
+	height: 100%;
+}
+
+#adminmenu {
+	position: relative;
+	margin: 0;
+	padding: 20px 0;
+	font-size: 14px;
+	min-height: 100%;
+	box-sizing: border-box;
+	width: 250px;
+
+	.wp-responsive-open & {
+		width: 100%;
+	}
+
+	// Space for the absolutely positionned collapse button
+	padding-bottom: 40px;
+
+	.wp-submenu-head {
+		display: none;
+	}
+
+	ul {
+		margin: 10px 0 20px 32px;
+
+		li > a {
+			font-size: 13px;
+			display: flex;
+			padding: 3px;
+			color: #444444;
+		}
+	}
+
+	> li {
+		padding: 0 20px;
+	}
+
+	.wp-menu-separator {
+		background: #bbbbbb;
+		height: 1px;
+		margin: 15px 0;
+	}
+
+	> li > a {
+		position: relative;
+		display: flex;
+		padding: 6px;
+		color: #111111;
+
+		// Space for the absolutely positionned caret
+		padding-right: 20px;
+	}
+
+	.wp-menu-image {
+		margin-right: 8px;
+	}
+
+	.wp-has-submenu .wp-menu-arrow {
+		display: block;
+	}
+	
+	.wp-menu-arrow {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 32px;
+		height: 32px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 12px;
+			left: 10px;
+			border-top: 6px solid #666666;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+		  }
+		  
+		  &:after {
+			content: '';
+			position: absolute;
+			left: 13px;
+			top: 12px;
+			border-top: 3px solid #fff;
+			border-left: 3px solid transparent;
+			border-right: 3px solid transparent;
+		  }
+	}
+
+	.awaiting-mod,
+	.update-plugins {
+		display: inline-block;
+		vertical-align: top;
+		box-sizing: border-box;
+		margin: 1px 0 -1px 5px;
+		padding: 0 5px;
+		min-width: 18px;
+		height: 18px;
+		border-radius: 9px;
+		background-color: $main-theme-color;
+		color: #fff;
+		font-size: 11px;
+		line-height: 1.6;
+		text-align: center;
+		z-index: 26;
+	}
+
+	span.count-0 {
+		display: none;
+	}
+
+	@include folded {
+		width: auto;
+
+		.wp-menu-image {
+			margin-right: 0;
+		}
+
+		.wp-menu-name {
+			display: none;
+		}
+
+		> li {
+			padding: 0 10px;
+		}
+
+		> li > a {
+			padding-right: 6px;
+		}
+
+		ul {
+			display: none !important;
+		}
+
+		.wp-has-submenu .wp-menu-arrow {
+			display: none;
+		}
+	}
+}
+
+#collapse-menu {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	@media only screen and (min-width: 600px) and (max-width: 960px) {
+		display: none;
+	}
+}
+
+#collapse-button {
+	display: block;
+	width: 100%;
+	height: 34px;
+	margin: 0;
+	border: none;
+	padding: 0;
+	position: relative;
+	overflow: visible;
+	background: none;
+	color: #444;
+	cursor: pointer;
+
+	.collapse-button-icon,
+	.collapse-button-label {
+		/* absolutely positioned to avoid 1px shift in IE when button is pressed */
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.collapse-button-label {
+		top: 8px;
+		padding: 0 0 0 36px;
+	}
+
+	.collapse-button-icon {
+		width: 20px;
+		height: 34px;
+
+		&:after {
+			content: "\f148";
+			display: block;
+			position: relative;
+			top: 7px;
+			left: 5px;
+			text-align: center;
+			font: normal 20px/1 dashicons !important;
+			speak: none;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+	}
+
+	@include folded {
+		.collapse-button-label {
+			display: none;
+		}
+		
+		.collapse-button-icon:after {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+/* Top Bar Menu */
+#wpadminbar {
+	background: $main-theme-color;
+	height: $admin-bar-height;
+}
+
+html.wp-toolbar {
+	padding-top: $admin-bar-height;
+
+	@include break-small {
+		padding-top: 0;
+	}
+}
+
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item {
+	padding: 0 15px;
+}
+
+#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input {
+	height: $admin-bar-height;
+	line-height: $admin-bar-height;
+}
+
+#wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon, .wp-admin-bar-arrow {
+	padding: (($admin-bar-height - 24) / 2) 0;
+
+	@include break-medium {
+		padding: 0;
+	}
+}
+
+#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
+	color: #f1f1f1;
+}
+
+/**
+ * Toolbar menu toggle
+ */
+#wp-admin-bar-menu-toggle {
+	display: none !important;
+
+	@include break-small {
+		display: block !important;
+	} 
+
+	a {
+		display: block;
+		padding: 0;
+		overflow: hidden;
+		outline: none;
+		text-decoration: none;
+		background: none;
+		height: 46px;
+
+		.wp-responsive-open & {
+			background: #32373c;
+		}
+	}
+
+	.ab-icon:before {
+		content: "\f228";
+		display: inline-block;
+		float: left;
+		font: normal 40px/45px dashicons;
+		vertical-align: middle;
+		outline: none;
+		margin: 0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		height: 44px;
+		width: 50px;
+		padding: 0;
+		border: none;
+		text-align: center;
+		text-decoration: none;
+		box-sizing: border-box;
+
+		.wp-responsive-open &:before {
+			color: #00b9eb;
+		}
+	}	
+}
+
+/* Hide-if-customize for items we can't add classes to */
+.customize-support #menu-appearance a[href="themes.php?page=custom-header"],
+.customize-support #menu-appearance a[href="themes.php?page=custom-background"] {
+	display: none;
+}

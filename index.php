@@ -185,6 +185,11 @@ class DesignExperiments {
 				break;
 			}
 		}
+
+		wp_deregister_style( 'admin-menu' );
+		wp_register_style( 'admin-menu', plugins_url( 'css/admin-menu.css', __FILE__ ) );
+		wp_register_script( 'wp-admin-menu', plugins_url( 'js/admin-menu.js', __FILE__ ), [ 'jquery' ] );
+		wp_enqueue_script( 'wp-admin-menu' );
 	}
 
 	/**
