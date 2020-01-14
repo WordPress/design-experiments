@@ -20,18 +20,18 @@ class DesignExperiments {
 
 	function __construct() {
 
-		// Generate a list of all CSS files
+		// Generate a list of all CSS files.
 		$this->design_experiment_css_files = glob( plugin_dir_path( __FILE__ ) . 'css/*.css' );
 
 		$this->get_design_experiment_meta_data();
 
-		// Add admin actions
+		// Add admin actions.
 		add_action( 'admin_menu', array( $this, 'design_experiments_add_settings_page' ) );
 		add_action( 'admin_init', array( $this, 'design_experiments_settings' ) );
 		add_action( 'admin_notices', array( $this, 'design_experiments_admin_notice' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'design_experiments_enqueue_stylesheets' ), 100 );
 
-		// Filters
+		// Filters.
 		add_filter( 'plugin_action_links_design-experiments/index.php', array( $this, 'design_experiments_add_settings_link' ) );
 	}
 
@@ -64,7 +64,7 @@ class DesignExperiments {
 	 */
 	function design_experiments_settings() {
 		$design_setting_args = array(
-			'type' => 'string',
+			'type'    => 'string',
 			'default' => 'default',
 		);
 		register_setting( 'design-experiments-settings', 'design-experiments-setting', $design_setting_args );
@@ -119,7 +119,7 @@ class DesignExperiments {
 	function design_experiments_settings_page() { ?>
 
 		<div class="wrap">
-		<h1><?php _e('Design Experiments'); ?></h1>
+		<h1><?php _e( 'Design Experiments', 'design-experiments' ); ?></h1>
 
 		<form method="post" action="options.php">
 			<?php settings_fields( 'design-experiments-settings' ); ?>
