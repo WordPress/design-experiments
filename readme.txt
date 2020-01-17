@@ -1,5 +1,5 @@
 === Design Experiments ===
-Contributors: wordpressdotorg, andraganescu, azaozz, karmatosed, kjellr, mapk, melchoyce, tinkerbelly
+Contributors: wordpressdotorg, andraganescu, azaozz, karmatosed, kjellr, mapk, melchoyce, tinkerbelly, passoniate
 Tags: design, experiments
 Stable tag: trunk
 Requires at least: 4.6

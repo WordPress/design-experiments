@@ -1,4 +1,4 @@
-Thank you for thinking about contributing to WordPress' Design Experiements Plugin! 
+Thank you for thinking about contributing to WordPress' Design Experiments Plugin!
 
 This plugin is a pure CSS experimentation, all contributions are welcome, the only requirements are:
 
